@@ -7,7 +7,7 @@ To compile the latex files you need MikTeX and a text editor like TeXstudio or T
 Next fork the repository and make your changes. Then create a pull request and I will respond as quickly as possible. If all these jargon is new to you then I suggest you spend a little time understanding how pull request (PR) works with these videos, [understanding PRs](https://www.youtube.com/watch?v=For9VtrQx58) and [creating a PR in GitHub](https://www.youtube.com/watch?v=rgbCcBNZcdQ).
 
 ## Resources
-Some usefull resources for latex are:
+Some useful resources for latex are:
 
 - [Official docs](https://www.latex-project.org/help/documentation/)
 - [Overleaf](https://www.overleaf.com/learn) (recommended)
