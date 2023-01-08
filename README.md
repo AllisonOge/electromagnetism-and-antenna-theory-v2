@@ -4,7 +4,7 @@ A book for undergrads at the department of electrical and electronic engineering
 ## Quick Start
 To compile the latex files you need MikTeX and a text editor like TeXstudio or TeXworks. Install MikTeX from the official [site](https://miktex.org/download) based on your local machine and repeat the same steps for [TeXworks](https://tug.org/texworks/) or [TeXstudio](https://www.texstudio.org/) depending on which you prefer. 
 
-If you want to contribute to this project, please refer to the [contributing guide]()
+If you want to contribute to this project, please refer to the [contributing guide](https://github.com/AllisonOge/electromagnetism-and-antenna-theory-v2/blob/master/CONTRIBUTING.md)
 
 ## Resources
 Some useful resources for latex are:
