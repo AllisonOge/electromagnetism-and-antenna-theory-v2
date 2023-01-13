@@ -13,5 +13,12 @@ Some useful resources for latex are:
 - [Overleaf](https://www.overleaf.com/learn) (recommended)
 - [DevDocs](https://devdocs.io/latex/)
 
-# Product
+## Product
 The latest book can be downloaded from this [link](https://drive.google.com/file/d/1SxQ9Guy-Qag5Mfivgv_mQNWIFANo5isC/view?usp=sharing)
+
+## Recommended books
+Some recommended books are
+
+- [Electromagnetic waves by Shevganokar](https://drive.google.com/file/d/1avlvwO-as23gX2_dxO4-kxjri_i_yNIf/view?usp=share_link)
+- [Microwave Engineering by Pozar](https://drive.google.com/file/d/1ou0ehzj0813YF-r21mj1mKmuxT-PkJ4N/view?usp=share_link)
+- [Antenna theory, analysis and design by Banalis](https://drive.google.com/file/d/1DdBUyr8pHjf5mI7RqGGH1c-i0sPthx8P/view?usp=share_link)
