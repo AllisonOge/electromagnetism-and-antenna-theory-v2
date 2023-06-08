@@ -2,14 +2,14 @@
 In the approach to find the power radiated, we would first find out the poynting vector for the dipole and the power can be gotten by integrating the poynting vector 
 over the total surface enclosing the antenna. 
 
-The average poynting vector $\bar{P}_{av} = \dfrac{1}{2}\mathit{R_e}\{\bar{E} \times \bar{H}^*\} $\\
+The average poynting vector $\bar{P}_{av} = \dfrac{1}{2}\mathfrak{Re}\{\bar{E} \times \bar{H}^*\} $\\
 
 Here, we are considering the total fields produced by the dipole
 $$
-= \dfrac{1}{2}\mathit{R_e}\{E_\theta H_\phi\hat{\theta} \times \hat{\phi} + E_r H_\phi\hat{r}\times \hat{\theta}\}
+= \dfrac{1}{2}\mathfrak{Re}\{E_\theta H_\phi\hat{\theta} \times \hat{\phi} + E_r H_\phi\hat{r}\times \hat{\theta}\}
 $$
 $$\fbox{$
-= \dfrac{1}{2}\mathit{R_e}\{E_\theta H_\phi^*\hat{r} - E_r H_\phi^*\hat{\theta}$\} }\footnote{\label{cross product note}since \ $\hat{\theta}\times\hat{\phi} = \hat{r} \ and \ \hat{r}\times\hat{\phi} = -\hat{\theta}$}
+= \dfrac{1}{2}\mathfrak{Re}\{E_\theta H_\phi^*\hat{r} - E_r H_\phi^*\hat{\theta}$\} }\footnote{\label{cross product note}since \ $\hat{\theta}\times\hat{\phi} = \hat{r} \ and \ \hat{r}\times\hat{\phi} = -\hat{\theta}$}
 $$
 From equation *,* and *
 \begin{align*}
@@ -33,7 +33,7 @@ $$\Longrightarrow \dfrac{j\beta^2}{\omega r^3}
 $$\Longrightarrow \dfrac{\beta^3}{\omega r^2} - \dfrac{j}{\omega r^5}$$
 Thus \quad  
 \begin{dmath*}
-\bar{P}_{av} = \dfrac{1}{2}\mathit{R_e}\left[\left(\dfrac{I_\circ d\ell\sin\theta}{4\pi}\right)^2\dfrac{1}{\epsilon} \left(\dfrac{\beta^3}{\omega r^2} - \dfrac{j}{\omega r^5}\right)\hat{r}\right]
+\bar{P}_{av} = \dfrac{1}{2}\mathfrak{Re}\left[\left(\dfrac{I_\circ d\ell\sin\theta}{4\pi}\right)^2\dfrac{1}{\epsilon} \left(\dfrac{\beta^3}{\omega r^2} - \dfrac{j}{\omega r^5}\right)\hat{r}\right]
 = \dfrac{1}{2}
 \left[\dfrac{I_\circ d\ell\sin\theta}{4\pi r}\right]^2 \dfrac{\beta^3}{\epsilon\omega}\hat{r} 
 \end{dmath*}
@@ -44,7 +44,7 @@ Since one problem with the Hertz dipole is a symmetrical problem, the Hertz dipo
 Now, to determine the total power we would integrate the poynting vector over a closed surface enclosing the Hertz dipole.
 \begin{figure}[h]
 \centering
-\includegraphics[height=5cm]{./graphics/diagram1}
+\includegraphics[width=.8\linewidth]{./graphics/diagram1}
 \caption{Elemental area in spherical coordinate}
 \label{figure12}
 \end{figure}
@@ -129,13 +129,13 @@ Also, the electric field is symmetrical about the $\phi$ plane since it does not
 \begin{figure}[!tbp]
 \centering
 \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[height=5cm]{./graphics/diagram3a.jpg}
+\includegraphics[width=.8\linewidth]{./graphics/diagram3a}
 \caption{Radiation pattern of th E-plane.}
 \label{figure14a}
 \end{minipage}
 \hfill
 \begin{minipage}[b]{0.4\textwidth}
-\includegraphics[height=5cm]{"./graphics/3D view radiation pattern"}
+\includegraphics[width=.8\linewidth]{"./graphics/3D view radiation pattern"}
 \caption{3D view of the radiation pattern.}
 \label{figure14b}
 \end{minipage}
