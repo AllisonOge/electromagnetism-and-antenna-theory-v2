@@ -3,13 +3,15 @@ Thank you for investing your time in contributing to our project.
 
 In this guide you will get an overview of the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
 
-Use the table of contents icon <img src="./assets/images/table-of-contents.png" width="25" height="25" /> on the top left corner of this document to get to a specific section of this guide quickly.
+Use the table of contents icon <img src="./assets/images/table-of-contents.png" width="25" height="25" /> on the top left or right corner of this document to get to a specific section of this guide quickly.
 
 # Getting started
 To get your local machine ready to compile the latex files and make your contributions please check the [README.md](./README.md) file.
 
 # Issues
 ## Create a new issue
+*Not much of reader then maybe a video will do, [check here](https://youtu.be/HnrNeuAYZOg).*
+
 If you spot an(any) error(s) and you do not want to edit the project files but would rather leave it to the contributors to handle, you can still help by providing a detailed explanation of the error(s) and the correction(s) using the guide as follows:
 
 - ensure you have the latest book from the online storage. Link can be found in the [README.md](./README.md) file.
