@@ -1,5 +1,13 @@
 *.log
 *.txt
 *.rar
-*.synctex.gz
-*.pdf
+*.toc
+*.aux
+*.idx
+*.ind
+*.ilg
+*.out
+*.fls
+*.fdb_latexmk
+main.synctex.gz
+main.pdf
