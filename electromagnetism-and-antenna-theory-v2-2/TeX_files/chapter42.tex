@@ -14,130 +14,97 @@ Hence in this chapter, we will look at two cases which are:
 \end{enumerate}
 
 \section{Attenuation Constant For TEM Mode in Parallel Plane Waveguide}
-
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.45]{./graphics/lecture2-image-b.png}
-\caption{propagation of fields inside a parallel plane waveguide for TEM mode}
+\caption{Propagation of fields inside a parallel plane waveguide operating in TEM mode}
+\label{fig:elcture2imageb}
 \end{figure}
 
-For the calculation of  attenuation constant $\alpha_c$   for TEM in a parallel waveguide to be done, solving for $\alpha_c$  will give us some feel of when we use structures like coaxial cables, parallel wire lines and how the losses are actually calculated. We have seen the calculation of the losses from the knowledge of resistance and conductance in transmission line. However, we ask a question. How do we know the resistance and conductance in this line, s essentially starting from the fields, we can calculate how the losses are going to take place in this conducting surfaces.
+For the calculation of attenuation constant $\alpha_c$  for TEM in a parallel waveguide to be done, solving for $\alpha_c$ brings to light when we use structures like coaxial cables\index{coaxial cable} and parallel wire transmission lines, and how the losses are calculated. We have seen the calculation of the losses from the knowledge of resistance and conductance in transmission lines. However, we ask a question \emph{how do we know the resistance and conductance in this line?} Essentially starting from the fields, we can calculate how the losses occur in these conducting surfaces.
 
-Now, let us consider a parallel plane waveguide with wave propagating in the z direction.
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[height=5cm]{411}
-%	\vspace{-20pt}
-%	\caption{propagation of fields inside a parallel plane waveguide for TEM mode}
-%\end{figure}
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.45]{./graphics/lecture2-image-b.png}
-\caption{propagation of fields inside a parallel plane waveguide for TEM mode}
-\end{figure}
-For this case, we say $\overline{E}$ is in the x direction and $\overline{H}$  in the y direction for the coordinate axis. For this mode, the ratio of the $\overline{E}$ and  $\overline{H}$ fields is equal to the intrinsic impedance of the medium filling the waveguide so we have a relation between $\overline{E}$ and  $\overline{H}$
+Now, let us consider a parallel plane waveguide\index{parallel plane waveguide} with a wave propagating in the z-direction as shown in figure~\ref{fig:elcture2imageb} in the TEM mode. For this case, we say $\bar{E}$ is in the x direction and $\bar{H}$ is in the y direction of the coordinate axis. For this mode, the ratio of the $\bar{E}$ and $\bar{H}$ fields is equal to the intrinsic impedance\index{intrinsic impedance} of the medium filling the waveguide so we have a relation between $\bar{E}$ and $\bar{H}$ as:
+\begin{dmath*}
+\text{Intrinsic impedance}, \eta = \frac{\bar{E}}{\bar{H}}
+\end{dmath*}
 
-Parallel Plane wave guide $\frac{\overline{E}}{\overline{H}} = \eta $ intrinsic impedance of the medium in the waveguide.
+If we express the electric field $\bar{E}$ as some amplitude $E_0$, then the electric and magnetic fields are given as:
+\begin{align*}
+\bar{E} &= E_0 e^{-j\beta }\hat{x}\\
+\bar{H} &= \frac{E_0}{\eta} e^{-j\beta z}\hat{y}
+\end{align*}
+Again, the waveguide is infinite in the y direction, so the attention given by the relation, is used to find the total power carried by the waveguide.
+\begin{align}
+\alpha = \frac{\text{power decrease per unit length}}{2 \times \text{total power carried by the waveguide}}
+\label{eqn:alphac}
+\end{align}
 
-If we express the electric field $\overline{E}$ as some amplitude $E_0$, so that
-\begin{equation}
-\overline{E} = E_0 e^{-j\beta }\hat{x}
-\end{equation}
-\begin{equation}
-\overline{H} = \frac{E_0}{\eta} e^{-j\beta z}\hat{y}
-\end{equation}
-Since the waveguide is infinite in the y direction, if we go by the relation
-\begin{center}
-$\alpha = \frac{\text{power decrease per unit length}}{\text{2 $\times$ total power carried by the waveguide}}$	
-\end{center}
+The power will be infinite since the cross-section of the waveguide is infinite i.e. y tends to $\infty$. The losses will be infinite and we will not get a definite or meaningful answer. So we define an attenuation, $\alpha_{c}$ by the unit width of this waveguide. We take a piece of the waveguide which is of unit length in the y direction i.e. (1) in the y direction. Now begs the question, \emph{what is the power loss in the unit length of the waveguide? What is the power carried by the unit width of the waveguide?} If found we can then calculate the attenuation constant $\alpha_{c}$ of the waveguide.
 
-to find out the total power carried by the waveguide, then the power will be infinite since the cross section of the waveguide is infinite, y tends to $\infty$. The losses will be infinite and we will not get a definite or meaningful answer.
+Now we have $\bar{H}$ which is not varying as a function of y, it is constant for y, with amplitude $\frac{E_0}{\eta}$. Thus, on the top and bottom walls, the magnetic field will be constant for y in the y direction.
 
-So we define the $\alpha_{c}$ by the unit width of this waveguide. We take a piece of the waveguide which is of unit length in the y direction i.e (1) in the y direction. What is the powerloss in the unit length of the waveguide? What is the power carried by unit width of the waveguide? From there we can calculate the attenuation constant $\alpha_{c}$ of the waveguide. 
+As we saw last time, the normal to the surface bounding the electromagnetic wave is as shown in figure~\ref{fig:elcture2imageb}. Thus, we can express the surface current in terms of the normal as $\hat{n}\times\bar{H}=\bar{J_s}$ and determine the direction of $\bar{J_s}$ (shown by the arrows in figure~\ref{fig:elcture2imageb}). This shows that the amplitude of $\bar{J_s}$ is exactly the same amplitude with $\frac{E_0}{\eta}(\bar{H})$. For the TEM mode in the parallel plane waveguide, the fields and currents inside the waveguide can be visualized as shown in figure~\ref{fig:elcture2imageb} and these fields propagate with the phase velocity inside the waveguide in the z-direction.
 
-Now we have $\overline{H}$ which is not varying as a function of y, it is constant for y, with amplitude $\frac{E_0}{\eta}$. On top and bottom walls, the magnetic field will be in the y direction.\\\\ As we saw last time, the normal to the surface bounding the electromagnetic wave is as shown. Going by $\hat{n}\times\overline{H}=\overline{J_s}$, we have the direction of $\overline{J_s}$ shown by the arrows. The amplitude of $\overline{J_s}$ is exactly the same amplitude with $\frac{E_0}{\eta}(\overline{H})$. Now that we have visualized the fields and currents inside the waveguide, then, those fields are going to move with the phase velocity inside the waveguide in the z direction.
-
-So, all the  quantities, $\overline{E}, \overline{H}$ are going to have a sinusoidal variation as a function of time. If we consider any location on the conducting plane, the fields, $\overline{E}, \overline{H}$ and the current $\overline{J_s}$ are going to vary sinusoidally as a function of time. So, if we take the peak amplitude, $E_0$ and $\frac{E_0}{\eta}$ of ($\overline{E}$ and $\overline{H}$ ) and find out the RMS value of the fields and the RMS value of the surface currents,we can get the average power lost and average power carried by the waveguide. So for unit width of the waveguide,the power carried by the waveguide per unit width is $\frac{Re}{2}(E \times H^*)$ integrated over the cross section of height (a or d) and width of the waveguide = 1. So, let us say the height of the waveguide is given as a, then the power carried by the waveguide per unit width.
+Also, all the fields, $\bar{E}$ and $\bar{H}$ are going to have a sinusoidal variation as a function of time. If we consider any location on the conducting plane, the fields, $\bar{E}$ and $\bar{H}$ as well as the current $\bar{J_s}$ would vary sinusoidally as a function of time. So, if we take the peak amplitude, $E_0$ and $\frac{E_0}{\eta}$ of $\bar{E}$ and $\bar{H}$ and find out the root-mean-square (RMS) value of the fields and the RMS value of the surface currents, we can get the average power lost and average power carried by the waveguide. So for the unit width of the waveguide, the power carried by the waveguide per unit width is $\frac{\mathfrak{Re}\lbrace E \times H^*\rbrace}{2}$ integrated over the cross-section of height (a or d) and width of the waveguide (unit width). So, let us say the height of the waveguide is given as a, then the power carried by the waveguide per unit width.
 
 \begin{equation}
-W=\int_{x=0}^{a}\int_{y=0}^{1} \frac{1}{2}Re{(\overline{E} \times \overline{H})dxdy}	
+W=\int_{x=0}^{a}\int_{y=0}^{1} \frac{1}{2}\mathfrak{Re}\lbrace\bar{E} \times \bar{H}^\ast\rbrace dxdy
+\label{eqn:powerparawaveguide}	
 \end{equation}
-$\overline{E}$ is in x direction, $\overline{H}$ is in y direction, so the power flow is in the z direction. $\overline{E} \times \overline{H}^*$ is we take this to be $\overline{E} \times \frac{\overline{E}}{\eta}$. If we consider the dielectric filling the waveguide is an ideal dielectric, $\eta$ is a real quantity. \\
-So, essentially,
+For the TEM mode, $\bar{E}$ is in the x direction and $\bar{H}$ is in the y direction, so the power flow is in the z-direction.
 
-\begin{center}
-$W$ = $\int_{x=0}^{a}\int_{y=0}^{1}\frac{1}{2}Re(E_0 \frac{E_0^*}{\eta})dxdy$
+From equation~\eqref{eqn:powerparawaveguide}, $\bar{E} \times \bar{H}^\ast = \bar{E} \times \frac{\bar{E}^\ast}{\eta}$. If we consider the dielectric filling the waveguide as an ideal dielectric, $\eta$ is a real quantity, then the power carried by the waveguide per unit width is given as:
+\begin{dmath}
+W = \int_{x=0}^{a}\int_{y=0}^{1}\frac{1}{2}\mathfrak{Re}\left\lbrace E_0 \frac{E_0^\ast}{\eta}\right\rbrace dxdy
+= \frac{\left|E_{0}\right|^2}{2\eta}\int_{x=0}^{a}\int_{y=0}^{1}dxdy 
+= \frac{|E_0|^2a}{2\eta}
+\label{eqn:powercarriedperunitwidth}
+\end{dmath}
 
-\end{center}
+This is the total power carried by the TEM mode per unit width of the waveguide. The second quantity we need to determine is the power loss per unit length of the waveguide. As we have seen earlier, to determine the power loss, we need to visit the concept of \emph{surface resistance}\index{surface resistance}. If we know the conductivity of the boundary, we can calculate the surface resistance and from the surface resistance, we can calculate the power loss per unit area as:
 \begin{equation}
-= \frac{\left|E_{0}\right|^2}{2\eta}\int_{x=0}^{a}\int_{y=0}^{1}dxdy = \frac{|E_0|^2a}{2\eta}
+\text{Power loss per unit area} = \frac{1}{2}R_s|\bar{J_s}|^2 
 \end{equation}
 
+So power loss per unit length, $-(\derivative{W}{z})$ is determined as the integration over the area made by a length of 1 unit in the z direction and breadth of 1 unit in the y direction (unit area). The magnitude of $ \bar{J_s} $ is the same as that of the magnetic field, so its magnitude will be $ \frac{E_0}{\eta} $ and $H^\ast$ will have a sinusoidal variation in time. So for the per unit length, if we calculate power loss per unit area and integrate it over the unit area would give the total loss per on the wall. Since there are 2 walls, the total loss will be doubled, that is, for each wall, we calculate power loss per unit length
+\begin{equation*}
+-\derivative{W}{z} = 2\footnotemark \int_{y=o}^{1} \int_{z=0}^{1}\frac{1}{2}R_s|\bar{J_s}|^2dydz
+\end{equation*}
+\footnotetext{
+This represents the doubling of the power loss per unit length due to the presence of two walls.
+}
+If we recall, the surface resistance, $R_s$ was the real part of the intrinsic impedance of the conducting wall. Again, the intrinsic impedance of the conducting wall is given as
+\begin{dmath*}
+\eta_c = \sqrt{\frac{j\omega\mu}{\sigma}}
+= \sqrt{\frac{\omega\mu}{2\sigma}}+j\sqrt{\frac{\omega\mu}{2\sigma}}\quad\text{where }\sqrt{\frac{\omega\mu}{2\sigma}}\text{ = }R_s\text{ and }j\sqrt{\frac{\omega\mu}{2\sigma}}\text{ = }jX_s
+= R_s + jX_s
+\end{dmath*}
+Where $R_s$ is the surface resistance\index{surface resistance} and $X_s$ is the surface reactance. Back to the power loss per unit width, if we substitute for $R_s$ and $|\bar{J_s}|^2$ in the equation, we get
+\begin{dmath}
+-\derivative{W}{z} = \int_{y=o}^{1} \int_{z=0}^{1}\frac{1}{2}\sqrt{\frac{\omega\mu}{2\sigma}}\times\frac{|E_0|^2}{\eta}dydz
+= \sqrt{\frac{\omega\mu}{2\sigma}}\times\frac{|E_0|^2}{\eta}
+\label{eqn:powerlossperunitlength}
+\end{dmath}
+Equation~\eqref{eqn:powerlossperunitlength} is the power loss per unit length of the waveguide. So, we have the quantities which are needed for the calculation of the attenuation constant.
 
-This is the total power carried by the TEM mode per unit width of the waveguide. The second quantity we need is the power loss per unit length of the waveguide. As we have seen earlier, when we go to the concept of what we call surface resistance, if we know the conductivity of the boundary, we can calculate the surface resistance. From the surface resistance, we can calculate the power loss per unit area.
-\begin{equation}
-=\frac{1}{2}R_s|\overline{J_s}|^2 
-\end{equation}
+Thus subsituting for values in equation~\eqref{eqn:alphac} the attenuation constant, $\alpha_c$ is given as 
+\begin{dmath}
+\alpha_c = \frac{\sqrt\dfrac{\omega\mu}{2 \sigma}\times\dfrac{|E_0|^2}{\eta}}{2 \times \dfrac{|E_0|^2 a}{2 \eta}}
+= \frac{2}{a}\sqrt{\frac{\omega\mu}{2\sigma}}=\frac{1}{a}\sqrt{\frac{\omega\mu}{2\sigma}}
+\end{dmath}
 
-So power loss per unit length 
-$ =-(\frac{dw}{dz}) $
-
-This is integrated over the area made by length in z direction and breadth im y direction of 1  unit. We make use of length 1 in z i.e unit length. So area is from 0 to 1 in z and 0 to 1 in y. $ \overline{J_s} $ is the same as a magnetic field, its magnitude will be $ \frac{E_0}{\eta} $ and H* will have a sinusoidal variation in time, so per unit length. If we calculate this value and integrate over the unit area 
-, that would give the total loss per unit area of the wall. Since there are 2 walls, the total loss will be doubled. For each wall we calculate
-power loss per unit length; 
-\begin{equation}
--\frac{dw}{dz}= 2 \int_{y=o}^{1} \int_{z=0}^{1}\frac{1}{2}R_s|\overline{J_s}|^2dydz
-\end{equation}
-Note: The 2 indicates the 2 walls of the waveguide. 
-
-If we recall, the $R_s$ was the real part of the intrinsic impedance of the conducting wall. For the conducting wall,
-$$\eta_c = \sqrt{\frac{j\omega\mu}{\sigma}}= \sqrt{\frac{\omega\mu}{2\sigma}}+j\sqrt{\frac{\omega\mu}{2\sigma}}$$
-
-Recall:
-\begin{center}
-$\sqrt{\frac{\omega\mu}{2\sigma}}=R_s$	
-\end{center}
-which is the surface resistance. Also,
-\begin{center}
-$j\sqrt{\frac{\omega\mu}{2\sigma}}=X_s$
-\end{center}
-which is the Surface Reactance.
-\begin{equation}
-\eta_c = R_s + X_s.
-\end{equation}
-We are interested in power loss here, so that we can substitute for $R_s$ in $\frac{dw}{dz}$ equation to have
-\begin{center}
-$-(\frac{dw}{dz})=\sqrt{\frac{\omega\mu}{2\sigma}}\times\frac{|E_0|^2}{\eta}$
-\end{center}
-\begin{equation}
-W=\frac{|E_0|^2 a}{2\eta}
-\end{equation}
-This equation is the power loss per unit length of the waveguide. So, we have the quantities which are needed for the  calculation of attenuation constant .
-Attenuation constant 
-\begin{center}
-$$\alpha_c = \frac{\sqrt\frac{\omega\mu}{2 \sigma}\times\frac{|E_0|^2}{\eta}}{2 \times \frac{|E_0|^2 a}{2 \eta}}$$
-
-$$= \frac{2}{a}\sqrt{\frac{\omega\mu}{2\sigma}}=\frac{1}{a}\sqrt{\frac{\omega\mu}{2\sigma}}$$	
-\end{center}
-Thus, we get the attenuation constant of the parallel plane wave guide as
-
-\begin{equation}
-\alpha_c=\frac{1}{a}\sqrt{\frac{\omega\mu}{2\sigma}}
-\end{equation}
-$\omega$ is the frequency, $a$ is the height of the waveguide, $\mu$ is the permeability of the dielectric, and $\sigma$ is the conductivity of the parallel planes.Somethings can be observed from this equation, 
+This gives us the attenuation constant of the parallel plane waveguide. $\omega$ is the frequency, $a$ is the height of the waveguide, $\mu$ is the permeability of the dielectric, and $\sigma$ is the conductivity of the parallel planes. There are some observations we can make from this equation. 
 \begin{enumerate}[(i)]
-\item The attenuation constant is inversely proportional to the height of the waveguide. This makes sense, because if we consider the parallel plane waveguide, since magnetic field does not vary as a function of height, no matter the separation of the two planes, the power loss per unit length is the same as it does not change. However, the power carried by the waveguide is affected in that it increases. But the power loss per unit length does not change and it is small. As a result, the attenuation constant reduces with increasing height, a.
-\item The attenuation constant is inversely proportional to the conductivity, $\sigma$. That, we understand, because if you have a good conductor, as the conductivity becomes large, the attenuation gets smaller since there will be less loss in the limit, $\sigma$ tends to $\infty$, $\alpha_{c}$ tends to 0. So, a waveguide made of ideal conductor will have 0 attenuation constant. The important thing to note is that attenuation constant $\alpha_{c}$ is a function of frequency $\omega$. As $\omega$ increase, the attenuation constant $\alpha_{c}$ increases.
-\item Attenuation constant is directly proportional to frequency, in that, as frequency increases, attenuation constant increases and vice versa. At high frequencies, the loss becomes excessive and signal cannot be fed effectively. In coaxial cables, at low frequencies, the attenuation constant is manageable whereas high frequencies create a low-pass filtering effect smoothening signals because of too much losses. When the same structure is used to carry signal at high frequencies, the loss becomes excessive, so signal cannot be transmitted efficiently from one point to the other. Looking at another angle, suppose we had to send a broadband signal using this structure, i.e. the signal occupies very large bandwidth, the lower end of the frequency spectrum will go efficiently, but the higher end of the spectrum will not go efficient;y. Its amplitude will be reduced.
-\end{enumerate}
-At low frequencies  the attenuation  constant  is manageable but when we use the same structures to carry signals at high frequency, the  loss becomes excessive and the signal cannot be transmitted  efficiently from one point to the other. We can also see this from another angle, that suppose we need to send a broadband signal using this  structure i.e if the signal occupy very large bandwidth, the lower  end of the frequency  spectrum will go efficiently but the higher end of the frequency spectrum  will not go efficiently.Its amplitude  would be reduced and the wave guiding structure has an effect like that of a LOW PASS FILTER. So the signal is distorted  as if it was pass through a low pass filter. 
-Whenever  there is a guiding structure, invariably there is low pass filtering  and a distorted signal I.e there will be blurring  of the sharp edges of the signal in time. Signals get smoothed out because of low pass filtering action caused by lossy behaviour of the waveguide. Conductor loss varies with frequency and so an increase  in frequency will lead to high loss for the same wave guide structure. 
+\item The attenuation constant is inversely proportional to the height of the waveguide. This makes sense because if we consider the parallel plane waveguide since the magnetic field does not vary as a function of height, no matter the separation of the two planes, the power loss per unit length is the same as it does not change. However, the power carried by the waveguide is affected in that it increases. But the power loss per unit length does not change and it is small. As a result, the attenuation constant reduces with increasing height, $a$.
+\item The attenuation constant is inversely proportional to the conductivity, $\sigma$. That, we understand, because if we have a good conductor, as the conductivity becomes large, the attenuation gets smaller since there will be less loss in the limit, that is, as $\sigma$ tends to $\infty$, $\alpha_{c}$ tends to 0. So, a waveguide made of an ideal conductor will have zero attenuation constant.
+\item Attenuation constant is directly proportional to frequency, in that, as frequency increases, attenuation constant increases and vice versa. Thus, at high frequencies, the loss becomes excessive and the signal cannot be fed effectively.
 
-\section{Transverse Electric Mode (TE10)}
-Since this is the mode that will propagate inside a rectangular waveguide. Recall for
-$TE_{10}$ mode
-\begin{center}
-$\frac{E_x}{E_z}=0$
+This explains why in coaxial cables\index{coaxial cable}, at low frequencies, the attenuation constant is manageable whereas high frequencies create a low-pass filtering effect smoothening signals because of too much losses. Essentially, when the same structure is used to carry the signal at high frequencies, the loss becomes excessive, so the signal cannot be transmitted efficiently from one point to the other. Alternatively, suppose we had to send a broadband signal\footnote{
+A broadband signal is one that occupies a very large bandwidth
+}\index{broadband signal} using the structure, the lower end of the frequency spectrum will pass through the structure, but the higher end of the spectrum will not pass through the structure rather, its amplitude will be reduced (just like a low pass filter).
+\end{enumerate}
+
+With these observations, we conclude on the propagation of broadband signals in a guiding structure, such that invariably there is low pass filtering and a distorted signal i.e. there will be blurring of the sharp edges of the signal in time. Therefore, broadband signals get smoothed out because of low pass filtering action caused by the lossy behaviour of the waveguide which varies with frequency and so an increase in frequency will lead to a high loss for the same waveguide structure.
 
 $H_y=0$	
 \end{center}
