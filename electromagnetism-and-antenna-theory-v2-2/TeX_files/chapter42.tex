@@ -106,120 +106,103 @@ A broadband signal is one that occupies a very large bandwidth
 
 With these observations, we conclude on the propagation of broadband signals in a guiding structure, such that invariably there is low pass filtering and a distorted signal i.e. there will be blurring of the sharp edges of the signal in time. Therefore, broadband signals get smoothed out because of low pass filtering action caused by the lossy behaviour of the waveguide which varies with frequency and so an increase in frequency will lead to a high loss for the same waveguide structure.
 
-$H_y=0$	
-\end{center}
-$$
-E_{x} = E_{z} = H_{y} = 0
-$$	
-$$
-E_{y} = \dfrac{-j\omega\mu a }{\pi} C\sin \dfrac{\pi a}{x} e ^{-j\beta z}
-$$
-$$
-H_{x} = \dfrac{-j\omega a}{\pi} C \sin\dfrac{\pi a}{x}
-e^{-j\beta z} 
-$$
+\section{Attenuation Constant for $TE_{10}$ mode in a Rectangular Waveguide}
+For this mode let us make some recapitulations. The $TE_{10}$ mode is the dominant mode in a rectangular waveguide. The fields are given as
+\begin{align*}
+E_{x} &= E_{z} = H_{y} = 0\\
+E_{y} &= \dfrac{-j\omega\mu a }{\pi} C\sin \dfrac{\pi a}{x} e ^{-j\beta z}\\
+H_{x} &= \dfrac{-j\omega a}{\pi} C \sin\dfrac{\pi a}{x}
+e^{-j\beta z}\\
+H_{z} &= C\cos \dfrac{\pi x}{a} e^{-j\beta z}
+\end{align*}
+In the previous chapters, we saw the current distribution because of these fields. Now we use these fields to calculate the power carried by the waveguide, the loss in the four walls of the waveguide and then we calculate the attenuation constant.
 
-$$
-H_{z} = C\cos \dfrac{\pi x}{a} e^{-j\beta z}
-$$
-
-
-Last time we saw the current distribution because of these fields. Now we use  these fields to calculate power carried by the waveguide, the loss in the four walls of the wave guide and then we calculate the attenuation constant.\\\\ 
-From the waveguide shown below
-
+Consider the rectangular waveguide operating in $TE_{10}$ shown in figure~\ref{fig:lectureimage21}. First, we calculate the total power since the area of the cross-section is known.
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\linewidth]{./graphics/lecture-image-21.jpg}
-\caption{propagation inside a rectangular waveguide2}
+\caption{$TE_{10}$ mode propagation in a rectangular waveguide}
+\label{fig:lectureimage21}
 \end{figure}
 
+We take per unit length of the waveguide in the z-direction. Calculate the loss per unit length, from the same argument, at every location the field is going to sinusoidally as a function of time. We take the peak value of the magnetic field and just take the RMS value from there and then we can calculate the power loss by integrating over the length of the waveguide.
 
-First we calculate the total power since the area of the cross section is known. We take per unit length of the waveguide in the z direction. Calculate the loss per unit length, from same argument, at every location the field is going to sinusoidally as a function of time.
-We take the peak value of the magnetic field and just take  the r.m.s value from there and then  we can calculate for the power loss by integrating over the length of the waveguide.
-First we take total power or power carried:
-\begin{center}
-$W= \int_{x=0}^{a}\int_{y=0}^{b}\frac{1}{2}R_e(\overline{E} \times H^*)dxdy$
-\end{center}
-$E_y$ has -j and $H_x$ has j, $E_y\times H_x^*=$ give -j$\times(-j)=-1$\\
-$E_y\times H_2^*$ gives imaginary value. So only $E_y\times H_x^*$ gives real power flow. 
+First, we take total power or power carried:
+\begin{dmath*}
+W= \int_{x=0}^{a}\int_{y=0}^{b}\frac{1}{2}\mathfrak{Re}\lbrace\bar{E} \times H^*\rbrace dxdy
+\end{dmath*}
+$E = E_y \hat{y}$ and $H = H_x\hat{x} + H_z\hat{z}$, such that $E_y\times H_x^\ast\approx j\times(-j) = -1$ is real while $E_y\times H_z^\ast \approx j \times 1$ is imaginary. So only $E_y\times H_x^*$ gives real power flow. 
 
- So,
-\begin{center}
-$W= \int_{x=0}^{a}\int_{y=0}^{b}\frac{1}{2}R_e(E_yH_x^*(-\hat{z}))+(E_yH_z^*)dxdy$
-\end{center}
-\begin{center}
-$W= \int_{x=0}^{a}\int_{y=0}^{b}\frac{1}{2}\frac{\omega\mu a}{\pi}.\frac{\beta a}{\pi}c^2sin^2(\frac{\pi x}{a})dxdy$
-\end{center}
-\begin{center}
-$=\frac{\omega\mu\beta a^2c^2}{2\pi^2}.b\int_{x=0}^{a}sin^2(\frac{\pi x}{a})dx$
-\end{center}
-\begin{equation}
+Therefore,
+\begin{dmath*}
+W= \int_{x=0}^{a}\int_{y=0}^{b}\frac{1}{2}\mathfrak{Re}\{E_yH_x^*(-\hat{z})+(E_yH_z^*)\}dxdy
+= \int_{x=0}^{a}\int_{y=0}^{b}\frac{1}{2}\frac{\omega\mu a}{\pi}.\frac{\beta a}{\pi}c^2{\sin}^2(\frac{\pi x}{a})dxdy
+=\frac{\omega\mu\beta a^2c^2}{2\pi^2}.b\int_{x=0}^{a}{\sin}^2(\frac{\pi x}{a})dx
 =\frac{\omega\mu\beta a^3bc^2}{4\pi^2}
-\end{equation}
-By knowing the fields for TE10 mode,we can calculate the total  power  carried by the wave guide. Power calculation for the loss in the waveguide is rather tedious  because in the case of parallel plane waveguide,we had only two planes and the current distribution was simple and the current  was moving only in the z direction, so we could integrate very easily. 
-For the case of the rectangular waveguide, the current which is flowing on the surface is rather complicated.
-We showed last time that it was some kind of blooming and closing flower on the two alternate planes of the rectangular waveguide. 
+\end{dmath*}
+By knowing the fields for $TE_{10}$ mode, we can calculate the total power carried by the waveguide. Power calculation for the loss in the waveguide is rather tedious because, in the case of the parallel plane waveguide, we had only two planes and the current distribution was simple and the current was moving only in the z direction, so we could integrate very easily.
 
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[scale=0.5]{ppw2}
-%	\caption{the direction of magnetic and electric fields viewed from the surface of a rectangular waveguide}
-%\end{figure}
-\begin{figure}[H]
+In the case of the rectangular waveguide, the current which is flowing on the surface is rather complicated. We showed in the previous chapters that it was some kind of blooming and closing flower on the two alternate planes of the rectangular waveguide. To revisit our discussion in thoes chapters, consider figure~\ref{fig:lecture2-image-a}. 
+\begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{./graphics/lecture2-image-a.png}
-\caption{the direction of magnetic and electric fields viewed from the surface of a rectangular waveguide}
+\caption{The direction of magnetic and electric fields viewed from the surface of a rectangular waveguide}
+\label{fig:lecture2-image-a}
 \end{figure}
 
-On side G, the component of magnetic field was frequency and it varies as a function  of y. So on side G,we have a current that varies only with y. On the top and bottom  surface, we have$H_x$ $H_2$ present. 
-$H_x$ is non zero at y=0 and y=b.
-Hence on the top, we have current direction in x and z.
-On side G and H,we have current that are only y oriented. So,
-$$\overline{J_s}|_{x=0} = \overline{J_s}|_{x=a} = H_z|_{x=0 \ or \ x=a}=C$$
-from here we can calculate the loss of the waveguide, but we have now the two component of the current.\\ One that is  Z oriented on top and bottom wall and the other x oriented  on top and bottom  wall. So If we are to find the total current  on these walls, we have to have a vector sum of the two currents on the top and bottom surface of the walls of the waveguide. From there we can calculate the total loss  of the waveguide.
-First let us calculate the loss for the sidewalls G and H. 
-For the side wall $H_2=(cos(\frac{\pi x}{a})e^{j\beta z}$ at x=a gives current inside it which does not vary with y and at x=0 will help give current in G ($\hat{n} \times \overline{H}$) which does not vary with y. Also, $e^{j\beta z}$ gives sinusoidal variation but we are interested in the amplitude,hence instead of writing $ce^{-j\beta z}$ (with x=0 or x=a) we take just C term. So, the current  on the vertical  walls are
+On side G, the component of the magnetic field was the frequency and it varies as a function of y. So on side G, we have a current that varies only with y. On the top and bottom surfaces, we have $H_x$ $H_2$ present. $H_x$ is non zero at y=0 and y=b.
+Hence on the top, we have the current direction in x and z.
+On sides G and H, we have currents that are only y oriented. So,
+$$
+\bar{J_s}|_{x=0} = \bar{J_s}|_{x=a} = H_z|_{x=0 \ or \ x=a}=C
+$$
+from here we can calculate the loss of the waveguide, but we have now the two components of the current.
+
+One that is Z oriented on the top and bottom wall and the other x oriented on the top and bottom wall. So If we are to find the total current on these walls, we have to have a vector sum of the two currents on the top and bottom surface of the walls of the waveguide. From there we can calculate the total loss of the waveguide.
+
+First, let us calculate the loss for the sidewalls G and H. 
+For the side wall $H_2=(cos(\frac{\pi x}{a})e^{j\beta z}$ at x=a gives current inside it which does not vary with y and at x=0 will help give current in G ($\hat{n} \times \bar{H}$) which does not vary with y. Also, $e^{j\beta z}$ gives sinusoidal variation but we are interested in the amplitude, hence instead of writing $Ce^{-j\beta z}$ (with x=0 or x=a) we take just C term. So, the current on the vertical walls are
 \begin{center}
 $J_s|_{x=0} = J_s|_{x=a} = H_z|_{x=0 or x=a} = C$	
 \end{center}
-x=0 represent  wall G and X=a represent wall H. The magnetic field on this side wall
+x=0 represents wall G and X=a represents wall H. The magnetic field on this side wall
 \begin{center}
 $H_2=cos(\frac{\pi x}{a}) e^{-j\beta z}$	
 \end{center}
 does not vary with y. So if we calculate the loss in the two walls per unit length of the waveguide, It is
 \begin{equation}
-W_L|_{\text{verticalwalls}} = 2\int_{y=0}^{b}\int_{z=0}^{1}\frac{1}{2}R_s|\overline{J_s}|^2dydz
+W_L|_{\text{verticalwalls}} = 2\int_{y=0}^{b}\int_{z=0}^{1}\frac{1}{2}R_s|\bar{J_s}|^2dydz
 \end{equation}
-Recall $\overline{J_s}$ is given by c which we can substitute  in hence to have
+Recall $\bar{J_s}$ is given by c which we can substitute in hence to have
 \begin{equation}
 =R_s|c|^2b
 \end{equation}
-So calculation  of the loss in the vertical walls is quite simple because we have one component of the surface current which is y oriented. 
-However, when we go to the top surface, we have two magnetic field components on the top and bottom surface $H_x$ and $H_z$. So we have to find the total current on this surface and then calculate for the loss for the top and bottom  surfaces. 
+So the calculation of the loss in the vertical walls is quite simple because we have one component of the surface current which is y oriented. 
+However, when we go to the top surface, we have two magnetic field components on the top and bottom surface $H_x$ and $H_z$. So we have to find the total current on this surface and then calculate the loss for the top and bottom surfaces. 
 
-\section{HORIZONTAL WALLS} 
-$\overline{J_s}$ is a vector  quantity  now as there are two  components in x and z
+\section{Horizontal Walls} 
+$\bar{J_s}$ is a vector quantity now as there are two components in x and z
 \begin{center}
-$|\overline{J_s}|_{y=0(bottom)} = |\overline{J_s}|_{y=b(top)} = |H|_{y=0}$
-$=(|\overline{H}_x|^2 + (|\overline{H}^2 )$
+$|\bar{J_s}|_{y=0(bottom)} = |\bar{J_s}|_{y=b(top)} = |H|_{y=0}$
+$=|\bar{H}_x|^2 + (|\bar{H}^2 )$
 \end{center}
-$|\overline{H}|$ is the magnitude  of the total component made up of Hx and Hz.\\\\
+$|\bar{H}|$ is the magnitude of the total component made up of Hx and Hz.
 
 Recall
 \begin{center}
-$\overline{H_x} = \frac{j\beta a}{\pi}Csin(\frac{\pi x}{a})e^{j\beta z}$
+$\bar{H_x} = \frac{j\beta a}{\pi}Csin(\frac{\pi x}{a})e^{j\beta z}$
 \end{center}
 \begin{center}
 $H_z=Ccos(\frac{\pi x}{a})e^{j\beta z}$
 \end{center}
-They are not varying as a function of y, so they are the same at y=0 or at y=b i.e at top and bottom  plane which are the two horizontal walls.
+They are not varying as a function of y, so they are the same at y=0 or at y=b i.e. at the top and bottom plane which are the two horizontal walls.
 \begin{center}
 $W_L|_{HOR} = 2\int_{x=0}^{a}\int_{z=0}^{1}\frac{1}{2}R_s(|H_x|^2 + |H_z|^2)dxdz$
 \end{center}
 \begin{center}
 $=\int_{x=0}^{a}\int_{z=0}^{1}R_s ((\frac{\beta a}{\pi})^2C^2 \times sin^2(\frac{\pi x}{a})+ C^2cos^2(\frac{\pi x}{a}))dxdz$	
 \end{center}
-Solving  this integral we get
+Solving this integral we get
 \begin{equation}
 W_L|_{HOR} = \frac{R_S|c|^2 a}{a}\left(\left(\frac{\beta a}{\pi}\right)^2 +1\right)
 \end{equation}
@@ -230,14 +213,14 @@ $W_L=-\frac{dw}{dz}=W_L|_{VER}+W_L|_{HOR}$
 \begin{center}
 $=R_s|C|^2b+\frac{R_s|C|^2a}{2}[(\frac{\beta a}{\pi})^2+1]$	
 \end{center}
-We can write this in terms of frequency and the cut off frequency of the mode, because we know cut off frequency  is related to the dimension of the waveguide=
+We can write this in terms of frequency and the cut-off frequency of the mode, because we know cut off frequency is related to the dimension of the waveguide=
 \begin{center}
 $=R_s|C|^2 (b + \frac{a}{2} + \frac{a}{2}(\frac{\beta a}{\pi})^2)$	
 \end{center}
 \begin{center}
 $ =R_s|C|^2(b+\frac{a}{2}(1+(\frac{\beta a}{\pi})^2)$	
 \end{center}
-Recall equation for rectangular waveguide:  
+Recall the equation for a rectangular waveguide: 
 \begin{center}
 $\beta=\sqrt{{\omega}^2\mu\epsilon-(\frac{m\pi}{a})^2-(\frac{n\pi}{b})^2}$	
 \end{center}
@@ -253,7 +236,7 @@ For $TE_{10}$, m=1, n=0
 $\omega_c^2\mu\epsilon=(\frac{\pi}{a})^2$,	
 \end{center}
 \begin{center}
-$\beta^2=\omega^2\epsilon-\omega_c^2\epsilon$  or  $\beta^2 + \omega_c^2\mu\epsilon$	
+$\beta^2=\omega^2\epsilon-\omega_c^2\epsilon$ or $\beta^2 + \omega_c^2\mu\epsilon$	
 \end{center}
 \begin{center}
 $= \omega^2\mu\epsilon$	
@@ -264,7 +247,7 @@ $\frac{\beta^2}{\omega_c^2\mu\epsilon}+1=\frac{\omega^2\mu\epsilon}{\omega_c^2\m
 \begin{equation}
 = 1+ \frac{\beta^2}{\omega_c^2\mu\epsilon}	
 \end{equation}
-but $\omega_c^2\mu\epsilon=(\frac{\pi^2}{a})$  with  m=1, n=0. From 
+but $\omega_c^2\mu\epsilon=(\frac{\pi^2}{a})$ with m=1, n=0. From 
 \begin{center}
 $\omega_c^2\mu\epsilon=(\frac{m\pi}{a})^2 + (\frac{n\pi}{b})^2$	
 \end{center}
@@ -275,16 +258,16 @@ $(\frac{f}{f_c})^2= 1+\frac{\beta^2}{(\frac{\pi}{a})^2}$
 =1+ (\frac{\beta a}{\pi})^2	
 \end{equation}
 \begin{center}
-$R_s|C|^2 (b+\frac{a}{2}(1+(\frac{\beta a}{\pi})^2)$	
+$R_s|C|^2 b+\frac{a}{2}(1+(\frac{\beta a}{\pi})^2)$	
 \end{center}
 \begin{center}
-$=R_s|C|^2(b+\frac{a}{2}(\frac{f}{f_c)}^2)$	
+$=R_s|C|^2(b+\frac{a}{2}(\frac{f}{f_c}^2))$	
 \end{center}
-Hence the total loss in the four walls in terms of cut off frequency is
+Hence the total loss in the four walls in terms of cut-off frequency is
 \begin{equation}
 W_L=R_s|C|^2[b+\frac{a}{2}(\frac{f}{f_c})^2]	
 \end{equation}
-So,we know the two things which are needed are: the total power carried by the waveguide which we got and the power loss per unit length of the wave guide. As we saw once we know these two quantities, then we can get attenuation  constant for the waveguide and that will be:
+So, we know the two things which are needed are: the total power carried by the waveguide which we got and the power loss per unit length of the waveguide. As we saw once we know these two quantities, then we can get the attenuation constant for the waveguide and that will be:
 and 
 \begin{equation}
 W_L=-(\frac{dw}{dz})= R_s|C|^2[b+\frac{a}{2}(\frac{f}{f_c})^2]	
@@ -329,21 +312,21 @@ $\alpha_{c} for TE_{10}$
 \begin{equation}
 =\frac{R_s[1+\frac{2b}{a}(\frac{f_c}{f})^2]}{\eta b\sqrt{1-(\frac{f_c}{f})^2}}	
 \end{equation}
-With $R_s=\sqrt\frac{\omega\mu}{2\sigma}$ in $\alpha_{c}$ expression, it implies  that the higher the frequency, the higher $\alpha_{c}$ and the more the losses. We also know that $\alpha_{c}$  is related to the ratio $\frac{f_c}{f}$. As f tends to $f_C$ becomes very large and when frequency approaches the cut off frequency, there is no propagation of the mode I.e the probation ceases, the power essentially  bounces back and forth between  the two surfaces  and the power is essentially absorbed  in the ohmic losses  of these walls and the attenuation  constant  becomes very large. 
-So having  understood these two cases, one was a simple case of parallel plane wave guide in TEM MODE. the other the $TE_{10}$ case which is the mode that is most times  going to propagate inside a rectangular waveguide. We can now calculate the attenuation  constant for any mode.   
+With $R_s=\sqrt\frac{\omega\mu}{2\sigma}$ in $\alpha_{c}$ expression, it implies that the higher the frequency, the higher $\alpha_{c}$ and the more the losses. We also know that $\alpha_{c}$ is related to the ratio $\frac{f_c}{f}$. As f tends to $f_C$ becomes very large and when frequency approaches the cut-off frequency, there is no propagation of the mode I.e the probation ceases, the power essentially bounces back and forth between the two surfaces and the power is essentially absorbed in the ohmic losses of these walls and the attenuation constant becomes very large. 
+So having understood these two cases, one was a simple case of the parallel plane waveguide in TEM MODE. the other is the $TE_{10}$ case which is the mode that is most times going to propagate inside a rectangular waveguide. We can now calculate the attenuation constant for any mode.  
 
-We have explained   the philosophy of how attenuated constant calculated inside the waveguide, and using this philosophy, the attenuation  constant can be calculated for any arbitrary mode inside the waveguide.
+We have explained the philosophy of how the attenuated constant is calculated inside the waveguide, and using this philosophy, the attenuation constant can be calculated for any arbitrary mode inside the waveguide.
 
-In summary  the quantity  attenuation  constant is very important  when we use a waveguiding structure In practice. We assume that the waveguiding structure is efficient, that means the losses are very small on this waveguide.
-No matter how small these losses are,we always like to get a measure  for that loss so we require the quantity attenuation constant in a parallel  plane waveguide, we saw that the attenuation constant of a waveguide consist of two components:
+In summary, the quantity attenuation constant is very important when we use a waveguiding structure In practice. We assume that the waveguiding structure is efficient, which means the losses are very small on this waveguide.
+No matter how small these losses are, we always like to get a measure for that loss so we require the quantity attenuation constant in a parallel plane waveguide, we saw that the attenuation constant of a waveguide consists of two components:
 \begin{enumerate}[(i)]
-\item due to dielectric  loss due to finite conductivity of the dielectric  filling the waveguide
+\item due to dielectric loss due to finite conductivity of the dielectric filling the waveguide
 \item due to losses arising from finite conductivity of the conducting boundary.
 \end{enumerate}
-Assuming  that the losses are small for both dielectric  and the conductor, we separately calculate attenuation  constant due to dielectric losses and the conductor  losses and then the total attenuation  constant is the sum of these two attenuation constant.
+Assuming that the losses are small for both the dielectric and the conductor, we separately calculate the attenuation constant due to dielectric losses and the conductor losses and then the total attenuation constant is the sum of these two attenuation constants.
 
-For calculation of attenuation  constant due to dielectric ,we use the concept of complex permittivity, we replaced the dielectric  constant by complex dielectric  constant in the dispersion relation.By separating the real and imaginary part we get the attention  constant due to dielectric losses. 
-For conducting losses, we calculated the total power flow inside the waveguide,and the losses per unit length on the walls of the waveguide. From there we can calculate the attenuation  constant  of  the  waveguide. This essentially complete our discussion on the normal propagating waveguide. 
-What we have seen so far in this course is that we started with a wave which was in an unbound medium,and slowly we try to trip the wall into a more and more bound structure.
+For the calculation of attenuation constant due to dielectric, we use the concept of complex permittivity, we replaced the dielectric constant with a complex dielectric constant in the dispersion relation. By separating the real and imaginary parts we get the attention constant due to dielectric losses. 
+For conducting losses, we calculated the total power flow inside the waveguide and the losses per unit length on the walls of the waveguide. From there we can calculate the attenuation constant of the waveguide. This essentially completes our discussion on the normal propagating waveguide. 
+What we have seen so far in this course is that we started with a wave which was in an unbound medium, and slowly we try to trip the wall into a more and more bound structure.
 
-Reviewing from the Propagation  of plane wave,we started from a wave in an unbound  medium,then we put an interface, we tried to restrict the propagation of wave into semi infinite space,then, we put two planes to trip the wave between  the  planes,to get a structure called a parallel plane waveguide. Then, We restricted the wave from other two directions,so the wave is trapped in a closed pipe which is called a rectangular  waveguide. We can also close from the other two sides I.e we can cut the pipe and close it from both side, then, the wave can be trapped  completely  inside the structure. This structure is essentially  called a resonator which is beyond the scope of this course.from an unbound  medium  to a bound medium  of wave structure explains the way electromagnetic waves are guided in a particular  system. Hence waveguide is an extremely useful device for guiding electromagnetic waves from  one point to another efficiently.
+Reviewing the propagation of the plane wave, we started from a wave in an unbound medium, then we put an interface, we tried to restrict the propagation of the wave into semi-infinite space, and then, we put two planes to trip the wave between the planes, to get a structure called a parallel plane waveguide. Then, We restricted the wave from the other two directions, so the wave is trapped in a closed pipe which is called a rectangular waveguide. We can also close from the other two sides I.e we can cut the pipe and close it from both sides, then, the wave can be trapped completely inside the structure. This structure is essentially called a resonator which is beyond the scope of this course. From an unbound medium to a bound medium of wave structure explains the way electromagnetic waves are guided in a particular system. Hence waveguide is an extremely useful device for guiding electromagnetic waves from one point to another efficiently.
