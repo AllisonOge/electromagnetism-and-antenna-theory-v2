@@ -206,6 +206,27 @@ but $\omega_c^2\mu\epsilon=\left(\frac{\pi^2}{a}\right)$
 \end{align*}
 }
 Equation~\eqref{eqn:lossrecte10} is the total loss in the four walls in terms of the cut-off frequency. So, to calculate the attenuation constant, we require two essential pieces of information: the total power conveyed by the waveguide and the power loss per unit length of the waveguide which have already been determined. With these two quantities known, the attenuation constant of the waveguide can be derived, yielding valuable insights into its characteristics.
+\begin{dmath}
+\alpha_{c}=\frac{-\derivative{W}{z}}{z\times W}
+=\frac{R_s|C|^2\left(b+\frac{a}{2}\left(\frac{f}{f_c}\right)^2\right)}{2\times\dfrac{\omega\mu a^3bc^2}{4\pi^2}}
+=\frac{R_s[b+\frac{a}{2}(\frac{f}{f_C})^2]}{\omega\mu\cdot\omega\sqrt{\mu\epsilon}\sqrt{1-(\frac{f_c}{f}^2)}\frac{a^2}{\pi^2}ab\cdot\frac{1}{2}}
+=\frac{R_s[b+\frac{a}{2}(\frac{f}{f_c})^2]}{\omega^2\mu\sqrt{\mu\epsilon}\sqrt{1-(\frac{f_c}{f})^2}\frac{1}{\omega^2\mu\epsilon}.\frac{ab}{2}}
+=\frac{R_s[b+\frac{a}{2}(\frac{f}{f_c})^2]}{\frac{\omega^2\mu\sqrt{\mu\epsilon}}{\omega_c^2\mu\epsilon}.\frac{ab}{2}\sqrt{1-(\frac{f_c}{f})^2}}
+=\frac{R_s[b+\frac{a}{2}(\frac{f}{f_c})^2]}{(\frac{f}{f_c})^2\sqrt{\frac{\mu}{\epsilon}}\frac{a}{2}.b\sqrt{1-(\frac{f_c}{f})^2}}
+=\frac{\frac{2}{a}.(\frac{f_c}{f})^2R_s[b+\frac{a}{2}(\frac{f}{f_c})^2]}{\eta.b\sqrt{1-(\frac{f_c}{f})^2}}
+=\frac{R_s[1+\frac{2b}{a}(\frac{f_c}{f})^2]}{\eta b\sqrt{1-(\frac{f_c}{f})^2}}
+\label{eqn:alphacrecte10}
+\end{dmath}
+% Recall:
+% \begin{center}
+% $\beta=\sqrt{\omega^2\mu\epsilon-\omega_c^2\mu\epsilon}$	
+% \end{center}
+% \begin{center}
+% $\beta=\omega\sqrt{\mu\epsilon}\sqrt{1-(\frac{f_c}{f})^2}$	
+% \end{center}
+% \begin{center}
+% $\omega^2\mu\epsilon=\frac{\pi^2}{a^2}$	
+% \end{center}
 With $R_s=\sqrt\frac{\omega\mu}{2\sigma}$ in $\alpha_{c}$ expression, it implies that the higher the frequency, the higher $\alpha_{c}$ and the more the losses. We also know that $\alpha_{c}$ is related to the ratio $\frac{f_c}{f}$. As f tends to $f_c$ becomes very large and when frequency approaches the cut-off frequency, there is no propagation of the mode i.e. the propagation ceases, the power essentially bounces back and forth between the two surfaces and the power is essentially absorbed in the ohmic losses of these walls and the attenuation constant becomes very large.
 
 So having understood these two cases, one was a simple case of the parallel plane waveguide in TEM mode. the other is the rectangular waveguide in $TE_{10}$ mode which is the dominant mode in a rectangular waveguide. We have explained the philosophy of how the attenuated constant is calculated inside the waveguide, and using this philosophy, the attenuation constant can be calculated for any arbitrary mode inside the waveguide.
