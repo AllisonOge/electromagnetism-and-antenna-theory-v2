@@ -108,13 +108,13 @@ With these observations, we conclude on the propagation of broadband signals in 
 
 \section{Attenuation Constant for $TE_{10}$ mode in a Rectangular Waveguide}
 For this mode let us make some recapitulations. The $TE_{10}$ mode is the dominant mode in a rectangular waveguide. The fields are given as
-\begin{align*}
+\begin{align}
 E_{x} &= E_{z} = H_{y} = 0\\
-E_{y} &= \dfrac{-j\omega\mu a }{\pi} C\sin \dfrac{\pi a}{x} e ^{-j\beta z}\\
+E_{y} &= \dfrac{-j\omega\mu a }{\pi}C\sin \dfrac{\pi a}{x} e ^{-j\beta z}\label{eqn:eyrecte10}\\
 H_{x} &= \dfrac{-j\omega a}{\pi} C \sin\dfrac{\pi a}{x}
-e^{-j\beta z}\\
-H_{z} &= C\cos \dfrac{\pi x}{a} e^{-j\beta z}
-\end{align*}
+e^{-j\beta z}\label{eqn:hxrecte10}\\
+H_{z} &= C\cos \dfrac{\pi x}{a} e^{-j\beta z}\label{eqn:hzrecte10}
+\end{align}
 In the previous chapters, we saw the current distribution because of these fields. Now we use these fields to calculate the power carried by the waveguide, the loss in the four walls of the waveguide and then we calculate the attenuation constant.
 
 Consider the rectangular waveguide operating in $TE_{10}$ shown in figure~\ref{fig:lectureimage21}. First, we calculate the total power since the area of the cross-section is known.
@@ -134,33 +134,77 @@ W= \int_{x=0}^{a}\int_{y=0}^{b}\frac{1}{2}\mathfrak{Re}\lbrace\bar{E} \times H^*
 $E = E_y \hat{y}$ and $H = H_x\hat{x} + H_z\hat{z}$, such that $E_y\times H_x^\ast\approx j\times(-j) = -1$ is real while $E_y\times H_z^\ast \approx j \times 1$ is imaginary. So only $E_y\times H_x^*$ gives real power flow. 
 
 Therefore,
-\begin{dmath*}
-W= \int_{x=0}^{a}\int_{y=0}^{b}\frac{1}{2}\mathfrak{Re}\{E_yH_x^*(-\hat{z})+(E_yH_z^*)\}dxdy
+\begin{dmath}
+W= \int_{x=0}^{a}\int_{y=0}^{b}\frac{1}{2}\mathfrak{Re}\{E_yH_x^*(-\hat{z})+(E_yH_z^*)\hat{x}\}dxdy
 = \int_{x=0}^{a}\int_{y=0}^{b}\frac{1}{2}\frac{\omega\mu a}{\pi}.\frac{\beta a}{\pi}c^2{\sin}^2(\frac{\pi x}{a})dxdy
 =\frac{\omega\mu\beta a^2c^2}{2\pi^2}.b\int_{x=0}^{a}{\sin}^2(\frac{\pi x}{a})dx
 =\frac{\omega\mu\beta a^3bc^2}{4\pi^2}
-\end{dmath*}
+\label{eqn:powercarriedrecte10}
+\end{dmath}
 By knowing the fields for $TE_{10}$ mode, we can calculate the total power carried by the waveguide. Power calculation for the loss in the waveguide is rather tedious because, in the case of the parallel plane waveguide, we had only two planes and the current distribution was simple and the current was moving only in the z direction, so we could integrate very easily.
 
 In the case of the rectangular waveguide, the current which is flowing on the surface is rather complicated. We showed in the previous chapters that it was some kind of blooming and closing flower on the two alternate walls of the rectangular waveguide. To revisit our discussion in those chapters, consider figure~\ref{fig:lecture2-image-a}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{./graphics/lecture2-image-a.png}
-\caption{The direction of magnetic and electric fields viewed from the surface of a rectangular waveguide}
+\caption{Surface current distribution in $TE_{10}$ mode of the rectangular waveguide}
 \label{fig:lecture2-image-a}
 \end{figure}
 
 On side walls G and H, the surface current is y-oriented as shown in figure~\ref{fig:lecture2-image-a}. It is contributed by the magnetic field component, $H_z$ since $H_x$ is zero at $x=0$ or $x=a$ (see equation~\eqref{eqn:hxrecte10}). On the top and bottom walls J and I, we have the surface current direction in x and z since both $H_x$ and $H_z$ are non-zero at $y=0$ and $y=b$ (see equations~\eqref{eqn:hxrecte10} and~\eqref{eqn:hzrecte10}). Therefore, on sides G and H, we have currents that are only y oriented given as
+\begin{align*}
+\bar{J_s}|_{x=0} = \bar{J_s}|_{x=a} = H_z|_{x=0\text{ or }x=a}=C
+\end{align*}
 
 From this point onward, it becomes feasible to compute the waveguide's loss. However, at this juncture, we possess the two constituent elements of the current. The first current component is oriented in the z-direction and is present at both the top and bottom walls. The second current component is oriented in the x-direction and is also present at the top and bottom walls. To determine the overall current along these walls, it is necessary to perform a vector summation of the two currents on the top and bottom surfaces of the waveguide. Subsequently, by utilizing this combined current, the total loss of the waveguide can be computed.
 
 First, let us calculate the loss for the sidewalls G and H. For the side wall, $H_z=cos(\frac{\pi x}{a})e^{j\beta z}$ at $x=a$ gives current ($\hat{n} \times \bar{H}$) which does not vary with y and at $x=0$ gives current which again does not vary with y. Also, $e^{j\beta z}$ gives sinusoidal variation but we are interested in the amplitude, hence instead of writing $Ce^{-j\beta z}$ with $x=0$ or $x=a$, we take just the C term. So, we calculate the loss in the two walls per unit length of the waveguide as
+\begin{align*}
+W_L|_{\text{vertical walls}} &= 2\int_{y=0}^{b}\int_{z=0}^{1}\frac{1}{2}R_s|\bar{J_s}|^2dydz\quad\text{But, }\bar{J_s}\text{ = }C\\
+&= R_s|C|^2b
+\end{align*}
 
 The computation of loss in the vertical walls is relatively straightforward since we only have one component of the surface current, which is oriented in the y-direction. However, when examining the top surface, we encounter two magnetic field components, namely $H_x$ and $H_z$, present on both the top and bottom surfaces. Hence, it is necessary to determine the aggregate current on this surface and subsequently evaluate the loss for both the top and bottom surfaces. 
 
 For the horizontal walls, $\bar{J_s}$ is a vector quantity now as there are two components in x and z.
+\begin{align*}
+|\bar{J_s}|_{y=0(bottom)} = |\bar{J_s}|_{y=b(top)} = |H|_{y=0} = |\bar{H}_x|^2 + |\bar{H}_z|^2
+\end{align*}
+$|\bar{H}|$ is the magnitude of the total component made up of $H_x$ and $H_z$.
 
 From equations~\eqref{eqn:hxrecte10} and~\eqref{eqn:hzrecte10}, we observe that they are not varying as a function of y, so they are the same at $y=0$ or $y=b$ i.e. at the top and bottom walls which are the two horizontal walls.
+\begin{dmath}
+W_L|_{\text{horizontal walls}}
+% = 2\int_{x=0}^{a}\int_{z=0}^{1}\frac{1}{2}R_s\left(|H_x|^2 + |H_z|^2\right)dxdz
+= 2\int_{x=0}^{a}\int_{z=0}^{1}R_s \left(\left(\frac{\beta a}{\pi}\right)^2 C^2\sin^2\left(\frac{\pi x}{a}\right)+ C^2\cos^2\left(\frac{\pi x}{a}\right)\right)dxdz
+= \frac{R_s|C|^2 a}{a}\left(\left(\frac{\beta a}{\pi}\right)^2 +1\right)
+\end{dmath}
+Total loss = $\text{losses in horizontal Walls, }W_L|_{\text{horizontal walls}}$ + $\text{losses in vertical walls, }W_L|_{\text{vertical walls}}$
+\begin{dmath}
+W_L=-\derivative{W}{z} =W_L|_{\text{vertical walls}}+W_L|_{\text{horizontal walls}}
+=R_s|C|^2b+\frac{R_s|C|^2a}{2}\left[\left(\frac{\beta a}{\pi}\right)^2+1\right]
+=R_s|C|^2 \left(b + \frac{a}{2} + \frac{a}{2}\left(\frac{\beta a}{\pi}\right)^2\right)\footnotemark
+=R_s|C|^2\left(b+\frac{a}{2}\left(1+\left(\frac{\beta a}{\pi}\right)^2\right)\right)\quad\text{But, }\left(\frac{f}{f_c}\right)^2\text{ = }1+\left(\frac{\beta a}{\pi}\right)^2\footnotemark
+=R_s|C|^2\left(b+\frac{a}{2}\left(\frac{f}{f_c}^2\right)\right)
+\label{eqn:lossrecte10}
+\end{dmath}
+\footnotetext{
+We can write this in terms of frequency and the cut-off frequency of the mode because we know the cut-off frequency is related to the dimension of the waveguide.
+}
+\footnotetext{
+For ${\omega}^2\mu\epsilon = \left(\frac{m\pi}{a}\right)^2 + \left(\frac{n\pi}{b}\right)^2$ substitute $m = 1$ and $n = 0$ such that
+\begin{align*}
+\omega_c^2\mu\epsilon=\left(\frac{\pi}{a}\right)^2
+\end{align*}
+And $\beta^2=\omega^2\epsilon-\omega_c^2\epsilon$ or $\beta^2 + \omega_c^2\mu\epsilon$, so
+\begin{align*}
+\frac{\beta^2}{\omega_c^2\mu\epsilon}+1=\frac{\omega^2\mu\epsilon}{\omega_c^2\mu\epsilon}=\left(\frac{f}{f_c}\right)^2
+\end{align*}
+but $\omega_c^2\mu\epsilon=\left(\frac{\pi^2}{a}\right)$
+\begin{align*}
+\left(\frac{f}{f_c}\right)^2=1+\left(\frac{\beta a}{\pi}\right)^2
+\end{align*}
+}
 Equation~\eqref{eqn:lossrecte10} is the total loss in the four walls in terms of the cut-off frequency. So, to calculate the attenuation constant, we require two essential pieces of information: the total power conveyed by the waveguide and the power loss per unit length of the waveguide which have already been determined. With these two quantities known, the attenuation constant of the waveguide can be derived, yielding valuable insights into its characteristics.
 With $R_s=\sqrt\frac{\omega\mu}{2\sigma}$ in $\alpha_{c}$ expression, it implies that the higher the frequency, the higher $\alpha_{c}$ and the more the losses. We also know that $\alpha_{c}$ is related to the ratio $\frac{f_c}{f}$. As f tends to $f_c$ becomes very large and when frequency approaches the cut-off frequency, there is no propagation of the mode i.e. the propagation ceases, the power essentially bounces back and forth between the two surfaces and the power is essentially absorbed in the ohmic losses of these walls and the attenuation constant becomes very large.
 
