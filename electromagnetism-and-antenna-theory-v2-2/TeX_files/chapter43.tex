@@ -120,53 +120,46 @@ if $\alpha = -n,$ then,
 J_{-n}(x) = \sum_{k = 0}^{\infty}\frac{(-1)^k (\frac{x}{2})^{2k - n}}{k! \Gamma(-n + k + 1)}
 \label{eqn2}
 \end{equation}
-In general we would expect the solution of the Bessel equation as $$ y(x) = A J_n(x) + B J_{-n} (x)$$
-
-However this solution is only true if n is not an integer. This is because when n is an integer the two terms are linearly dependent, and are related by $ J_{-n}(x) = (-1)^n J_n(x)$ which shows $J_{-n}(x)$ is linearly related to $ J_n(x).$ This can be shown by referring once again to our knowledge of gamma functions.
-
-We know that $$\Gamma(n + 1) = n \Gamma(n)$$
-So 	$$\Gamma(n) = \frac{\Gamma(n + 1)}{n} $$
-and for negative integer values of n, or zero, $\Gamma(n)$ is infinite. So from equation \ref{eqn2}, the coefficients of the first n terms becomes zero since the gamma function is infinite and the summation starts with $k=n$
-
-So 	$$J_n(x) = \sum_{k = n}^{\infty}\frac{(-1)^k (\frac{x}{2})^{2k - n}}{k! \Gamma(-n + k + 1)}$$
-Let's substitute a dummy variable $m= k - n$, so that;
-$$J_{-n}(x) = \sum_{m = 0}^{\infty}\frac{(-1)^{m + n} (\frac{x}{2})^{2m + n}}{(m + n)! \Gamma(m + 1)}$$
-$$= \sum_{m = 0}^{\infty}\frac{(-1)^{m + n} (\frac{x}{2})^{2m + n}}{(m + n)! m!}$$ where m is an integer\\
-comparing the above equation with
-$$J_n(x) = \sum_{k = 0}^{\infty}\frac{(-1)^k (\frac{x}{2})^{2k + n}}{(k + n)! k!}$$ where $\Gamma(n + k - 1)=(n + k)!$ for $n= integer$\\
-we see that $$J_{-n}(x) = (-1)^n J_n(x)$$
-In electromagnetics and optics, n is an integer hence $J_{-n}$ is not an independent solution. Now let's physically examine the function $J_n(x)$ \\
-Consider a specific case of $n = \frac{-1}{2}$
-\\
-So $$J_{-\frac{1}{2}}(x) = \sum_{k = 0}^{\infty}\frac{(-1)^k (\frac{x}{2})^{2k - \frac{1}{2}}}{k! \Gamma( k + \frac{1}{2})}$$
-and $$\Gamma( k + \frac{1}{2}) = \frac{(2k - 1)! \sqrt{\pi}}{2^{2k - 1}(k - 1)!}$$
-from gamma function relationship where $\Gamma(\frac{1}{2}) = \sqrt{\pi}$.\\
-Then
-$$J_{-\frac{1}{2}}(x) = \sqrt{\frac{2}{\pi x}}\sum_{k = 0}^{\infty}\frac{(-1)^k x^{2k}}{(2k!)}$$
-where $$\cos x =\sum_{k = 0}^{\infty}\frac{(-1)^k x^2k}{(2k!)}$$
-So $$J_{-\frac{1}{2}}(x) = \sqrt{\frac{2}{\pi}}\frac{1}{\sqrt{x}}\cos(x)$$
-and similarly $$J_{\frac{1}{2}}(x) = \sqrt{\frac{2}{\pi}}\frac{1}{\sqrt{x}}\sin(x)$$
-
-Let's plot the function $ J_{-\frac{1}{2}}(x)$
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\linewidth]{"./graphics/fig 11_1"}
-\caption{ Plot of the function $ J_{-\frac{1}{2}}(x)$}
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel=$x$,
+    ylabel=$y$,
+    domain=0:14,
+    samples=200,
+    legend pos=north east,
+    axis lines=middle,
+    width=1\linewidth,
+    height=6cm,
+]
+
+% Cosine function
+\addplot [blue] {cos(deg(x))};
+\addlegendentry{$\cos(x)$};
+
+% 1/sqrt(x) function
+\addplot [red] {1/sqrt(x)};
+\addlegendentry{$\frac{1}{\sqrt{x}}$};
+
+% Bessel function
+\addplot [green!70!black] {sqrt(2/(pi*x))*cos(deg(x-sqrt(x)))};
+\addlegendentry{$J_{-1/2}(x)$};
+
+\end{axis}
+\end{tikzpicture}
 \label{fig:fig-1}
 \end{figure}
 From the plot, it shows that it is the product of $\frac{1}{\sqrt{x}}$ and $\cos(x)$ which are plotted differently. It is seen that at $x=0$, $\frac{1}{\sqrt{x}}$ goes to infinity and as x increases the $\frac{1}{\sqrt{x}}$ term decreases rapidly as shown. The product of the two functions $(\cos(x)$ and $\frac{1}{\sqrt{x}}$) gives the resulting plot of $J_-{\frac{1}{2}}(x)$. It is seen that the zero points are maintained so $J_-{\frac{1}{2}}(x)$ has the periodicity of $\cos(x)$ but the lobes or amplitude of $J_-{\frac{1}{2}}(x)$ goes on decreasing in value as x increases. Below shows the plot of $J_n(x)$ functions
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\linewidth]{"./graphics/fig 11_2"}
-\caption{ Plot of $J_n(x)$ functions}
-\label{fig:fig-2}
+\includegraphics[width=1\linewidth]{./graphics/BesselJ_800}
+\caption{Plot of Bessel functions of positive order $J_{n}(x)$}
+\label{fig:bessel-functions}
 \end{figure}
-Let's consider the Bessel function of the second kind also called the Neumann functions as a second solution to the Bessel equation when n is an integer. It is given by: 
-$$Y_n = \frac{\cos(n\pi) J_n(x) - J_{-n}(x)}{\sin(n\pi)}$$
-As we have seen from the plot of $J_n(x)$ that every Bessel function of the first kind has a zero value at the centre i.e at $x= 0$ except for $J_-{\frac{1}{2}}(x)$ and $J_0(x)$, where $J_0(x)$ has a peak value at $ x= 0$. Suppose we want to confine the wave such that it is within a single lobe of the function then the solution is of the order of $n =0$ which is $J_0(x)$. On the other hand, the Neumann functions always starts from $-\infty$ at $x=0$ (centre of the waveguide) as shown below
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
-\includegraphics[width=0.7\linewidth]{"./graphics/fig 11_3"}
+\includegraphics[width=1\linewidth]{./graphics/BesselY_800}
 \caption{ Plot of the Neumann functions}
 \label{fig:fig-3}
 \end{figure}
