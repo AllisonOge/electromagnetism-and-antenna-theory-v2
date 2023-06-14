@@ -1,48 +1,57 @@
-\chapter[Circular Waveguide]{CIRCULAR WAVEGUIDE}
-Before we discuss the solution for the circular waveguide let us review what we discussed in the previous lecture and then discuss some important characteristics of the Bessel function when the order n is an integer.
-
-So as we have discussed, for a second order PDE of the form 
-\begin{displaymath}
-x^2\frac{d^2y}{dx^2} + x\frac{dy}{dx} + (x^2-n^2)y {=} 0
-\end{displaymath}
-It is called a Bessel equation and one kind of the solution is called the Bessel function of the first kind given as an infinite series
-\begin{displaymath}
-J_n(x) {=} \sum^\infty_{k=0} \frac{(-1)^k (\frac{x}{2})}{k!\Gamma(n+k+1)}
-\end{displaymath}
-where n is the order of the solution and $\Gamma(n+k+1){=}(n+k)\Gamma(n+k)$. As we know for any second order PDE there is always two different independent solution and so we have another solution called the Bessel function of second kind or Neumann function given as 
-\[Y_n(x) = \frac{\cos(n\pi)J_n(x)-J_{-n}(x)}{\sin(n\pi)} \]
-In general the solution of the Bessel equation is \[y(x) = A J_n(x) + B Y_n(x)\]
-However \[Y_n(0)=\pm\infty\] which means at the centre of a cylindrical symmetry the electromagnetic fields or power density are infinite at the centre which makes no physical sense. So due to practical reasons the solution of the Bessel function is 
-\[y(x) = A J_n(x) \]
-There is also the Bessel function of the third kind called the Henkel functions and they play important role in electro magnetics when dealing with dielectric waveguides such as the optical fibre where inside the waveguide we have the Bessel function of the first kind and outside the waveguide we have the Bessel functions of the third kind or Henkel functions.
+\chapter{Circular Waveguide (1)}\label{lec:lec44}
+In the previous chapter, we discussed the second order partial differential equation (PDE) of the form given in equation~\eqref{eqn:secondorderode} called the \emph{Bessel equation}\label{bessel equation}. It is given as
+\begin{equation*}
+x^2\derivative[2]{y}{x} + x\derivative{y}{x} + (x^2-n^2)y = 0
+\end{equation*}
+There is one kind of solution called the \emph{Bessel function\index{bessel function} of the first kind} which is an infinite series from equation~\eqref{eqn:besselsolnseries2} given as
+\begin{equation*}
+J_n(x) = \sum^\infty_{k=0} \frac{(-1)^k (\frac{x}{2})}{k!\Gamma(n+k+1)}
+\end{equation*}
+Where n is the order of the solution and $\Gamma(n+k+1) = (n+k)\Gamma(n+k)$. As we know for any second order PDE there is always two different independent solution and so we have another solution called the \emph{Bessel function of second kind} or Neumann function\index{neumann function} which from equation~\eqref{eqn:neumannfunctions} is given as 
+\[
+Y_n(x) = \frac{\cos(n\pi)J_n(x)-J_{-n}(x)}{\sin(n\pi)}
+\]
+In general the solution of the Bessel equation is
+\[
+y(x) = A J_n(x) + B Y_n(x)
+\]
+However, $Y_n(0)=\pm\infty$ means at the centre of a cylindrical symmetry, the electromagnetic fields or power density is infinite which makes no physical sense. So due to practical reasons the solution of the Bessel function is 
+\[
+y(x) = A J_n(x)
+\]
+In addition to the Bessel functions of the first and second kind, there is another type known as the \emph{Bessel function of the third kind}, commonly referred to as the Henkel functions. These Henkel functions hold significance in the field of electromagnetics, particularly when dealing with dielectric waveguides like optical fibers. In the modeling of such structures, the Bessel function of the first kind is employed to describe the behavior inside the waveguide, while the Bessel functions of the third kind (Henkel functions) are utilized to represent the behavior outside the waveguide. This distinction allows for a comprehensive characterization of the wave propagation in dielectric waveguides.
  
-For all electromagnetic problem the order 'n' is always an integer. So we will have forms such as $ J_0(x) $, $ J_1(x) $, $ J_2(x) $, . and so on. Where only $J_0(x)$ has some value at x{=}0 while the rest value of n is zero is 
-\[ J_n(0)=0 \; for \; n \neq 0 \]
-If we plot these functions, we observe that the behaviour in similar to the sine and cosine function (which means it is periodic) but as x increases the peak value starts decreasing. For instance if we plot $J_0(x)$ as shown it peaks at x=0 and attenuates as x increases.
+For all electromagnetic problems, the order $n$ is always an integer. So we will have the following Bessel functions $ J_0(x), J_1(x), J_2(x), \ldots$ where only $J_0(x)$ has some value at $x=0$ while the rest have the value zero, mathematically, we say 
+\[
+J_n(0)=0\quad\text{for }n \neq 0
+\]
+When we plot these functions, we notice that their behavior resembles that of the sine and cosine functions. This similarity arises from the fact that both types of functions are periodic. However, as the value of x increases, the peak value of the functions begins to diminish. For example, if we plot the Bessel function $J_0(x)$, as depicted in Figure \ref{fig:fig1}, it reaches its maximum at x = 0 and experiences attenuation as x increases.
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{./graphics/fig_1.1}
-\caption{}
+\caption{Plot of Bessel function $J_0(x)$}
 \label{fig:fig1}
 \end{figure}
 
-As we go to higher order functions the behaviour is similar to a sine function. Let's plot the $J_1(x)$ function as shown.
+As we go to higher order functions the behaviour is similar to a sine function. Let us plot the Bessel function $J_1(x)$ as shown in figure~\ref{fig:fig2}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{./graphics/fig_2.1}
-\caption{}
+\caption{Plot of Bessel function $J_1(x)$}
 \label{fig:fig2}
 \end{figure}
 
-So when looking for the solution for the waveguide there are two constraints involved and they are;
+In the search for a solution to the waveguide, we encounter two constraints that must be taken into account:
 \begin{enumerate}[(i)]
-\item What order n do we have for the solution.
-\item Which zero point (root) are we considering because the electric field has to get to zero point (root) at the boundary.
+\item The first constraint pertains to the order $n$ of the solution. This order determines how the wave oscillates within the waveguide.
+\item The second constraint, denoted by $p$, involves the selection of a specific zero point (root) of the electric field. It is necessary for the electric field to reach a zero point (root) at the boundary of the waveguide.
 \end{enumerate}
- So the first constraint, n tell us how the wave oscillate while the second constraint which we will denote with p, will tell us which zero point we are considering. 
+By considering these two constraints, we are able to characterize the behavior of the wave in the waveguide. The order $n$ governs the oscillation pattern, while the choice of zero point (root) $p$ determines the specific behavior at the boundary. 
 
-Therefore, a solution would be specified as $J_n^p(x)$ which gives a specific unique solution. For all possible solutions $J_n^p(x_{np})$, there would be a unique value of $x_{np}$, where $J_n^p(x_{np})=0$ given by the table below.
-\begin{center}
+Consequently, we can denote the solution as $J_n^p(x)$, representing a distinct and particular solution. For each conceivable solution $J_n^p(x_{np})$, there exists a singular value of $x_{np}$ at which $J_n^p(x_{np})$ equals zero, as illustrated in table~\ref{tab:table1}.
+\begin{table}
+\centering
+\caption{Values of zeros in the Bessel functions of the first kind}
 \begin{tabular}{|c|c c c|}
 \hline 
 \backslashbox{p}{n} & n=0 & n=1 & n=2 \\ 
@@ -50,66 +59,70 @@ Therefore, a solution would be specified as $J_n^p(x)$ which gives a specific un
 1&  2.405&  3.832& 5.136 \\ 
 2&  5.520&  7.016& 8.417 \\ 
 \hline 
-\end{tabular} 
-\end{center}
+\end{tabular}
+\label{tab:table1}
+\end{table}
 
-The table above as we see tells us where the cut-off frequencies occurs for the circular waveguide. n and p in the circular waveguide is similar to m and n in the rectangular waveguide in a way such that they define the modes and the cut-off frequencies for each mode. We recall from the rectangular waveguide that m shows the number of peaks in the x direction while n shows the number of peaks in the y direction. However, in this case the two arguments n and p show what order of the solution and root of the solution we are considering.
- 
- Now let's find the solution of the circular waveguide. Later on we will discuss the derivative of the Bessel function because it is needed in the solution of the waveguide when applying boundary condition.
+The occurrence of cut-off frequencies in the circular waveguide can be observed from Table~\ref{tab:table1}. In the circular waveguide, the parameters $n$ and $p$ serve a similar purpose as $m$ and $n$ in the rectangular waveguide. They define the modes and corresponding cut-off frequencies for each mode. As a reminder from the rectangular waveguide, the value of 
+$m$ represents the number of peaks in the x direction, while $n$ represents the number of peaks in the y direction. However, in the case of the circular waveguide, the arguments $n$ and $p$ indicate the order and root of the solution being considered.
 
-\section{TM mode in Circular Waveguide}
- So we are considering a hollow metallic pipe of radius a, filled with a dielectric material of $\mu$ and $\epsilon$ as shown.
- 
+In order to determine the solution for the circular waveguide, it is necessary to examine the derivative of the Bessel function. This derivative becomes crucial when applying the boundary conditions in the waveguide solution.
+
+\section{TM mode in a Circular Waveguide}
+Let us examine a hollow metallic pipe characterized by a radius of a. The interior of the pipe is filled with a dielectric material with respective permeability $\mu$ and permittivity $\epsilon$, as illustrated in Figure~\ref{fig:fig3}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\linewidth]{./graphics/fig_3.1}
-\caption{}
+\caption{Circular Waveguide of radius $a$ and dielectric material, $\mu, \epsilon$}
 \label{fig:fig3}
 \end{figure}
-For the Helmholtz wave equation 
- \begin{equation}
-\bigtriangledown^2\vec{E} + w^2\mu\epsilon\vec{E}=0
-\label{eqn12.1}
-\end{equation}\
-The Laplacian term $\bigtriangledown^2\vec{E}$ has components in the transverse plane and longitudinal. We are still interested in the solution which is of the form of $\vec{E}=\vec{E}_{\bot}e^{-\gamma z}$ where the amplitude $\vec{E}_\bot$ remain in the transverse plane and the wave is propagating in the z direction with propagation constant $\gamma$. 
 
-So we will write equation \ref{eqn12.1} as:
-\[\bigtriangledown^2\vec{E}_\perp e^{-\gamma z} + \omega^2 \mu\epsilon E_\perp e^{-\gamma z} = 0\]
-where \[\bigtriangledown^2 = \bigtriangledown^2_\perp + \frac{\partial^2}{\partial z^2}\]
-So 
-\[\bigtriangledown^2_\perp\vec{E}_\perp e^{-\gamma z} + \frac{\partial^2}{\partial z^2}\left(\vec{E}_\perp e^{-\gamma z}\right) + \omega^2\mu\epsilon\vec{E}_\perp e^{-\gamma z} = 0\]
-\[\bigtriangledown^2_\perp\vec{E}_\perp e^{-\gamma z} + (\gamma^2)\left(\vec{E}_\perp e^{-\gamma z}\right) + \omega^2\mu\epsilon\vec{E}_\perp e^{-\gamma z} = 0\]
-\[\bigtriangledown^2_\perp\vec{E}_\perp e^{-\gamma z} + (\omega^2\mu\epsilon + \gamma^2)\left(\vec{E}_\perp e^{-\gamma z}\right) = 0\]
+From the Helmholtz wave equation in equation~\eqref{eqn:helmholtzelectric} 
 \begin{equation}
-\bigtriangledown^2_\perp\vec{E}_\perp + (\omega^2\mu\epsilon + \gamma^2)\vec{E}_\perp = 0
-\label{eqn12.2}
+\nabla^2\vec{E} + \omega^2\mu\epsilon\vec{E}=0
+\label{eqn:helmholtzelectriclec44}
+\end{equation}\
+The Laplacian operator $\nabla^2\vec{E}$ encompasses both transverse and longitudinal components. However, our focus lies on finding a solution of the form $\vec{E}=\vec{E}_{\bot}e^{-\gamma z}$, where the amplitude $\vec{E}_\bot$ remains confined to the transverse plane, and the wave propagates along the z-axis with a propagation constant denoted by $\gamma$. So we will write equation \ref{eqn:helmholtzelectriclec44} as
+\begin{align*}
+\nabla^2\vec{E}_\perp e^{-\gamma z} + \omega^2 \mu\epsilon E_\perp e^{-\gamma z} = 0\\\text{where }\nabla^2 = \nabla^2_\perp + \partialderivative[2]{}{z}&\\
+\nabla^2_\perp\vec{E}_\perp e^{-\gamma z} + \partialderivative[2]{}{z}\left(\vec{E}_\perp e^{-\gamma z}\right) + \omega^2\mu\epsilon\vec{E}_\perp e^{-\gamma z} =&  0\\
+\nabla^2_\perp\vec{E}_\perp e^{-\gamma z} + (\gamma^2)\left(\vec{E}_\perp e^{-\gamma z}\right) + \omega^2\mu\epsilon\vec{E}_\perp e^{-\gamma z} =& 0\\
+\nabla^2_\perp\vec{E}_\perp e^{-\gamma z} + (\omega^2\mu\epsilon + \gamma^2)\left(\vec{E}_\perp e^{-\gamma z}\right) =& 0
+\end{align*}
+\begin{equation}
+\nabla^2_\perp\vec{E}_\perp + (\omega^2\mu\epsilon + \gamma^2)\vec{E}_\perp = 0
+\label{eqn:helmholtzelectriclec44_2}
 \end{equation}
-where $h^2 = \omega^2\mu\epsilon + \gamma^2$. To solve this equation we will use the cylindrical coordinate system. We recall for the rectangular waveguide, we used the Cartesian coordinate system because irrespective of the location we consider along x in the transverse plane the limits along y direction is the same. However for a circular waveguide whose transverse plane is a circle, the limits of y at any location along x changes and so it is preferable to solve the equation using the cylindrical coordinate system because the wave guide has a cylindrical symmetry.
+Where $h^2 = \omega^2\mu\epsilon + \gamma^2$. In order to solve Equation~\ref{eqn:helmholtzelectriclec44_2}, we will employ the cylindrical coordinate system. This choice is motivated by the circular nature of the waveguide's transverse plane, which exhibits radial symmetry. Unlike the rectangular waveguide, where the limits along the y-direction remained constant for any chosen location along the x-axis in the transverse plane, the circular waveguide's y-limits vary depending on the x-coordinate. Hence, utilizing the cylindrical coordinate system is preferable for solving the equation due to the cylindrical symmetry inherent in the waveguide's geometry.
  
 The cylindrical coordinate system is defined by $\hat{r}$ and $\hat{\phi}$ in the transverse plane and $\hat{z}$ in the longitudinal direction.
 \begin{figure}[h]
 \centering
-\includegraphics[height=5cm]{./graphics/fig_4.1}
-\caption{}
+\includegraphics[width=0.7\linewidth]{./graphics/fig_4.1}
+\caption{Cylindrical coordinates for the circular waveguide}
 \label{fig:fig4}
 \end{figure}
- We will now write equation \ref{eqn12.2} for the cylindrical coordinate as 
- $$
- \frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial^2\vec{E}_\bot}{\partial r}) + \frac{1}{r^2}\frac{\partial^2\vec{E}_\bot}{\partial\phi^2}+ h^2\vec{E}_\bot = 0 
- $$
- which is the equation which will give the solution of the modes. 
 
-The field components in the circular waveguide are $E_r$, $E_\phi$ and $E_z$ as shown
-\begin{figure}[H]
+We will now write equation \ref{eqn:helmholtzelectriclec44_2} for the cylindrical coordinate as 
+\begin{align}
+\frac{1}{r}\partialderivative{}{r}\left(r\partialderivative[2]{\vec{E}_\bot}{r}\right) + \frac{1}{r^2}\partialderivative[2]{\vec{E}_\bot}{\phi}+ h^2\vec{E}_\bot = 0 
+\label{eqn:cylindricalequation}   
+\end{align}
+This is the equation which will give the solution of the modes. The field components in the circular waveguide are $E_r$, $E_\phi$ and $E_z$ as shown in figure~\ref{fig:fig5}
+\begin{figure}[h]
 \centering
-\includegraphics[height=5cm]{./graphics/fig_5.1}
-\caption{}
+\includegraphics[width=0.5\linewidth]{./graphics/fig_5.1}
+\caption{Field components in the circular waveguide}
 \label{fig:fig5}
 \end{figure}
 
 For the TM mode we know that $H_z=0$ and $E_z$ exists and for the TE mode $E_z=0$ and $H_z$ will exist. Therefore, for the TM mode we should solve for $E_z$ with appropriate boundary conditions and for TE mode, we should solve for $H_z$ with appropriate boundary conditions. 
 
-So for the TM mode we will solve for $E_z$ which should vary in r and $\phi$ and propagates in the z direction as shown $E_z(r,\phi, z)=E_z(r,\phi)e^{-\gamma z}$, where $e^{-\gamma z}$ signifies the field is propagating in the z direction. So from the wave equation for the cylindrical coordinate which we have written, we have;
+So for the TM mode we will solve for $E_z$ which should vary in $r$ and $\phi$ and propagates in the z direction, that is,
+\begin{align*}
+E_z(r,\phi, z)=E_z(r,\phi)e^{-\gamma z}\quad\text{where }e^{-\gamma z}
+\end{align*}
+It signifies the field is propagating in the z direction. So from the from equation~\eqref{eqn:cylindricalequation} we have;
 \begin{equation}
 \frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial E_z}{\partial r}) + \frac{1}{r^2}\frac{\partial^2 E_z}{\partial\phi^2} + h^2 E_z = 0 
 \label{eqn12.3}
@@ -188,20 +201,20 @@ Therefore $E_z(r,\phi) = C_nJ_n(hr)\cos(n\phi)$ where $C_n$ depends on the mode 
 
 The other components can be gotten from the expressions below for the transverse field component we have discussed in previous lectures.
 $$
-\vec{E}_\bot=\frac{-j\omega\mu}{h^2}\bigtriangledown_\bot\times H_z\hat{z} - \frac{\gamma}{d^2}\bigtriangledown_\bot E_z
+\vec{E}_\bot=\frac{-j\omega\mu}{h^2}\nabla_\bot\times H_z\hat{z} - \frac{\gamma}{d^2}\nabla_\bot E_z
 $$
 and
 $$
-\vec{H}_\bot = \frac{-j\omega\mu}{h^2}\bigtriangledown_\bot\times E_z\hat{z}-\frac{\gamma}{h^2}\bigtriangledown_\bot H_z
+\vec{H}_\bot = \frac{-j\omega\mu}{h^2}\nabla_\bot\times E_z\hat{z}-\frac{\gamma}{h^2}\nabla_\bot H_z
 $$
 We recall for the TM mode $H_z=0$
 so
 $$
-\vec{E}_\bot=-\frac{\gamma}{h^2}\bigtriangledown_\bot E_z$$ for a lossless medium $$\gamma=j\beta
+\vec{E}_\bot=-\frac{\gamma}{h^2}\nabla_\bot E_z$$ for a lossless medium $$\gamma=j\beta
 $$
 therefore 
 $$
-\vec{E}_\bot = \frac{-j\beta}{h^2}\bigtriangledown_\bot E_z
+\vec{E}_\bot = \frac{-j\beta}{h^2}\nabla_\bot E_z
 $$
 $$
 \vec{E}_\bot = \frac{-j\beta}{h^2}\left\{\frac{\hat{r}\partial E_z}{\partial r} + \frac{\hat{\phi}}{r}\frac{\partial E_z}{\partial\phi} \right\}
@@ -215,7 +228,7 @@ E_\phi = \frac{-j\beta\partial}{h^2r\partial}E_z = \frac{j\beta n}{h^2 r}C_nJ_n(
 $$
 Also for transverse components $H_r$ and $H_\phi$ \\ we have
 $$
-\vec{H}_\bot=\frac{j\omega\epsilon}{h^2}\bigtriangledown_\bot\times(E_z\hat{z})
+\vec{H}_\bot=\frac{j\omega\epsilon}{h^2}\nabla_\bot\times(E_z\hat{z})
 $$
 $$
 =\frac{j\omega\epsilon}{h^2}\left\{
@@ -232,11 +245,11 @@ $$
 and \[H_\phi = -\frac{j\omega\epsilon}{h^2}\frac{\partial}{\partial r}E_z = -\frac{j\omega\epsilon}{h^2}C_nJ'_n(hr)\cos(n\phi)\]
 where $J_n'(hr)$ is the derivative of the Bessel function. Now let's determine h by applying the boundary conditions.
 
-The $E_z$ component is given as $C_nJ_n(hr)\cos(n\phi)$ is parallel or tangential to the conducting wall and so $E_z(r=a)=0$. This implies that $J_n(ha)=0$ which could be any root of a specific Bessel function as n {=} 0,1,2,.... Let's consider n = 0 which is the first order Bessel function $J_0(hr)$. Also n=0 implies that there is a constant field in the $\phi$ direction since $\cos(n\phi)=1$. In general, n shows the number of wavelength, $\lambda$ that fits within $2\pi$ and the order of the Bessel function. For n=0 if we consider the first root of the Bessel function $J_0(hr)$ to satisfy the boundary condition at r=a we have that $h_a = 2.405$ from the table below
+The $E_z$ component is given as $C_nJ_n(hr)\cos(n\phi)$ is parallel or tangential to the conducting wall and so $E_z(r=a)=0$. This implies that $J_n(ha)=0$ which could be any root of a specific Bessel function as n = 0,1,2,.... Let's consider n = 0 which is the first order Bessel function $J_0(hr)$. Also n=0 implies that there is a constant field in the $\phi$ direction since $\cos(n\phi)=1$. In general, n shows the number of wavelength, $\lambda$ that fits within $2\pi$ and the order of the Bessel function. For n=0 if we consider the first root of the Bessel function $J_0(hr)$ to satisfy the boundary condition at r=a we have that $h_a = 2.405$ from the table below
 \begin{center}
 \begin{tabular}{| c | c c c |}
 \hline
-\backslashbox{p}{n} &n{=}0 &n{=}1 &n{=}2 \\
+\backslashbox{p}{n} &n=0 &n=1 &n=2 \\
 \hline
 1 &2.405 &3.832 &5.136 \\
 2 &5.520 &7.016 &8.417 \\
