@@ -1,5 +1,5 @@
 \chapter{Circular Waveguide (1)}\label{lec:lec44}
-In the previous chapter, we discussed the second order partial differential equation (PDE) of the form given in equation~\eqref{eqn:secondorderode} called the \emph{Bessel equation}\label{bessel equation}. It is given as
+In the previous chapter, we discussed the second-order partial differential equation (PDE) of the form given in equation~\eqref{eqn:secondorderode} called the \emph{Bessel equation}\label{bessel equation}. It is given as
 \begin{equation*}
 x^2\derivative[2]{y}{x} + x\derivative{y}{x} + (x^2-n^2)y = 0
 \end{equation*}
@@ -7,25 +7,25 @@ There is one kind of solution called the \emph{Bessel function\index{bessel func
 \begin{equation*}
 J_n(x) = \sum^\infty_{k=0} \frac{(-1)^k (\frac{x}{2})}{k!\Gamma(n+k+1)}
 \end{equation*}
-Where n is the order of the solution and $\Gamma(n+k+1) = (n+k)\Gamma(n+k)$. As we know for any second order PDE there is always two different independent solution and so we have another solution called the \emph{Bessel function of second kind} or Neumann function\index{neumann function} which from equation~\eqref{eqn:neumannfunctions} is given as 
+Where n is the order of the solution and $\Gamma(n+k+1) = (n+k)\Gamma(n+k)$. As we know for any second-order PDE there are always two different independent solutions and so we have another solution called the \emph{Bessel function of second kind} or Neumann function\index{neumann function} which from equation~\eqref{eqn:neumannfunctions} is given as 
 \[
 Y_n(x) = \frac{\cos(n\pi)J_n(x)-J_{-n}(x)}{\sin(n\pi)}
 \]
-In general the solution of the Bessel equation is
+In general, the solution of the Bessel equation is
 \[
 y(x) = A J_n(x) + B Y_n(x)
 \]
-However, $Y_n(0)=\pm\infty$ means at the centre of a cylindrical symmetry, the electromagnetic fields or power density is infinite which makes no physical sense. So due to practical reasons the solution of the Bessel function is 
+However, $Y_n(0)=\pm\infty$ means at the centre of cylindrical symmetry, the electromagnetic fields or power density is infinite which makes no physical sense. So due to practical reasons, the solution of the Bessel function is 
 \[
 y(x) = A J_n(x)
 \]
-In addition to the Bessel functions of the first and second kind, there is another type known as the \emph{Bessel function of the third kind}, commonly referred to as the Henkel functions. These Henkel functions hold significance in the field of electromagnetics, particularly when dealing with dielectric waveguides like optical fibers. In the modeling of such structures, the Bessel function of the first kind is employed to describe the behavior inside the waveguide, while the Bessel functions of the third kind (Henkel functions) are utilized to represent the behavior outside the waveguide. This distinction allows for a comprehensive characterization of the wave propagation in dielectric waveguides.
+In addition to the Bessel functions of the first and second kind, there is another type known as the \emph{Bessel function of the third kind}, commonly referred to as the Henkel functions. These Henkel functions hold significance in the field of electromagnetics, particularly when dealing with dielectric waveguides like optical fibres. In the modelling of such structures, the Bessel function of the first kind is employed to describe the behaviour inside the waveguide, while the Bessel functions of the third kind (Henkel functions) are utilized to represent the behaviour outside the waveguide. This distinction allows for a comprehensive characterization of the wave propagation in dielectric waveguides.
  
 For all electromagnetic problems, the order $n$ is always an integer. So we will have the following Bessel functions $ J_0(x), J_1(x), J_2(x), \ldots$ where only $J_0(x)$ has some value at $x=0$ while the rest have the value zero, mathematically, we say 
 \[
 J_n(0)=0\quad\text{for }n \neq 0
 \]
-When we plot these functions, we notice that their behavior resembles that of the sine and cosine functions. This similarity arises from the fact that both types of functions are periodic. However, as the value of x increases, the peak value of the functions begins to diminish. For example, if we plot the Bessel function $J_0(x)$, as depicted in Figure \ref{fig:fig1}, it reaches its maximum at x = 0 and experiences attenuation as x increases.
+When we plot these functions, we notice that their behaviour resembles that of the sine and cosine functions. This similarity arises from the fact that both types of functions are periodic. However, as the value of x increases, the peak value of the functions begins to diminish. For example, if we plot the Bessel function $J_0(x)$, as depicted in Figure \ref{fig:fig1}, it reaches its maximum at x = 0 and experiences attenuation as x increases.
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{./graphics/fig_1.1}
@@ -33,7 +33,7 @@ When we plot these functions, we notice that their behavior resembles that of th
 \label{fig:fig1}
 \end{figure}
 
-As we go to higher order functions the behaviour is similar to a sine function. Let us plot the Bessel function $J_1(x)$ as shown in figure~\ref{fig:fig2}.
+As we go to higher-order functions the behaviour is similar to a sine function. Let us plot the Bessel function $J_1(x)$ as shown in figure~\ref{fig:fig2}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{./graphics/fig_2.1}
@@ -46,7 +46,7 @@ In the search for a solution to the waveguide, we encounter two constraints that
 \item The first constraint pertains to the order $n$ of the solution. This order determines how the wave oscillates within the waveguide.
 \item The second constraint, denoted by $p$, involves the selection of a specific zero point (root) of the electric field. It is necessary for the electric field to reach a zero point (root) at the boundary of the waveguide.
 \end{enumerate}
-By considering these two constraints, we are able to characterize the behavior of the wave in the waveguide. The order $n$ governs the oscillation pattern, while the choice of zero point (root) $p$ determines the specific behavior at the boundary. 
+By considering these two constraints, we are able to characterize the behaviour of the wave in the waveguide. The order $n$ governs the oscillation pattern, while the choice of zero point (root) $p$ determines the specific behaviour at the boundary. 
 
 Consequently, we can denote the solution as $J_n^p(x)$, representing a distinct and particular solution. For each conceivable solution $J_n^p(x_{np})$, there exists a singular value of $x_{np}$ at which $J_n^p(x_{np})$ equals zero, as illustrated in table~\ref{tab:table1}.
 \begin{table}
@@ -116,22 +116,19 @@ This is the equation which will give the solution of the modes. The field compon
 \label{fig:fig5}
 \end{figure}
 
-For the TM mode we know that $H_z=0$ and $E_z$ exists and for the TE mode $E_z=0$ and $H_z$ will exist. Therefore, for the TM mode we should solve for $E_z$ with appropriate boundary conditions and for TE mode, we should solve for $H_z$ with appropriate boundary conditions. 
+For the TM mode, we know that $H_z=0$ and $E_z$ exist and for the TE mode, $E_z=0$ and $H_z$ will exist. Therefore, for the TM mode, we should solve for $E_z$ with appropriate boundary conditions and for the TE mode, we should solve for $H_z$ with appropriate boundary conditions. 
 
-So for the TM mode we will solve for $E_z$ which should vary in $r$ and $\phi$ and propagates in the z direction, that is,
+So for the TM mode, we will solve for $E_z$ which should vary in $r$ and $\phi$ and propagates in the z direction, that is,
 \begin{align*}
 E_z(r,\phi, z)=E_z(r,\phi)e^{-\gamma z}\quad\text{where }e^{-\gamma z}
 \end{align*}
-It signifies the field is propagating in the z direction. So from the from equation~\eqref{eqn:cylindricalequation} we have;
+It signifies the field is propagating in the z-direction. So from the from equation~\eqref{eqn:cylindricalequation} we have;
 \begin{equation}
 \frac{1}{r}\frac{\partial}{\partial r}(r\frac{\partial E_z}{\partial r}) + \frac{1}{r^2}\frac{\partial^2 E_z}{\partial\phi^2} + h^2 E_z = 0 
 \label{eqn12.3}
 \end{equation}
-And we know r and $\phi$ are orthogonal so whatever variation we have in r is not related to the variations in $\phi$ so we can write $E_z(r, \phi)$ as
-$$
-E_z(r, \phi) = R(r)\Phi(\phi) 
-$$
-using separation of variables where $R(r)$ is a function of r only and $\Phi(\phi)$ is a function of $\phi$ only.
+Also, it is important to note that the variables $r$ and $\phi$ are orthogonal to each other, as depicted in Figure~\ref{fig:fig4}. This implies that any variation in the radial coordinate $r$ is independent of the variations in the azimuthal coordinate $\phi$. Hence, we can express $E_z$ as a function of $r$ and $\phi$ in the following manner:
+\begin{align*}
 
 So we will write equation \ref{eqn12.3} as 
 $$ 
