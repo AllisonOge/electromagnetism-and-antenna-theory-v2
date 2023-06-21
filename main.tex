@@ -1,0 +1,144 @@
+\documentclass[a4paper,10pt, two column]{book}
+
+% custom define a new command named "Comb" that takes two arguments and typesets a binomial coefficient.
+\usepackage[fleqn]{amsmath}
+\newcommand*{\Comb}[2]{{}^{#1}C_{#2}}
+
+\usepackage[margin=1.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{diagbox}
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage{textcomp}
+\usepackage{times}
+\usepackage{physics}
+\usepackage{float}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{breqn}
+\usepackage{pgfplots}\usepackage[abspath, parent]{currfile}
+% get absolute path to part one
+\makeatletter
+\edef\pathtopartone{\currfileabsdir/electromagnetism-and-antenna-theory-v2-1/}
+\makeatother
+% get absolute path to part two
+\makeatletter
+\edef\pathtoparttwo{\currfileabsdir/electromagnetism-and-antenna-theory-v2-2/}
+\makeatother
+% custom set exercises and example packages. add dependencies
+\usepackage[lastexercise, answerdelayed]{exercise}
+\newtheorem{example}{Example}
+\newtheorem{exmp}{Example}[section]
+
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
+\setlist[enumerate]{topsep=0pt,itemsep=0pt,partopsep=1ex,parsep=1ex}
+
+\usepackage{imakeidx}
+\makeindex
+
+\begin{document}
+
+\author{Nosa Bello}
+\title{ELECTROMAGNETISM AND ANTENNA THEORY}
+\date{\today}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\chapter{Preface}
+Electromagnetism and Antenna Theory is a book developed out of dedication and passion for comprehensive and curated concepts in transmission lines, wave equations and the foundations of antenna theory. The book is a compilation and review of lectures for the courses \textit{Telecommunication Principle I} and \textit{Microwave Engineering} taught by Dr Nosa Bello at the University of Benin, Nigeria. The book is a work in progress and will be updated as the course progresses. The book is divided into two parts. Part one covers transmission lines and the wave equation while part two covers waveguides and antenna theory. The book is written in \LaTeX\ and the source code is available on \href{https://github.com/allisonoge/electromagnetism-and-antenna-theory-v2.git}{GitHub}.
+
+\mainmatter
+
+\part{TRANSMISSION LINE AND THE WAVE EQUATION}
+
+% transmission lines lectures
+
+\include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter01}
+\include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter02}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter03}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter04}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter05}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter06}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter07}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter08}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter09}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter10}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter11}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter12}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter13}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter14} % file is empty after restructuring
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter15}
+
+% wave equation lectures
+
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter16}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter17}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter18}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter19}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter20}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter21}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter22}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter23}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter24}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter25}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter26}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter27}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter28}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter29}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter30}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter31}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter32}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter33}
+% \include{./electromagnetism-and-antenna-theory-v2-1/TeX_files/chapter34}
+
+\part{WAVEGUIDES AND ANTENNA THEORY}
+
+introduction to waveguides and rectangular waveguides lectures
+
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter35}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter36}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter37}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter38}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter39}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter40}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter41}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter42}
+
+% circular waveguide lectures
+
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter43}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter44}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter45}
+
+% antenna theory lectures
+
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter46}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter47}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter48}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter49}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter50}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter51}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter52}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter53}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter54}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter55}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter56}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter57}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter58}
+\include{./electromagnetism-and-antenna-theory-v2-2/TeX_files/chapter59}
+
+\backmatter
+% bibliography, glossary and index would go here.
+\printindex
+
+% answers to exercises
+\shipoutAnswer
+
+\end{document}
