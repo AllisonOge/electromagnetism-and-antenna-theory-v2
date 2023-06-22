@@ -1,53 +1,71 @@
 \chapter{Circular Waveguide (2)}\label{lec:lec45}
-Briefly  before  discussing the TE modes in circular waveguide, lets review the TM modes we treated in the previous lecture for the TM   mode in a circular waveguide whose dielectric has permeability given as $\mu$ and $\epsilon$ respectively, we know that the $E_z$ component exist and the boundary condition for the conducting surface in satisfied when $E_z(r=a)= 0$. We found that the solution of $E_z$ is $E_z = A_n J_n(hr)\cos(n\phi)$  where $h= \omega^2\mu + \gamma^2$  Then we observed that for the boundary condition certain modes exists which can be specified by two parameters n and p such that a specific TM mode is denoted by $TM_{np}$ where n shows how the amplitude varies in $\phi$ and also what order of the Bessel function in present while p shows which zero point (root) we goto to satisfy the boundary condition within the function $J_n(x)$. So  basically the modes are determined by how the amplitude varies in the $\phi$ direction and the number of lobes or wavelength we got in the r direction. We recall from  the last lecture that the n has to be an integer because the $\cos(n\phi)$ has to come back to the same value at $\phi=2\pi$ ie if we have gone a complete cycle, the amplitude should become the same otherwise we do not have a mode. So the two values which define a mode are n and p where  n like we said is the number of times we have variations in the $\phi$ direction and the order of the Bessel function and based on the order of the Bessel function p tells us which zero \textquoteleft0\textquoteright point we are considering to satisfy the boundary condition which in the number of lobes we would get in the $r$ direction. From our study of the Bessel functions we recall that only $J_o(hr)$ has an amplitude at hr = 0 and the rest $J_n(hr)$ function has amplitude which in zero at hr = 0 for $ n \ne 0$. Also we observed from the table that the lowest TM mode is the $TM_{01}$ mode where n = 0 and p = 1.  n = 0 implies there is no variation in the $\phi$ direction and p = 1 shows that there is only one peak or lobe in the r direction therefore $ha = 2.305$. So
+Before delving into the discussion of TE (Transverse Electric) modes in a circular waveguide, let us briefly revisit the TM (Transverse Magnetic) modes covered in the previous chapter. 
 
-$$ h = \frac{2.405}{a}$$ and $$f_c = \frac{2.405}{2\pi\sqrt{\mu\epsilon}} = \frac{0.383}{a\sqrt{\mu\epsilon}}\text{which is the cut-off frequency}$$
+\section{TM modes in a circular waveguide}
+Considering a circular waveguide filled with a dielectric material characterized by permeability $\mu$ and permittivity $\epsilon$, we recognize the presence of the $E_z$ component. The boundary condition for the conducting surface is fulfilled when $E_z(r=a) = 0$, indicating that the electric field component $E_z$ vanishes at the radial distance $r=a$. Upon solving for $E_z$ using equation~\eqref{eqn:electricfieldsoln}, we obtained the solution $E_z = A_n J_n(hr)\cos(n\phi)$, where $h = \omega^2\mu + \gamma^2$.
 
-Now lets look at the colour 2D plot showing the electric field intensities for various TM modes.
+Upon further analysis, we have observed that certain modes satisfy the boundary condition, and these modes can be characterized by two parameters, namely $n$ and $p$. In this context, a specific TM mode is denoted as $TM_{np}$. The parameter $n$ not only represents the variation of the amplitude in $\phi$ but also corresponds to the order of the Bessel function involved in the solution. On the other hand, the parameter $p$ indicates the specific zero point (root) within the Bessel function, which enables the satisfaction of the boundary condition. Indeed, the modes in the circular waveguide are characterized by two aspects. Firstly, the variation of amplitude in the $\phi$ direction. It is represented by the term $\cos(n\phi)$ in the solution.
+
+Secondly, the parameter $n$ determines the number of lobes or wavelengths in the azimuthal direction. Again, the parameter $n$ must be an integer. This is because the term $\cos(n\phi)$ must return to the same value after a complete cycle of $\phi=2\pi$. If the amplitude does not repeat itself after a full revolution, we do not have a mode. So the two values which define a mode are $n$ and $p$ where $n$ is the number of times we have variations in the azimuthal $\phi$, direction and based on the order of the Bessel function $p$, we determine which zero point (root) should be considered to satisfy the boundary condition which in the number of lobes we would get in the radial, $r$, direction.
+
+From our study of the Bessel functions we recall that only $J_0(hr)$ has an amplitude at $hr = 0$ and the rest $J_n(hr)$ function has an amplitude which is zero at $hr = 0$ for $n \ne 0$. Also, we observed from the table that the lowest TM mode is the $TM_{01}$ mode where $n = 0$ and $p = 1$. $n = 0$ implies there is no variation in the $\phi$ direction and $p = 1$ shows that there is only one peak or lobe in the $r$ direction, therefore, $ha = 2.405$ from table~\ref{tab:rootsofbessel}. 
+
+Now let us look at a colour 2D plot showing the electric field intensities for various TM modes.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.9\linewidth]{\pathtoparttwo/graphics/colourplot}
 \caption{2D colour plot of the TM modes.}
 \label{fig:colourplot}
 \end{figure}
-$\underline{TM_{10} \ mode:}$ \ \ In the $\phi$ direction we observe that there is no variation and that in what $n=0$ means. Also if we consider the r direction, there is one lobe as shown in the plot. We can plot the field variation  in the r direction as shown below.
+
+\subsection{$TM_{10}$ mode}
+In the $\phi$ direction, we observe that there is no variation since $n=0$. Also if we consider the $r$ direction, there is one lobe as shown in figure~\ref{fig:m1}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\linewidth]{\pathtoparttwo/graphics/m1}
-\caption{}
+\caption{Plot of Electric field variation in the $r$ direction for $TM_{10}$ mode.}
 \label{fig:m1}
 \end{figure}
-we observe that the field peaks at the centre and in zero at the boundary which is the same as the colour plot.
+
+We can observe from the plot that the field peaks at the centre and at zero at the boundary which is the same as the colour plot in figure~\ref{fig:colourplot}.
       
-$\underline{TM_{02} \ mode:}$ \ \ Also we observe that there is no variation in the $\phi$ direction because if we draw a circle in the plot, we observe that there is no variation in the field intensity along the circle. This is what we should expect for $n =0$. Also, if we consider the r direction we observe that there are two peaks or lobes in that direction. However, these peaks have different magnitudes signified by the red and cyan color we see on the plot. Lets plot this variation as shown below;
+\subsection{$TM_{02}$ mode}
+For the $TM_{02}$, we observe that there is no variation in the $\phi$ direction since $n=0$. If we draw a circle in the plot, we observe that there is no variation in the field intensity along the circle. Likewise, if we consider the $r$ direction we observe that there are two peaks or lobes in that direction. However, these peaks have different magnitudes signified by the red and cyan colours we see on the plot in figure~\ref{fig:colourplot}. Let us plot electric field variation for the $TM_{02}$ mode in the $r$ direction.
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\linewidth]{./graphics/m2}
-\caption{}
+\includegraphics[width=0.7\linewidth]{\pathtoparttwo/graphics/m2}
+\caption{Plot of the electric field variation in the $r$ direction for $TM_{02}$ mode.}
 \label{fig:m2}
 \end{figure}
-It can be seen that the magnitude at the centre is the red color we see on the plot and the cyan color corresponds to the negative lobe with lesser amplitude, this observation is different to that of the rectangular waveguide where the amplitude of the  electric field is same for the lobes for instance if we consider the 3rd order mode in the y direction we will see a plot as shown below which shows that the amplitude stays the same.
+
+The plot in figure~\ref{fig:m2} correlates with the colour plot in fugure~\ref{fig:colourplot} and it can be seen that the magnitude at the centre is the red colour we see on the plot and the cyan colour corresponds to the negative lobes with lesser amplitude, this observation is different to that of the rectangular waveguide where the amplitude of the electric field is same for all the lobes. For instance, if we consider the 3rd order mode in the y direction we will see a plot as shown in figure~\ref{fig:m3} which shows that the amplitude stays the same.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\linewidth]{\pathtoparttwo/graphics/m3}
-\caption{}
+\caption{Plot of the electric field variation in the $y$ direction for $TM_{x3}$ mode.}
 \label{fig:m3}
 \end{figure}
-$\underline{TM_{11} \ mode:}$ \ As shown in the plot, these is one wavelength variation in the $\phi$ direction because the are two peaks (one is positive-maximum and the other is negative-minimum) and it also corresponds to the first order Bessel function $J_1(hr)$. For this mode $p =1$  so the boundary condition is at the first root of $J_1(hr).$ We recall that $J_1(hr)$ has a zero at $h_r =0$ (center of the waveguide) so there is no field  at the center indicated by the deep blue colour.
 
-$\underline{TM_{21} \ mode:}$ \ \ for this mode $n=2$, so we expect two wavelength in the $\phi$ direction which corresponds to 4 peaks (2 maximum and 2 minimum) as shown in the plot. For  p = 1 there will be one peak in the r direction and it is plotted as shown below;
-\begin{figure}[H]
+\subsection{$TM_{11}$ mode}
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.5\linewidth]{\pathtoparttwo/graphics/m4}
-\caption{}
+\caption{Plot of the electric field variations for $TM_{11}$ mode.}
 \label{fig:m4}
 \end{figure}
 
-$\underline{TM_{31} \ mode:}$ \  \ For this mode n = 3 which equals 3 wavelength in the $\phi$ direction and it implies six peaks or lobes in that direction. Also for p = 1  it means we apply the boundary condition at the first zero point.
+As shown in the plot, there is one wavelength variation in the $\phi$ direction because they are two peaks (one is positive-maximum and the other is negative-minimum) and it also corresponds to the first order Bessel function $J_1(hr)$. For this mode $p =1$  so the boundary condition is at the first root of $J_1(hr).$ We recall that $J_1(hr)$ has a zero at $h_r =0$ (centre of the waveguide) so there is no field at the centre indicated by the deep blue colour.
 
-$\underline{TM_{12} \ mode:}$ \  \ Here n = 1 equals one wavelength in the $\phi$ direction corresponding to two lobes and p = 2 means we consider the second root of the   $J_1(hr)$ function. Therefore we will expect two lobes in the r direction as shown in the plot. Essentially n is the number of wavelength in the $\phi$  direction and p in the number of lobes in the r direction.
+\subsection{$TM_{21}$ mode}
+For this mode $n=2$, so we expect two wavelengths in the $\phi$ direction which corresponds to 4 peaks (2 maximum and 2 minimum) as shown in the plot. For  $p = 1$, there will be one peak in the r direction and it is plotted as shown below;
+
+\subsection{$TM_{31}$ mode}
+For this mode n = 3 which equals 3 wavelengths in the $\phi$ direction and it implies six peaks or lobes in that direction. Also for $p = 1$, it means we apply the boundary condition at the first zero point.
+
+\subsection{$TM_{12}$ mode}
+Here $n = 1$ equals one wavelength in the $\phi$ direction corresponding to two lobes and $p = 2$ means we consider the second root of the   $J_1(hr)$ function. Therefore we will expect two lobes in the r direction as shown in the plot. Essentially n is the number of wavelengths in the $\phi$  direction and p is the number of lobes in the r direction.
       
-\section{TE modes}
+\section{TE modes in a circular waveguide}
  Now, let's take a look at the TE modes of  the circular waveguide. For this mode we need to study the derivative of the Bessel function. We recall 
 $$ J_n(hr) = \sum_{k = 0}^{\infty}\dfrac{(-1)^k(hr)^{2k + n}}{k!(k+n)!2^{2k + n}} \quad \text{where n is an interger}$$
 So the derivative of the Bessel function is given as $$ \dfrac{dJ_n(hr)}{dr} $$ and it is denoted by $J'_n(hr) $ and it is given as 
@@ -142,7 +160,7 @@ We observe that $H_r$ depends on $\frac{\partial H_z}{\partial r},$ $H_\phi$ dep
 For the TE mode we have the $E_\phi$ component  which is parallel to the conducting walls as shown below.
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\linewidth]{./graphics/m5}
+\includegraphics[width=0.5\linewidth]{\pathtoparttwo/graphics/m5}
 \label{fig:m5}
 \end{figure}
 
