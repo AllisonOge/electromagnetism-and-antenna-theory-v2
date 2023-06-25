@@ -28,9 +28,13 @@ In the $\phi$ direction, we observe that there is no variation since $n=0$. Also
 \end{figure}
 
 We can observe from the plot that the field peaks at the centre and at zero at the boundary which is the same as the colour plot in figure~\ref{fig:colourplot}.
-      
+   
 \subsection{$TM_{02}$ mode}
-For the $TM_{02}$, we observe that there is no variation in the $\phi$ direction since $n=0$. If we draw a circle in the plot, we observe that there is no variation in the field intensity along the circle. Likewise, if we consider the $r$ direction we observe that there are two peaks or lobes in that direction. However, these peaks have different magnitudes signified by the red and cyan colours we see on the plot in figure~\ref{fig:colourplot}. Let us plot electric field variation for the $TM_{02}$ mode in the $r$ direction.
+For the $TM_{02}$ mode, we observe that there is no variation in the azimuthal direction ($\phi$) since $n=0$. This implies that the field intensity remains constant along any circular path drawn in the waveguide.
+
+In terms of the radial direction ($r$), we observe two peaks or lobes. However, it is important to note that these peaks have different magnitudes, which are represented by the red and cyan colours in the plot shown in figure~\ref{fig:colourplot}. 
+
+To visualize the electric field variation for the $TM_{02}$ mode specifically in the radial direction, let us plot the graph accordingly.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\linewidth]{\pathtoparttwo/graphics/m2}
@@ -38,7 +42,11 @@ For the $TM_{02}$, we observe that there is no variation in the $\phi$ direction
 \label{fig:m2}
 \end{figure}
 
-The plot in figure~\ref{fig:m2} correlates with the colour plot in fugure~\ref{fig:colourplot} and it can be seen that the magnitude at the centre is the red colour we see on the plot and the cyan colour corresponds to the negative lobes with lesser amplitude, this observation is different to that of the rectangular waveguide where the amplitude of the electric field is same for all the lobes. For instance, if we consider the 3rd order mode in the y direction we will see a plot as shown in figure~\ref{fig:m3} which shows that the amplitude stays the same.
+The plot shown in figure~\ref{fig:m2} is consistent with the colour plot displayed in figure~\ref{fig:colourplot}. The magnitude at the centre of the circular waveguide corresponds to the red colour observed in the plot, while the cyan colour represents the negative lobes with lower amplitudes. This observation is in contrast to the behaviour observed in rectangular waveguides, where the amplitude of the electric field remains the same for all lobes.
+
+To illustrate this difference further, let us consider the 3rd order mode in the y direction. The corresponding plot, as shown in figure~\ref{fig:m3}, demonstrates that the amplitude remains constant throughout the lobes. This is distinct from the behaviour observed in the circular waveguide, where the amplitude varies between the positive and negative lobes.
+
+These distinctions highlight the unique characteristics of the electric field behaviour in different waveguide geometries.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\linewidth]{\pathtoparttwo/graphics/m3}
@@ -47,38 +55,57 @@ The plot in figure~\ref{fig:m2} correlates with the colour plot in fugure~\ref{f
 \end{figure}
 
 \subsection{$TM_{11}$ mode}
+As depicted in figure~\ref{fig:colourplot}, we observe a single wavelength variation in the azimuthal direction ($\phi$). This is evident from the presence of two peaks, one representing the positive maximum and the other representing the negative minimum. The behaviour of these peaks aligns with the first-order Bessel function, specifically $J_1(hr)$.
+
+In the case of this mode, $p=1$, indicating that the boundary condition is satisfied at the first root of $J_1(hr)$. It is important to recall that $J_1(hr)$ has a zero at $h_r=0$, which corresponds to the centre of the circular waveguide. Therefore, the deep blue colour observed in the plot signifies that there is no electric field at the centre of the waveguide.
+
+\subsection{$TM_{21}$ mode}
+The $TM_{21}$ mode is characterized by $n=2$, indicating that we expect two wavelengths in the azimuthal direction ($\phi$). This corresponds to the presence of four peaks: two maximums and two minimums, as depicted in figure~\ref{fig:colourplot}.
+
+Considering $p=1$ for this mode, we anticipate a single peak in the radial direction ($r$). The plot shown in figure~\ref{fig:m4} illustrates the variation of the electric field in the $r$ direction for the $TM_{21}$ mode.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\linewidth]{\pathtoparttwo/graphics/m4}
-\caption{Plot of the electric field variations for $TM_{11}$ mode.}
+\caption{Plot of the electric field variations for $TM_{21}$ mode.}
 \label{fig:m4}
 \end{figure}
 
-As shown in the plot, there is one wavelength variation in the $\phi$ direction because they are two peaks (one is positive-maximum and the other is negative-minimum) and it also corresponds to the first order Bessel function $J_1(hr)$. For this mode $p =1$  so the boundary condition is at the first root of $J_1(hr).$ We recall that $J_1(hr)$ has a zero at $h_r =0$ (centre of the waveguide) so there is no field at the centre indicated by the deep blue colour.
-
-\subsection{$TM_{21}$ mode}
-For this mode $n=2$, so we expect two wavelengths in the $\phi$ direction which corresponds to 4 peaks (2 maximum and 2 minimum) as shown in the plot. For  $p = 1$, there will be one peak in the r direction and it is plotted as shown below;
-
 \subsection{$TM_{31}$ mode}
-For this mode n = 3 which equals 3 wavelengths in the $\phi$ direction and it implies six peaks or lobes in that direction. Also for $p = 1$, it means we apply the boundary condition at the first zero point.
+The $TM_{31}$ mode corresponds to $n=3$, indicating three wavelengths in the azimuthal direction ($\phi$). As a result, we observe six peaks or lobes in this direction. Each peak represents a maximum or minimum point of the electric field.
+
+Additionally, considering $p=1$ for this mode means that we apply the boundary condition at the first zero point of the Bessel function. This choice ensures that the electric field satisfies the boundary condition at a specific radial position in the waveguide.
 
 \subsection{$TM_{12}$ mode}
-Here $n = 1$ equals one wavelength in the $\phi$ direction corresponding to two lobes and $p = 2$ means we consider the second root of the   $J_1(hr)$ function. Therefore we will expect two lobes in the r direction as shown in the plot. Essentially n is the number of wavelengths in the $\phi$  direction and p is the number of lobes in the r direction.
-      
+In the case of the $TM_{12}$ mode, we have $n=1$, which corresponds to one wavelength in the azimuthal direction ($\phi$). This results in two lobes or peaks in the $\phi$ direction.
+
+For $p=2$, we consider the second root of the $J_1(hr)$ function. This implies that we expect two lobes in the radial direction ($r$). The colour plot in figure~\ref{fig:colourplot} for the $TM_{12}$ mode showcases this behaviour, with two distinct lobes in the radial direction.
+
+In summary, the parameter $n$ represents the number of wavelengths in the azimuthal direction ($\phi$), while $p$ denotes the number of lobes in the radial direction ($r$).
+   
 \section{TE modes in a circular waveguide}
- Now, let's take a look at the TE modes of  the circular waveguide. For this mode we need to study the derivative of the Bessel function. We recall 
-$$ J_n(hr) = \sum_{k = 0}^{\infty}\dfrac{(-1)^k(hr)^{2k + n}}{k!(k+n)!2^{2k + n}} \quad \text{where n is an interger}$$
-So the derivative of the Bessel function is given as $$ \dfrac{dJ_n(hr)}{dr} $$ and it is denoted by $J'_n(hr) $ and it is given as 
-$$J'_n(hr) = \sum_{k = 0}^{\infty}\dfrac{(-1)^k h^{2k + n}(2k + n)r^{2k + n -1}}{k!(k+n)!2^{2k + n}} \ \ \ \text{by differetiating}$$		
-$J_n(hr)$ with respect to r. Further simplification and substitution will give the relationship shown below 
-$$ J'_n(hr) = \frac{1}{2}\bigg[J_{n-1}(hr) - J_{n + 1}(hr)\bigg] $$
+Now, let's take a look at the TE modes of the circular waveguide. For this mode, we need to study the derivative of the Bessel function. From equation~\eqref{eqn:besselsolnseries2}, we can see that the Bessel function is given as 
+\begin{align*}
+J_n(x) &= \sum_{k = 0}^{\infty}\frac{(-1)^k (\frac{x}{2})^{2k + n}}{k! \Gamma(n + k + 1)}\quad\text{But, }\Gamma(n + k + 1) = (n+k)!\\
+&= \sum_{k = 0}^{\infty}\frac{(-1)^k (\frac{x}{2})^{2k + n}}{k! (n + k)!}\quad\text{Substituting }x = hr\\
+J_n(hr) &= \sum_{k = 0}^{\infty}\dfrac{(-1)^k(hr)^{2k + n}}{k!(k+n)!2^{2k + n}} \quad \text{where n is an interger}
+\end{align*}
+So the derivative of the Bessel function is given as $ \derivative{J_n(hr)}{r} $ and it is denoted by $J'_n(hr) $ and it is given as 
+\begin{align*}
+J'_n(hr) &= \sum_{k = 0}^{\infty}\dfrac{(-1)^k h^{2k + n}(2k + n)r^{2k + n -1}}{k!(k+n)!2^{2k + n}}\\
+&= \frac{1}{2}\bigg[J_{n-1}(hr) - J_{n + 1}(hr)\bigg]\footnotemark
+\end{align*}
+\footnotetext{
+By differentiating $J_n(hr)$ with respect to $r$ and further simplifying the expression, we obtain the above relationship.
+}
+Indeed, for the circular waveguide, the application of the boundary condition leads us to consider specific numerical values of $hr$ at which the derivative of the Bessel function, $J'_n(hr)$, equals zero. These values of $hr$ are essential for determining the characteristics and properties of the waveguide modes.
 
-For the circular waveguide we are only considering points where the boundary condition can be applied and as such the above relationship is not utilized here. However for dielectric waveguides like the optical fibre the relationship becomes useful for solving for the optical modes. So in terms of the circular waveguide we will work with the numerical values at which $J'_n(hr)$ goes to zero which is given in the table below;
+However, it is important to note that this relationship and the zeros of the derivative of the Bessel function are particularly useful when dealing with dielectric waveguides, such as optical fibres. In the context of the circular waveguide, we primarily focus on the numerical values that satisfy the boundary condition rather than explicitly utilizing the relationship mentioned.
 
+For further reference and analysis, Table~\ref{tab:zerosofdiffbessel} provides the specific values of $hr$ where $J'_n(hr)$ vanishes, which are crucial for solving the modes of the circular waveguide.
 \begin{table}[h]
 \centering
 \text{Zeros of $J'_n(hr)$}\\
-\begin{tabular}{|c | c  c  c|}
+\begin{tabular}{|c | c c c|}
 \hline
 \backslashbox{p}{n} & n=0 & n=1 & n=2 \\
 \hline
@@ -86,99 +113,138 @@ For the circular waveguide we are only considering points where the boundary con
 2 & 7.016 & 5.331 &6.706 \\
 \hline
 \end{tabular}
+\label{tab:zerosofdiffbessel}
 \end{table}
 
-From the table, we observe that the lowest zero point is when n = 1 and p = 1 and this correspond to a $TE_{11}$ mode therefore the $TE_{11}$ mode is the lowest cut-off mode, followed by $TE_{21}$ and then $TE_{01}$ and so on.
+From the table, we observe that the lowest zero point is when $n = 1$ and $p = 1$ and this corresponds to a $TE_{11}$ mode therefore the $TE_{11}$ mode is the lowest cut-off mode, followed by $TE_{21}$ and then $TE_{01}$ and so on.
 
-For the TE mode we know that $E_z = 0$ and $H_z$ exists, so we will solve for the $H_z$   component which is given as;
-$$H_z(r,\phi,z) = H_z(r,\phi)e^{-\gamma z}$$ So \begin{equation} \nabla^2 H_z(r,\phi) +  h^2 H_z(r,\phi) = 0\end{equation}
-To solve this equation we repeat the procedure for the TM mode such that 
-$$H_z(r,\phi)= R(r)\Phi(\phi)$$
-Therefore equation we 1 becomes
-$$ \frac{1}{r}\frac{\partial}{\partial r}\bigg(r\frac{\partial R\Phi}{\partial r}\bigg) + \frac{1}{r^2}\frac{\partial^2 R\Phi}{\partial \phi^2} + h^2\{R\Phi\} = 0$$
-and it result in
+For the TE mode we know that $E_z = 0$ and $H_z$ exists, so we will solve for the $H_z$  component which is given as;
+\begin{align*}
+H_z(r,\phi,z) = H_z(r,\phi)e^{-\gamma z}
+\end{align*}
+So, the Helmholtz equation becomes
 \begin{equation}
-\dfrac{d^2 R}{dr^2} + \frac{1}{r^2}\dfrac{dR}{dr} + \bigg(h^2 - \frac{n^2}{r^2}\bigg)R = 0
+\nabla^2 H_z(r,\phi) + h^2 H_z(r,\phi) = 0
+\label{eqn:helmholtztemode}
+\end{equation}
+To solve this equation we repeat the procedure we carried out for the TM mode such that 
+\begin{align*}
+H_z(r,\phi)= R(r)\Phi(\phi)
+\end{align*}
+Therefore equation~\eqref{eqn:helmholtztemode} becomes
+\begin{align*}
+\frac{1}{r}\partialderivative{}{r}\bigg(r\partialderivative{R\Phi}{r}\bigg) + \frac{1}{r^2}\partialderivative[2]{R\Phi}{\phi} + h^2\{R\Phi\} = 0
+\end{align*}
+Thus, the two solutions are given as
+\begin{equation}
+\derivative[2]{R}{r} + \frac{1}{r^2}\derivative{R}{r} + \bigg(h^2 - \frac{n^2}{r^2}\bigg)R = 0
+\label{eqn:radialtemode}
 \end{equation}
 and 
 \begin{equation}
 \dfrac{d^2\Phi}{d\phi^2} + n^2\Phi = 0
+\label{eqn:angulartemode}
 \end{equation}
-The procedure is similar to the TM mode, the only difference is that we start with solving  the helmhottz wave equation for the magnetic field.
-So the solution of the TE mode is 
-$$ H_z(r,\phi) = A_nJ_n(hr)\cos(n\phi)$$
-Now for this solution n has to be an integer. We can now solve for the other components. Recall;
-$$ \overline{H}_\perp = \frac{j\omega t}{h^2}\nabla_\perp\times(E_z\hat{z}) - \frac{r}{h^2}\nabla_\perp H_z$$ and
-$$\overline{E}_\perp = \frac{-j\omega \mu}{h^2}\nabla_\perp\times(H_z\hat{z}) - \frac{r}{h^2}\nabla_\perp E_z$$
-for the TE mode $E_z = 0$ So 
-\begin{align} 
-\overline{H}_\perp = H_r \hat{r} + H_\phi \hat{\phi} &= \frac{-r}{h^2}\nabla_\perp H_z\\
-&= \frac{-r}{h^2}\bigg\{ 
-\hat{r}\frac{\partial H_z}{\partial} + \frac{\hat{\phi}}{r} \frac{\partial H_z}{\partial \phi}   
-\bigg\}
-\end{align}
-Therefore
-$$H_r = \frac{-r}{h^2}\frac{\partial H_z}{\partial r} =  \frac{-r}{h^2}A_nJ'_n(hr)\cos(n\phi)$$
-For a lossless medium $ r =j\beta$
-
-So 
-$$H_r = \frac{-j\beta}{h^2}A_nJ'_n(hr)\cos(n\phi)$$
-and
-$$ H_\phi = \frac{-j\beta}{h^2}\frac{\partial H_z}{\partial \phi} =  \frac{-j\beta n}{h^2 r}A_nJ'_n(hr)\sin(n\phi)$$	 	
-Also
-\begin{dmath} 
-\overline{E}_\perp = \frac{-j\omega\mu}{h^2}\nabla_\perp\times H_z\hat{z}
-=\frac{-j\omega\mu}{h^2}
-\bigg\{ 
-\frac{1}{r}
-\bigg|
-\begin{matrix}
-\hat{r} &  r\hat{\phi}  &  \hat{z}\\ 
-\frac{\partial}{\partial r}  &  \frac{\partial}{\partial \phi}  &  0\\
-0  &  0  &  H_z
-\end{matrix}
-\bigg| 
-\bigg\}
-\end{dmath}
-\begin{dmath}
-\overline{E}_\perp = E_r\hat{r} + E_\phi\hat{\phi} = \frac{j\omega\mu}{h^2} \bigg \{ \frac{1}{r}\frac{\partial H_z}{\partial \phi} - \frac{\partial H_z}{\partial r}\bigg\}
-\end{dmath}
-So 
-$$ E_r = \frac{-j\omega\mu}{h^2 r}\frac{\partial H_z}{\partial \phi} = \frac{j\omega\mu n}{h^2 r}A_nJ_n(hr)\sin(n\phi)$$
-And
-$$ E_\phi = \frac{j\omega\mu}{h^2 }\frac{\partial H_z}{\partial \phi} = \frac{j\omega\mu }{h^2 }A_nJ'_n(hr)\cos(n\phi)$$
-So the component are
+The procedure is similar to that of the TM mode, the only difference is that we start with solving the Helmholtz wave equation for the magnetic field. So the solution of the magnetic field is 
 \begin{align*}
+H_z(r,\phi) = A_nJ_n(hr)\cos(n\phi)\quad\text{n has to be an integer}
+\end{align*}
+We can now solve for the other components. From equations~\eqref{eqn:transverseele2} and~\eqref{eqn:transversemag2} we have
+\begin{align*}
+\bar{E}_\perp = \frac{-j\omega\mu}{h^2}\nabla_\perp\times(H_z\hat{z}) - \frac{\gamma}{h^2}\nabla_\perp E_z\\
+\bar{H}_\perp = \frac{j\omega\epsilon}{h^2}\nabla_\perp\times(E_z\hat{z}) - \frac{\gamma}{h^2}\nabla_\perp H_z
+\end{align*}
+
+For the TE mode, $E_z = 0$, therefore,
+\begin{dmath} 
+\bar{H}_\perp = H_r \hat{r} + H_\phi \hat{\phi} = \frac{-\gamma}{h^2}\nabla_\perp H_z
+= \frac{-\gamma}{h^2}\bigg\{ 
+\hat{r}\partialderivative{H_z}{r} + \frac{\hat{\phi}}{r}\partialderivative{H_z}{\phi}  
+\bigg\}
+\end{dmath}
+Therefore
+\begin{align*}
+H_r = \frac{-\gamma}{h^2}\partialderivative{H_z}{r} = \frac{-\gamma}{h^2}A_nJ'_n(hr)\cos(n\phi)
+\end{align*}
+For a lossless medium $ \gamma =j\beta$, so 
+\begin{align*}
+H_r = \frac{-j\beta}{h^2}A_nJ'_n(hr)\cos(n\phi)
+\end{align*}
+Similarly, for the $\phi$ component, we have
+\begin{align*}
+H_\phi = \frac{-j\beta}{h^2}\frac{\partial H_z}{\partial \phi} = \frac{-j\beta n}{h^2 r}A_nJ'_n(hr)\sin(n\phi)
+\end{align*}
+
+For the transverse electric field, we have
+\begin{dmath} 
+\bar{E}_\perp = \frac{-j\omega\mu}{h^2}\nabla_\perp\times H_z\hat{z}
+=\frac{-j\omega\mu}{h^2}
+\left\{ 
+\frac{1}{r}
+\begin{vmatrix}
+\hat{r} & r\hat{\phi} & \hat{z}\\ 
+\partialderivative{}{r} & \partialderivative{}{\phi} & 0\\
+0 & 0 & H_z
+\end{vmatrix}
+\right\}
+= E_r\hat{r} + E_\phi\hat{\phi}
+= \frac{j\omega\mu}{h^2} \bigg\{\frac{1}{r}\partialderivative{H_z}{\phi} - \partialderivative{H_z}{r}\bigg\}
+\end{dmath}
+Therefore, the components are
+\begin{align*}
+E_r &= \frac{-j\omega\mu}{h^2 r}\partialderivative{H_z}{\phi} = \frac{j\omega\mu n}{h^2 r}A_nJ_n(hr)\sin(n\phi)\\
+E_\phi &= \frac{j\omega\mu}{h^2 }\partialderivative{H_z}{\phi} = \frac{j\omega\mu }{h^2 }A_nJ'_n(hr)\cos(n\phi)
+\end{align*}
+So the component is
+\begin{align}
 H_r &= \frac{j\beta}{h^2 }A_nJ_n(hr)\cos(n\phi)\\ H_\phi &= \frac{j\beta}{h^2 r}A_nJ_n(hr)\sin(n\phi)\\
 H_z &= A_nJ_n(hr)\cos(n\phi)\\
 E_r &= \frac{j\omega\mu n}{h^2 r}A_nJ_n(hr)\sin(n\phi)\\
 E_\phi &= \frac{j\omega\mu }{h^2 }A_nJ_n(hr)\cos(n\phi)\\
 E_z & = 0
-\end{align*}
+\end{align}
 
-We observe that $H_r$ depends on $\frac{\partial H_z}{\partial r},$ $H_\phi$ depends on $\frac{\partial H_z}{\partial \phi},$  $E_r$ depends on $\frac{\partial H_z}{\partial \phi}$ and $E_\phi$ depend on $\frac{\partial H_z}{\partial r}$. This shows that if we consider a field component in the z direction, we find the transverse component of this field as the derivative of the field with respect to the direction of each of the transverse component i.e $H_r \sim \frac{\partial H_z}{\partial r}$ and $H_\phi \sim \frac{\partial H_z}{\partial \phi}$  while we find transverse field component of the opposite of the opposite field from the derivative of the field with respect to the orthogonal direction to each of the transverse 	component of the opposite field i.e $H_r \sim \frac{\partial H_z}{\partial \phi}$ and $H_\phi \sim \frac{\partial H_z}{\partial r}$.     
-For the TE mode we have the $E_\phi$ component  which is parallel to the conducting walls as shown below.
+In the context of the circular waveguide, we have observed that the transverse components of the magnetic field, namely $H_r$ and $H_\phi$, are directly related to the derivative of the field component in the longitudinal direction, $H_z$. Specifically, $H_r$ is proportional to $\partialderivative{H_z}{r}$, while $H_\phi$ is proportional to $\partialderivative{H_z}{\phi}$.
+
+Similarly, the transverse components of the electric field, $E_r$ and $E_\phi$, are related to the derivative of the field component in the longitudinal direction, $H_z$. In this case, $E_r$ is proportional to $\partialderivative{H_z}{\phi}$, and $E_\phi$ is proportional to $\partialderivative{H_z}{r}$.
+
+For the TE (Transverse Electric) mode, we specifically observed that the electric field component $E_\phi$ is parallel to the conducting walls of the waveguide. This is illustrated in Figure~\ref{fig:m5}, where the electric field lines are tangential to the walls of the circular waveguide.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\linewidth]{\pathtoparttwo/graphics/m5}
+\caption{Azimuthal electric field component for the TE mode}
 \label{fig:m5}
 \end{figure}
 
-We know that at the boundary the electric field has to go to zero so $E_\phi(r = 0)$ = 0 which implies $J'_n(ha) = 0$ for any specific TE mode. If we take a look at the table we discussed earlier we observe that the smallest value  of $ha$ for which we satisfy the boundary condition is when $ha= 1.841$ which is the TE mode with the lowest cut-off frequency. As we know n shows there is one wavelength variation in the $\phi$ direction and p = 1 shows that we are at  the first zero point of the $J'_1(hr)$ function.
+Again, the electric field component $E_\phi$ must go to zero at the boundary ($r=0$) to satisfy the boundary condition. This requirement leads to the condition $J'_n(ha) = 0$, where $ha$ represents the product of the waveguide radius $a$ and the radial component $h$ of the waveguide mode.
+
+By referring to Table~\ref{tab:zerosofdiffbessel}, we can observe that the smallest value of $ha$ for which the boundary condition is satisfied is $ha = 1.841$. This corresponds to the TE mode with the lowest cut-off frequency. In this mode, we have one wavelength variation in the azimuthal direction ($\phi$) due to $n=1$, and $p=1$ indicates that we are considering the first zero point of the derivative of the Bessel function, specifically $J'_1(hr)$.
 
 So
-$$(h)_{TE_{11}} = \frac{1.841}{a}$$
-and the cut-off frequency of this mode is 
-$$(f_c)_{TE_{11}} = \frac{(h)_{TE_{11}}}{2\pi\sqrt{\mu\epsilon}} = \frac{0.293}{a\sqrt{\mu\epsilon}}$$	
-We recall that te lowest TE mode is the $TE_{01}$ mode which  to $(f_c)_{TE_{01}} = \frac{0.383}{a\sqrt{\mu\epsilon}}$ and if can be seen that the cut-off frequency of the $TE_{11}$ is less that that of the $TE_{01}$ mode. Hence the $TE_{11}$ mode is the dominant mode of the circular waveguide from the table we observe that the order of the mode are arranged from the lowest cut-off to the highest as \  $TE_{11}, \  TE_{21}, \ TE_{01}, \ TE_{12}, \ TE_{22} \ and \ TE_{02}$ which does not follows a nice order like the rectangular waveguide because of the derivative Bessel function terms.
+$$
+(h)_{TE_{11}} = \frac{1.841}{a}
+$$
+And the cut-off frequency of this mode is 
+$$
+(f_c)_{TE_{11}} = \frac{(h)_{TE_{11}}}{2\pi\sqrt{\mu\epsilon}} = \frac{0.293}{a\sqrt{\mu\epsilon}}
+$$
+We recall that the lowest TE mode is the $TE_{01}$ mode which corresponds to $(f_c)_{TE_{01}} = \frac{0.383}{a\sqrt{\mu\epsilon}}$. It is worth noting that the cut-off frequency of the $TE_{11}$ mode is lower than that of the $TE_{01}$ mode.
+
+As a result, the $TE_{11}$ mode becomes the dominant mode in the circular waveguide. The modes in the circular waveguide are not arranged in a simple order like in the rectangular waveguide due to the presence of the derivative of the Bessel function in the boundary condition. However, by referring to the table, we can observe that the modes are ordered based on their cut-off frequencies, from lowest to highest, as $TE_{11}, TE_{21}, TE_{01}, TE_{12}, TE_{22}$, and $TE_{02}$.
 
 \section{Attenuation in the circular waveguide}
- Lets discuss briefly, the attenuation in this mode. In terms of losses the behaviour will be similar to that of the parallel plane waveguide because the modes which have more energy close to the conducting wall will have more losses since these energies will excite current on field component parallel to the conducting walls will have more losses for the TE mode we have the $H_z$ and the $H_\phi$ component and for the TM mode we have the $H_\phi$ component only for most cases the losses drop as frequency increases and then increases, but there are unique mode present is any mode that is the $TE_{op}$ mode. For these modes the loss decreases monotonically as frequency increase which is shown below for the case of $TE_{01}$ mode 
+In terms of losses, the behaviour in the circular waveguide is similar to that of the parallel plane waveguide. The modes that have more energy close to the conducting wall will experience more losses because this energy can excite currents on the conducting surfaces. 
+
+For the TE (Transverse Electric) mode, which includes both the $H_z$ and $H_\phi$ components, and the TM (Transverse Magnetic) mode, which includes the $H_\phi$ component, the losses generally decrease as the frequency increases and then start to increase. This is a common trend. 
+
+However, there are unique modes of the order $TE_{0p}$. In such modes, the losses decrease monotonically as the frequency increases. This is demonstrated in figure~\ref{fig:m6} for the specific case of the $TE_{01}$ mode.
+
+It is important to note that the specific loss behaviour in different modes and frequency ranges can vary, but the general trend described above provides an understanding of the behaviour of losses in the circular waveguide.
 \begin{figure}[h]
 \centering
 \includegraphics[width=.5\linewidth]{\pathtoparttwo/graphics/m6}
-\caption{}
+\caption{Attenuation in the $TE_{01}$ mode}
 \label{fig:m6}
 \end{figure}
 
-So there is no minimum with respect to frequency. The $TE_{op}$ mode is unique in this sense because no other mode whether it is circuit or rectangular waveguide, has this behaviour this end our discussion on circular waveguide.
+Indeed, the $TE_{0p}$ mode in the circular waveguide exhibits a unique behaviour where the losses decrease monotonically as the frequency increases. This behaviour is distinct and not observed in any other mode, whether in a circular or rectangular waveguide. Therefore, the $TE_{0p}$ mode stands out in terms of its loss characteristics. This concludes our discussion on the circular waveguide.
