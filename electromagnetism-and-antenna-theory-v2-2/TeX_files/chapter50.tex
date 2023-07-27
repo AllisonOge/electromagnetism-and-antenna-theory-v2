@@ -1,43 +1,43 @@
-\chapter{Dipole Antenna}
-In the previous chapter we discussed the Hertz dipole which is a small current element and we concluded that it is not an effective radiator because the radiation resistance is very small. However, the Hertz dipole creates a foundation to discuss practical complex antenna structures. In this chapter we would investigate the radiation characteristics (radiation patterns) of a linear thin dipole. 
+\chapter{Dipole Antenna}\label{lec:lec50}
+In the previous chapter, we discussed the Hertz dipole which is a small current element and we concluded that it is not an effective radiator because the radiation resistance is very small. However, the Hertz dipole creates a foundation to discuss practical complex antenna structures. In this chapter, we would investigate the radiation characteristics (radiation patterns) of a linear thin dipole.
 
 \section{Analysis of the thin wire dipole}
-Essentially, the thin wire dipole is a piece of wire with length comparable to the wavelength of the time varying current. The basic arrangement is shown in figure\ref{figure1} below. In a simplistic way, it is possible to think of the antenna as having formed by bending the two wires of an open-ended transmission line down and up by $90^\circ$. The mid point, at which the bends occur, is known as the feed point. 
+Essentially, the thin wire dipole is a piece of wire with a length comparable to the wavelength of the time-varying current. The basic arrangement is shown in figure\ref{fig:thindipole}. In a simplistic way, it is possible to think of the antenna as having formed by bending the two wires of an open-ended transmission line down and up by 90\textdegree. The midpoint, at which the bends occur, is known as the feed point.
 \begin{figure}[h]
 \centering
-\includegraphics[height=5cm]{\pathtoparttwo/graphics/diagram5}
-\caption{A thin dipole antenna driven sinusoidally by a two wire line}
-\label{figure1}
+\includegraphics[width=0.5\linewidth]{\pathtoparttwo/graphics/diagram5}
+\caption{A thin dipole antenna driven sinusoidally by a two-wire line}
+\label{fig:thindipole}
 \end{figure}
 
-If we consider a transmission line which is open circuited at one end, we can visualize the standing wave patterns on this transmission line as shown in \ref{figure2}a. Now, Flaring up the ends to $90^\circ$ such that it is a dipole, we can still visualize the standing wave patterns of current on the structure as shown, which is maintained. 
+If we consider a transmission line which is open-circuited at one end, we can visualize the standing wave patterns on this transmission line as shown in \ref{fig:flaredtl}(a). Now, Flaring up the ends to 90\textdegree such that it is a dipole, we can still visualize the standing wave patterns of current on the structure as shown, which is maintained.
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/diagram6}
 \caption{a. Open circuited TL with current standing wave pattern shown.           
  b. Flared up version of the TL with current standing wave pattern shown for an ideal case dipole}
-\label{figure2}
+\label{fig:flaredtl}
 \end{figure}
 
-We might argue that for a completely flared up transmission line, are the standing wave patterns valid? Yes, they are, because the rigorous solution for the current distribution on the dipole is the same kind as that we get from the standing wave pattern on a transmission line. A few things to note are:
+We might argue that for a completely flared-up transmission line, are the standing wave patterns valid? Yes, they are, because the rigorous solution for the current distribution on the dipole is the same kind as that we get from the standing wave pattern on a transmission line. A few things to note are:
 \begin{enumerate}[(i)]
 \item  At the top of the antenna the current must go to zero because there is no path for the current at the tip of the antenna.
-\item  There is symmetry of current in the transmission line as equal current flow in opposite direction through the two and in essence there is symmetry of the current distribution in the dipole. 
+\item  There is the symmetry of current in the transmission line as equal current flows in opposite directions through the two and in essence, there is the symmetry of the current distribution in the dipole. 
 \end{enumerate}
 
-It is important to note that the input terminal current is decided by the length of the antenna and is independent of the voltage excitation. The reason is if the current goes to zero at the top of tip of the antenna then for different lengths of the antenna, the input current would not be the same irrespective of the given voltage source.
+It is important to note that the input terminal current is decided by the length of the antenna and is independent of the voltage excitation. The reason is if the current goes to zero at the top of the tip of the antenna then for different lengths of the antenna, the input current would not be the same irrespective of the given voltage source.
 
-In conclusion, for a thin wire dipole, the current distribution though not proven here, has symmetry on the dipole, reduces to zero at the tip of the antenna and is a function of the length of the dipole.
+In conclusion, for a thin wire dipole, the current distribution though not proven here has symmetry on the dipole, reduces to zero at the tip of the antenna and is a function of the length of the dipole.
 
-Let us consider a dipole antenna aligned in the z direction as shown in \ref{figure3} below, which has a current I(z) that is flowing through it. 
+Let us consider a dipole antenna aligned in the z direction as shown in \ref{fig:thindipole2} below, which has a current I(z) that is flowing through it. 
 \begin{figure}[h]
 \centering
-\includegraphics[height=5cm]{\pathtoparttwo/graphics/diagram7}
+\includegraphics[width=0.8\linewidth]{\pathtoparttwo/graphics/diagram7}
 \caption{A dipole antenna aligned in the z - direction}
-\label{figure3}
+\label{fig:thindipole2}
 \end{figure}
 
-We will visualize the dipole antenna as the collection of the Hertz dipoles and consider a Hertz dipole I(z)dz at a distance z from the feed point. Let us determine the fields at a far away point due to the small current element (because we are concerned with radiation fields) that makes an angle of $\theta$ with the z axis. Since we are considering a far away point, the two lines in \ref{figure3} appear parallel and the difference in distance traveled by waves along this path is given by $zcos\theta$. This means the radiation from the Hertz dipole with respect to the centre leads in phase by $zcos\theta$ because it travels lesser distance than that from the centre. We get from \ref{figure3} that $R - z\cos\theta = R_1. \ R_1$ is the distance from the observation point from the origin. 
+We will visualize the dipole antenna as the collection of the Hertz dipoles and consider a Hertz dipole I(z)dz at a distance z from the feed point. Let us determine the fields at a faraway point due to the small current element (because we are concerned with radiation fields) that makes an angle of $\theta$ with the z-axis. Since we are considering a faraway point, the two lines in \ref{figure3} appear parallel and the difference in distance travelled by waves along this path is given by $zcos\theta$. This means the radiation from the Hertz dipole with respect to the centre leads in phase by $zcos\theta$ because it travels a lesser distance than that from the centre. We get from \ref{figure3} that $R - z\cos\theta = R_1. \ R_1$ is the distance from the observation point from the origin. 
 
 The current distribution for the dipole antenna fed at the centre is given by
 $$I(z) = I_m\sin \{\beta(H -|z|)\} = \begin{cases} I_m\sin{\beta(H - z)}& \text{$z > 0,$}\\

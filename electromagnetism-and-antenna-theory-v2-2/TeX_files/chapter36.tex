@@ -1,13 +1,14 @@
-\chapter{Propagation of electromagnetic wave inside a parallel plane waveguide (2)}
-We continue with our investigation of the propagation of electromagnetic waves inside a parallel plane waveguide. i.e two conducting boundaries with waves moving in between them. In the previous chapter, we launched a wave which had perpendicular polarization between two conducting boundaries; as a result, we get a propagation which we call transverse electric propagation.
+\chapter{Parallel Plane Waveguide (2)}\label{lec:lec36}
+We continue with our investigation of the propagation of electromagnetic waves inside a parallel plane waveguide. i.e. two conducting boundaries with waves moving in between them. In the previous chapter, we launched a wave which had perpendicular polarization between two conducting boundaries; as a result, we get a propagation which we call transverse electric propagation.
 
-We introduced the concept of mode i.e the discrete electric and magnetic field patterns which propagate between these two conducting boundaries. What if we use a parallel polarized electric field instead of perpendicular polarization? What kind of propagation will take place and how does it differ from the previous case of perpendicular polarization? Figure~\ref{fig:silas1} shows a conductor boundary with the incident and reflected wave. The coordinate system is shown with y pointing out of the paper and as such the electric field is directed in the plane of the paper. Since this is a transverse wave, by Poynting theorem, the magnetic field for both must be in the y direction.
+We introduced the concept of mode i.e. the discrete electric and magnetic field patterns which propagate between these two conducting boundaries. What if we use a parallel polarized electric field instead of perpendicular polarization? What kind of propagation will take place and how does it differ from the previous case of perpendicular polarization? Figure~\ref{fig:silas1} shows a conductor boundary with the incident and reflected wave. The coordinate system is shown with y pointing out of the paper and as such the electric field is directed in the plane of the paper. Since this is a transverse wave, by Poynting theorem, the magnetic field for both must be in the y direction.
 \begin{figure}[h]
 \centering
 \includegraphics[scale=1]{\pathtoparttwo/graphics/silas1}
 \caption{Incident and reflected wave on a boundary that lies in the z plane}
 \label{fig:silas1}
 \end{figure}
+
 The problem is identical to what we had in the previous case. We find out the component of electric and magnetic fields and apply the boundary conditions.
 \begin{figure}[h]
 \centering
@@ -46,7 +47,7 @@ E_{i} = E_{r}\\
 \end{align*}
 We recall that we have a reflection coefficient $\Gamma = -1$ in the case of perpendicular polarization. This means it was behaving like a short circuit. For the parallel polarization, the transmission line analogy is an open circuit? which is not correct. The $E_{i}$ and $E_{r}$ from the diagram have a direction opposite to each other. So that in the case of perpendicular polarization, the $E_{i}$ and $ E_{r}$  were initially taken to be in the positive y direction. So   $\Gamma = 1$ means they are opposite to one another in direction, so n = -1 corresponded to the case of a short circuit in Transmission lines. Hence the negative sign that could have been in $\Gamma$ here is already taken care of by making $E_{i}$ and $E_{i}$ have opposite directions in the case of parallel polarization considered here. Thus, the reason the reflection coefficient is 1. 
 
-Looking at the sign of the reflection coefficient alone will not give the correct idea about the boundary. In summary, this parallel polarized case is still behaving like a short circuit, where the conductivity is infinite. The electric field is zero at the boundary, you get a reflection coefficient of +1 because the sign is appropriately absorbed into the direction of the electric field. Once you get that and use the relationship that the electric field is related to the magnetic field by the intense importance, we have $\frac{E_{i}}{H_{i}} = \frac{E_{r}}{H_{r}} =\Gamma$. The total electric field in medium 1 is a summation of the incident and reflected field. The same is true for the magnetic field. The electric field has two components in x and z, the magnetic field has components in only y duration. The magnetic field will have only the y component.
+Looking at the sign of the reflection coefficient alone will not give the correct idea about the boundary. In summary, this parallel polarized case is still behaving like a short circuit, where the conductivity is infinite. The electric field is zero at the boundary, you get a reflection coefficient of +1 because the sign is appropriately absorbed into the direction of the electric field. Once you get that and use the relationship that the electric field is related to the magnetic field by the intense importance, we have $\frac{E_{i}}{H_{i}} = \frac{E_{r}}{H_{r}} =\Gamma$. The total electric field in medium 1 is a summation of the incident and reflected field. The same is true for the magnetic field. The electric field has two components in x and z, and the magnetic field has components in only y duration. The magnetic field will have only the y component.
 \begin{equation*}
 E_{i}sin\theta e^{-j\beta(-xcos\theta + zsin\theta)} + E_{r}sin\theta e^{-j\beta(xcos\theta + zsin\theta)}
 \end{equation*}
@@ -201,7 +202,7 @@ At cut-off frequency,
 \end{align*}
 Therefore, at every cut-off for the respective mode, $v_{p}$ starts from $\infty$ and tends to $c$ as $f$ increases, $v_{g}$ starts from 0 and approaches $c$ as f increases. $TM_{1}$, and $TE_{1}$, do exist, But $TE_0$ does not exist when $TM_0$ exists. For $m = 0$, $v_{p}=c$ $v_{g}=c$. The phase velocity is always above $c$ and the group velocity is always below $c$.
 
-The graph in figure~\ref{fig:silas5} shows the group and phase velocity plot for the different modes, where $f_{c0}$, $f_{c1}$, and $f_{c2}$ are the cut-off frequencies for the different modes. For the $TM_0$ mode, there is no cut-off frequency because $\bar{\beta}$ is always equal to $\beta$ which is the phase constant in the intrinsic medium. With this understanding we go back to all the special cases we have talked about. Recall with $m = 0$, 
+The graph in figure~\ref{fig:silas5} shows the group and phase velocity plot for the different modes, where $f_{c0}$, $f_{c1}$, and $f_{c2}$ are the cut-off frequencies for the different modes. For the $TM_0$ mode, there is no cut-off frequency because $\bar{\beta}$ is always equal to $\beta$ which is the phase constant in the intrinsic medium. With this understanding, we go back to all the special cases we have talked about. Recall with $m = 0$, 
 \begin{align*}
 E_{x} =2E_{i} e^{-j\beta z}\\
 H_{y} = \frac{2E_{i}}{\eta} e^{-j\beta z}\\
