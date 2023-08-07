@@ -100,38 +100,45 @@ On the other hand, the magnetic field ($H$) direction changes from one point to 
 \label{fig:lec35fig5}
 \end{figure}
 
-So $H_r$ and $H_r$ keep changing direction, and the magnetic field inside the plane waveguide has two components, x and z components respectively. Since the net propagation is in the z direction, the magnetic field essentially has components in the direction of net propagation components perpendicular to the direction of net propagation.
+So $H_i$ and $H_r$ keep changing direction, and the magnetic field inside the plane waveguide has two components, x and z components respectively. Since the net propagation is in the z direction, the magnetic field essentially has components in the direction of net propagation components perpendicular to the direction of net propagation.
 
-Last time
+From equations~\eqref{en:totalelectricfield2},~\eqref{eqn:totalmagfieldx3} and~\eqref{eqn:totalmagfieldz2}, we can rewrite the components of the electric and magnetic field with $\cos\theta$ substituted with $\frac{m\pi x}{d}$ and $\sin\theta = \sqrt{1 - \cos^2\theta}$ as follows:
 \begin{dmath}
-H_x = -\jmath 2\frac{E_i}{\eta}sin\theta sin\left(\frac{m\pi x}{d}\right)e^{-\jmath 2\beta\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}
+E=\jmath 2 E_i \sin(\frac{m\pi x}{d})\footnotemark e^{-j\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}} \hat{y}
+\label{eqn:totalelectricfield3}
+\end{dmath}
+\footnotetext{
+Since, $\beta = \frac{2\pi}{\lambda}$, then $\beta\cos\theta = \beta\times\frac{m\lambda}{2d} = \frac{2\pi}{\lambda}\times\frac{m\lambda}{2d}=\frac{m\pi}{d}$
+}
+\begin{dmath}
+H_x = -\jmath 2\frac{E_i}{\eta}\sin\theta\sin(\frac{m\pi x}{d}) e^{-\jmath 2\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}
+\label{eqn:totalmagfieldx4}
 \end{dmath}
 \begin{dmath}
-H_z = -\jmath 2\frac{E_i}{\eta}\left(\frac{m\lambda}{2d}\right)cos\left(\frac{m\pi x}{d}\right)e^{-\jmath 2\beta\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}
+H_z = -\frac{2E_i}{\eta}\left(\frac{m\lambda}{2d}\right)\cos(\frac{m\pi x}{d})e^{-\jmath 2\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}
+\label{eqn:totalmagfieldz3}
 \end{dmath}
 These are the three fields which can survive in a particular waveguide for a perpendicularly polarized electric field (perpendicular to the plane of incidence). Now the phase constant for the mode is
 \begin{dmath}
-\bar{\beta} = \beta\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}
+\bar{\beta} = \beta\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}\quad\text{Such that $\sin\theta
+=\frac{\bar{\beta}}{\beta}$}
 \label{eqn:phaseconst}
 \end{dmath}
-This is the phase constant as a result of the superposition of two uniform plane waves in the z-direction. $\beta$ is just the phase constant of a single wave moving into the medium.
-\begin{dmath}
-sin\theta = \sqrt{1-\left(\frac{m\lambda}{2d}\right)^2} 
-=\frac{\bar{\beta}}{\beta}
-\end{dmath}
-The first thing we immediately note from these three expressions is if we put $m=0$, then the electric field goes to zero, $H_x$ goes to zero, and $H_z$ goes to zero. This means that for the fields to survive inside this structure, we must have values of m which is a non-zero integer. Since for $cos\theta = 0$ or $\theta = 90^o$. That means the wave incident on the waveguide cannot survive inside this structure. So if we launched a wave with the electric field shown in figure~\ref{fig:lec35fig6} and with the direction in the y-direction, the wave cannot survive. $E$ is perpendicular to the paper, with $m=0$, the wave cannot survive. 
+This is the phase constant as a result of the superposition of two uniform plane waves in the z-direction. $\beta$ is just the phase constant of a single wave moving into the medium. Let us examine equations~\eqref{eqn:totalelectricfield3},~\eqref{eqn:totalmagfieldx4}, and~\eqref{eqn:totalmagfieldz3}. When $m=0$, all three components of the electromagnetic fields ($E$, $H_x$, and $H_z$) reduce to zero. This implies that for the fields to survive and propagate within the waveguide, the mode parameter $m$ must be a non-zero integer.
+
+In physical terms, the value of $m$ directly relates to the angle of incidence ($\theta$) of the incident wave. For $\cos\theta=0$ or $\theta=90^\circ$, the incident wave is normally incident to the conducting boundaries, resulting in $m=0$. Under this condition, the wavefront is parallel to the conducting planes, and the incident wave cannot be guided effectively inside the waveguide. Hence, the electric field direction shown in Figure~\ref{fig:lec35fig6}, where $E$ is perpendicular to the plane of incidence (out of the paper), represents an incident plane wave that can propagate as a guided mode within the waveguide.
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/lec35fig6}
 \caption{Wave propagation in a parallel plane waveguide with distance set to $\frac{\lambda}{2\cos\theta}$}
 \label{fig:lec35fig6}
 \end{figure}
-Why does this happen? We can see physically from the waveguide structure, m essentially tells us that at $m=1$ and $x=0$ to $d$, we get $\dfrac{1}{2}$ cycle variation of the electric field. So we get the amplitude variation of $E$ shown in the figure~\ref{fig:lec35fig7} for $m=1$, for $m=2$, we have a full cycle variation\footnote{Wondering how it was found, here it is.
 
-At $x=\dfrac{d}{2}$,
-\begin{dmath*}
-sin\left(\frac{m\pi x}{d}\right) = sin\left(\frac{m\pi \dfrac{d}{2}}{d}\right) = sin\pi = 0
-\end{dmath*}}, and for $m=3$, we have $1\dfrac{1}{2}$ cycle variations. 
+\emph{Why does this happen?} The occurrence of discrete values for the mode parameter $m$ and its direct relation to the wave propagation behaviour within the waveguide can be understood from the physical properties of the waveguide structure itself.
+
+Consider the case where $m=1$, and the distance between the two conducting planes is $d$. At $x=0$, we have $\sin(\frac{m\pi x}{d}) = \sin(\frac{\pi}{d})$. Since the sine function takes its first positive zero at $\frac{\pi}{2}$, we find that $\sin(\frac{\pi}{d})$ is zero at $x=\frac{d}{2}$. This means that the electric field experiences a half-cycle variation (from zero to maximum) within the distance from $x=0$ to $x=d$. This behaviour is illustrated in Figure~\ref{fig:lec35fig7} for $m=1$.
+
+Similarly, for $m=2$, $\sin(\frac{m\pi x}{d})$ takes its first positive zero at $\frac{\pi}{d}$. Therefore, at $x=\frac{d}{2}$, we have $\sin(\frac{m\pi x}{d}) = \sin(\frac{2\pi}{d})$. Since the sine function has its first positive zero at $\pi$, we get $\sin(\frac{2\pi}{d})=0$ at $x=\frac{d}{2}$. This leads to a full cycle variation (from minimum to maximum and back to minimum) of the electric field within the distance from $x=0$ to $x=d$. The same pattern follows for $m=3$, where $\sin(\frac{m\pi x}{d})$ takes its first positive zero at $\frac{\pi}{d}$ and the second positive zero at $\frac{2\pi}{d}$, resulting in $1\frac{1}{2}$ cycle variations of the electric field within the distance from $x=0$ to $x=d$.
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/lec35fig7}
@@ -139,9 +146,60 @@ sin\left(\frac{m\pi x}{d}\right) = sin\left(\frac{m\pi \dfrac{d}{2}}{d}\right) =
 \label{fig:lec35fig7}
 \end{figure}
 
-So m tells us how many half cycles variations of the electric field amplitude or magnetic field amplitude in the direction transverse to the direction of net wave propagation. So if $m=0$, there is no variation which means a constant field from $x=0$ to $x=d$. $m=1$ means 1 half-cycle variation, $m=2$ means 2 half-cycle variations, $m=3$ means 3 half-cycle variations and so on. For $m=0$ the field is constant in the direction transverse to the direction of propagation. Since the electric field is in the y direction, between two conducting planes, at the conducting boundaries, the electric field must be zero at both of them. For $m=0$ we do not want any variation of the field and it should be zero at $x=0$ and $x=d$.That will only happen if the field is identically zero everywhere. That is what the bold part of the expression, $\bar{E} = \jmath 2E_i\boldsymbol{sin\left(\frac{m\pi x}{d}\right)}e^{-\jmath 2\beta\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}$, tells us. So the lowest value of m which can survive in the structure is $TE_1$ mode. Hence, for a given spacing of conducting planes, we must have a value, m, which is at least 1 and only then will the field exist in the structure, if $m=0$ the field will not exist inside the structure and the wave will not propagate. So depending upon the size or mode, we can have $TE_1$, if the size is sufficient, $TE_2$, $TE_3$ and so on.
+So the mode parameter, `$m$', signifies the number of half-cycle variations of the electric field (or magnetic field) amplitude that occur in the direction transverse to the net wave propagation. For instance, when $m=0$, the electric field remains constant along the transverse direction. Consequently, to satisfy the boundary conditions at the conducting planes, the electric field must be zero everywhere. As a result, the $m=0$ mode is physically impossible inside the waveguide, and no wave can propagate in this mode. That is what the bold part of the expression, $\bar{E} = \jmath 2E_i\boldsymbol{\sin(\frac{m\pi x}{d})}e^{-\jmath 2\beta\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}$, signifies.
 
-On a given structure, we can have multiple modes propagating depending upon how the angles $cos\theta = \frac{m\lambda}{2d}$ can be satisfied. $m=1$ is the lowest mode, so the question is what wave can survive in mode 1? With $cos\theta = 1$, $\dfrac{m\lambda}{2d} = 1$, hence, $\lambda = 2d$ or $d = \dfrac{\lambda}{2}$. This implies that the separation between the planes is $\dfrac{\lambda}{2}$. Thus in $TE_1$ mode the smallest separation is $\dfrac{\lambda}{2}$, if it is less than $\dfrac{\lambda}{2}$, we cannot have an angle as $\dfrac{m\lambda}{2(0.4\lambda \text{ assume})}> 1$, so that $cos\theta > 1$. No physical angle has its cosine greater than 1. So the lowest mode for which the wave can propagate in the structure has $d \geq \dfrac{\lambda}{2}$\footnote{This makes $cos\theta \leq 1$}. So not only that the separation distance $d$ is given, but a wavelength is required for which $d\geq\dfrac{\lambda}{2}$ or inverted $\lambda \leq 2d$. This means the frequency has to be above certain values so that $\lambda \leq 2d$ is satisfied, only then will the wave propagation take place. If $\lambda > 2d$ or frequency is less than certain values, then wave propagation cannot take place inside the structure.
+However, the lowest value of $m$ that can propagate within the structure is $m=1$, also known as the `$TE_{1}$' mode. In this mode, there is one half-cycle variation of the electric field amplitude in the direction transverse to the propagation direction. This variation allows the electric field to be zero at both conducting boundaries, thereby fulfilling the boundary conditions and enabling sustained wave propagation along the waveguide.
+
+For higher values of $m$ (e.g., $m=2$, $3$, and so on), the mode exhibits multiple half-cycle variations in the transverse direction, leading to more complex field distribution patterns with multiple peaks and nulls.
+
+It is important to note that the value of $m$ depends on the spacing of the conducting planes and the specific mode of operation. Only certain discrete values of $m$ support sustained propagation within the waveguide, resulting in a quantized and discrete nature of modes. These distinct modes, such as `$TE_{1}$', `$TE_{2}$', `$TE_{3}$', etc., each possess unique field patterns and specific angles of incidence that facilitate their propagation within the waveguide. This discrete nature of modes is fundamental to waveguides' functioning and has significant implications for their performance and design considerations.
+
+On a given structure, we can have multiple modes propagating depending upon how the angles $\cos\theta = \frac{m\lambda}{2d}$ can be satisfied. $m=1$ is the lowest mode, so the question is \emph{what wave can survive in mode 1?} With $\cos\theta = 1$, $\dfrac{m\lambda}{2d} = 1$, hence, $\lambda = 2d$ or $d = \dfrac{\lambda}{2}$. This implies that the separation between the planes is $\dfrac{\lambda}{2}$. Thus in $TE_1$ mode the smallest separation is $\dfrac{\lambda}{2}$, if it is less than $\dfrac{\lambda}{2}$, we cannot have an angle as $\dfrac{m\lambda}{2(0.4\lambda \text{ assume})}> 1$, so that $cos\theta > 1$. No physical angle has its cosine greater than 1. So the lowest mode for which the wave can propagate in the structure has $d \geq \dfrac{\lambda}{2}$\footnote{
+This makes $cos\theta \leq 1$
+}. So not only that the separation distance $d$ is given, but a wavelength is required for which $d\geq\dfrac{\lambda}{2}$ or inverted $\lambda \leq 2d$. This means the frequency has to be above certain values so that $\lambda \leq 2d$ is satisfied, only then will the wave propagation take place. If $\lambda > 2d$ or frequency is less than certain values, then wave propagation cannot take place inside the structure.
+\begin{exmp}
+\subsubsection*{Electric and Magnetic fields in a Parallel Plate Waveguide}
+An air-filled parallel plane waveguide has a 10cm separation between the plates. The maximum peak electric field is 100V/m. If the frequency of operation is 10GHz, and if the waveguide is excited in `$TE_{1}$' mode, find the expressions of the electric and magnetic fields inside the waveguide.
+
+\subsubsection*{Solution}
+The separation between the plates is $d = 10cm = 0.1m$. The frequency of operation is $f = 10GHz = 10\times 10^9Hz$. The maximum peak electric field is $E_i = 100V/m$. The waveguide is excited in `$TE_{1}$' mode, so $m=1$.
+
+Assuming the wave propagates in the z-direction and the electric field points in the y-direction then from equation~\eqref{eqn:totalelectricfield3}, we have
+\begin{align*}
+\bar{E} = \jmath 2E_i\sin(\frac{m\pi x}{d})e^{-\jmath 2\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}\hat{y}
+\end{align*}
+Let us find the wavelength, $\lambda$ and the phase constant, $\beta$.
+\begin{align*}
+\lambda &= \frac{c}{f}\quad\text{where } c = 3\times 10^8m/s\\
+&= \frac{3\times 10^8}{10\times 10^9}\\
+&= 0.03m
+\end{align*}
+\begin{align*}
+\beta &= \frac{2\pi}{\lambda}\\
+&= \frac{2\pi}{0.03}\\
+&= 200\pi
+\end{align*}
+Thus,
+\begin{align*}
+\bar{E} &= \jmath 2\times100\sin(\frac{m\pi x}{d})e^{-\jmath 2\times200\pi z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}\hat{y}\\
+&= \jmath 200\sin(\frac{\pi x}{0.1})e^{-\jmath 400\pi z\sqrt{1 - \left(\frac{\lambda}{0.2}\right)^2}}\hat{y}\\
+&= \jmath 200\sin(10\pi x)e^{-\jmath 400\pi z\sqrt{1 - {(5\lambda)}^2}}\hat{y}\\
+&= \jmath 200\sin(10\pi x)e^{-\jmath 400\pi z\sqrt{1 - {(5\times0.03)}^2}}\hat{y}\\
+&= \jmath 200\sin(10\pi x)e^{-\jmath 400\pi z\sqrt{0.7975}}\hat{y}\\
+&= \jmath 200\sin(10\pi x)e^{-\jmath 356.8\pi z}\hat{y}\quad V/m
+\end{align*}
+
+For the magnetic field, we have two components, $H_x$ and $H_y$, so from equations~\eqref{eqn:totalmagfieldx4} and \eqref{eqn:totalmagfieldz3}, we have
+\begin{dmath*}
+\bar{H} = j2\frac{E_i}{\eta}\sin\theta\sin(\frac{m\pi x}{d})e^{-j2\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}\hat{x} - 2\frac{E_i}{\eta}\cos\theta\cos(\frac{m\pi x}{d})e^{-j2\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}\hat{z}
+= 2\frac{E_i}{\eta}\left\{j\sin\theta\sin(\frac{m\pi x}{d})\hat{x} - \cos\theta\cos(\frac{m\pi x}{d})\hat{z}\right\}e^{-j2\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}
+= 2\times\frac{100}{377}\left\{j\sin\theta\sin(\frac{\pi x}{0.1})\hat{x} - \cos\theta\cos(\frac{\pi x}{0.1})\hat{z}\right\}e^{-j2\beta z\sqrt{1 - \left(\frac{\lambda}{0.2}\right)^2}}
+= 0.5305\left\{j\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}\sin(10\pi x)\hat{x} - \frac{m\lambda}{2d}\cos(10\pi x)\hat{z}\right\}e^{-j2\times200\pi z\sqrt{1-\left(\frac{0.03}{0.2}\right)^2}}
+= 0.5305\left\{j\sqrt{1-\left(\frac{0.03}{0.2}\right)^2}\sin(10\pi x)\hat{x} - \frac{0.03}{0.2}\cos(10\pi x)\hat{z}\right\}e^{-j2\times200\pi\times 0.9887 z}
+= 0.5305(j0.9887\sin(10\pi x)\hat{x} - 0.15\sin(10\pi x)\hat{z})e^{-j356.8z} H/m
+\end{dmath*}
+The field components of the wave propagating at 10 GHz have been calculated.
+\end{exmp}
 
 \section{Trough of a mode}\index{Trough of a mode}
  So from here, we get an important concept of what is called the \textbf{Trough} of a mode, that is when $d = \dfrac{\lambda}{2}$ or $\lambda = 2d$ which is the lowest frequency that can propagate on a waveguide whose separation is $d$.
@@ -156,14 +214,31 @@ On a given structure, we can have multiple modes propagating depending upon how 
 f_{min} = \frac{c}{2d}
 \label{eqn:cut-offf}
 \end{dmath}
-Equations \ref{eqn:cut-offlambda} and \ref{eqn:cut-offf} are the maximum wavelength and minimum frequency respectively that defines wave propagation. Below $f_{min}$, the wave doesn't propagate and that is the minimum frequency for $m=1$ mode and it is called the cut-off frequency of that mode. So for a particular mode to propagate the frequency must be above that value and that is called the cut-off frequency for that mode.
+Equations \ref{eqn:cut-offlambda} and \ref{eqn:cut-offf} are the maximum wavelength and minimum frequency respectively that define wave propagation. Below $f_{min}$, the wave doesn't propagate and that is the minimum frequency for $m=1$ mode and it is called the cut-off frequency of that mode. So for a particular mode to propagate the frequency must be above that value and that is called the cut-off frequency for that mode.
 
-The cut-off frequency is the lowest frequency which would propagate inside the structure for a given mode number or given $m$. Either we see that or the mode increases to $TE_2$, the frequency will be doubled and so on. Hence the reason we say the lowest mode is because that is the lowest frequency in the structure which can propagate.
+The cut-off frequency is the lowest frequency that would propagate inside the structure for a given mode number or given $m$. Either we see that or the mode increases to $TE_2$, the frequency will be doubled and so on. Hence the reason we say the lowest mode is because that is the lowest frequency in the structure which can propagate.
 
 Substituting $d=\dfrac{\lambda}{2}$ and $m=1$ in equation ~\ref{eqn:phaseconst} gives:
 \begin{dmath*}
 \bar{\beta} = \beta\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2} =  \beta\sqrt{1 - \left(\frac{\lambda}{2\left(\frac{\lambda}{2}\right)}\right)^2} = 0
 \end{dmath*}
-This shows that the frequency at $d=\dfrac{\lambda}{2}$ which is the cut-off frequency, the phase constant of the wave goes to zero. Below this frequency $\left(\dfrac{m\lambda}{2d}\right)^2 > 1$, the expression $\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}$ in the phase constant is imaginary, so $\bar{\beta}$ becomes imaginary. It is no more a phase constant but becomes an attenuation constant i.e. the wave losses its wave nature in the presence of a field which is dying down exponentially. So below the cut-off frequency, it represents a field which is exponentially decaying and hence no propagation of electromagnetic waves.
+This shows that the frequency at $d=\dfrac{\lambda}{2}$ which is the cut-off frequency, the phase constant of the wave goes to zero. Below this frequency $\left(\dfrac{m\lambda}{2d}\right)^2 > 1$, the expression $\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}$ in the phase constant is imaginary, so $\bar{\beta}$ becomes imaginary. It is no more a phase constant but becomes an attenuation constant i.e. the wave losses its wave nature in the presence of a field that is dying down exponentially. So below the cut-off frequency, it represents a field that is exponentially decaying and hence no propagation of electromagnetic waves.
 
 What we see from this analysis is that when we have a band structure like a parallel plane waveguide, first there are the discrete angles at which uniform plane waves are bouncing back and forth between two parallel planes giving the field distribution and those field patterns we call modal patterns. We also see that for a given mode number, the frequency has to be above certain values called cut-off frequency for that mode. So depending on the mode you want to excite, you require a certain frequency. So even if the waveguide is capable of supporting the different values of $m$, it would depend on the frequency whether the wave will be accepted or not i.e. if the frequency is greater than the cut-off frequency or not. This is the basic picture of modal propagation within a bounded structure like a waveguide. We will elaborate on this and then following this, we will try to see other modes and then move on to complex structures like the rectangular waveguides.
+
+% \section*{Exercises}
+% \begin{ExerciseList}
+% \Exercise[label={ex351}]
+% Starting with a diagram and basic field expressions, show that the distance between conducting boundaries in a parallel plane waveguide is given by $d = \frac{m\pi}{\beta\cos\theta}$ when m is an integer and $\theta$ is the angle of incidence.
+% \Exercise[label={ex352}]
+% From the developed expressions in Ex.~\ref{ex352}, derive a formular that shows with the aid of a graph that the parameter m indicate the number of half-cycles amplitude variation across the distance between the conducting planes.
+% \Exercise[label={ex353}]
+% Given that a  5 GHz wave is launched at an angle of 60\textdegree into an air-filled parallel-plae waveguide operating in TE mode calculate the phase constant.
+% \Answer[ref={ex353}]
+% 90.69rad/m
+% \Exercise[label={ex354}]
+% If a 50 GHz wave is launched into a parallel plane waveguide tha thas a separation of 1cm between the planes, calculate the larget possible launch angle (but less than 90\textdegree) required for the wave to propagate.
+% \Answer[ref={ex354}]
+% 72.51\textdegree
+
+% \end{ExerciseList}
