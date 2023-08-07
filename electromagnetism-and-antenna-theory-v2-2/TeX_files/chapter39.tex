@@ -35,9 +35,14 @@ That means $TE_{0n}$ or $TE_{m0}$ does not exist. The $TE_{0n}$ meant that the f
 
 \section{Phase Constant}\index{phase constant}
 Using a similar analysis to the TM mode, it can be shown that 
-$$h^2 =\left(\dfrac{m\pi}{a}\right)^2 + \left(\dfrac{n\pi}{b}\right)^2$$ 
+$$
+\text{The wave number, }h^2 =\left(\dfrac{m\pi}{a}\right)^2 + \left(\dfrac{n\pi}{b}\right)^2
+$$
 and then we get phase constant in the z-direction as 
-$$\beta = \sqrt{\omega^2\mu\epsilon-\left(\dfrac{m\pi}{a}\right)^2- \left(\dfrac{n\pi}{b}\right)^2}$$
+\begin{dmath*}
+\bar{\beta} = \sqrt{\omega^2\mu\epsilon - h^2}
+= \sqrt{\omega^2\mu\epsilon-\left(\dfrac{m\pi}{a}\right)^2- \left(\dfrac{n\pi}{b}\right)^2}
+\end{dmath*}
 $\bar{E},\bar{H}\sim e^{-j\beta z}$ i.e $\bar{E}\ and\ \bar{H}$ has a variation with $e^{-j\beta z}$. To show the travelling $\omega^2\mu\epsilon < \left[\left(\dfrac{m\pi}{a}\right)^2 + \left(\dfrac{n\pi}{b}\right)^2\right]$, then the phase constant becomes imaginary. At this point $e^{-j\beta z}$ does not represent a travelling wave, but exponentially decaying fields in the z-direction and the wave propagation cases.
 
 Hence we see that the frequency must have certain values so that $\beta$ is a real quantity. That frequency as we saw in a parallel plane waveguide where the transition takes place from wave to decaying field is the cut-off frequency of the mode. So far different values of $m$ and $n$ will have different cut-off frequencies. 
@@ -50,31 +55,30 @@ f_c = \frac{1}{2\pi \sqrt{\mu\epsilon}}\left[\left(\frac{m\pi}{a}\right)^2 + \le
 \end{dmath}
 Now knowing the order $m$ and $n$, and the dimension of the waveguide, we can determine the cut-off frequency for a particular mode.
 \begin{dmath*}
-\beta = \sqrt{{\omega}^2\mu\epsilon-{\omega_c}^2\mu\epsilon}
+\bar{\beta} = \sqrt{{\omega}^2\mu\epsilon-{\omega_c}^2\mu\epsilon}
 \end{dmath*}
 since ${\omega_c}^2\mu\epsilon = \left(\dfrac{m\pi}{a}\right)^2 + \left(\dfrac{n\pi}{b}\right)^2$
 \begin{dmath*}
-\beta =\omega\sqrt{\mu\epsilon}\left[1-{\frac{\omega c}{\omega}}\right]^{\frac{1}{2}} = \frac{\omega}{c}\left [1-{\frac{fc}{f}}\right]^{\frac{1}{2}} \frac{1}{\sqrt{\mu\epsilon}}= c
+\bar{\beta} = \sqrt{\omega^2\mu\epsilon\left(1 - \frac{\omega_c^2}{\omega^2}\right)}
+= \omega\sqrt{\mu\epsilon}\sqrt{1 - \frac{\omega_c^2}{\omega^2}}
 \end{dmath*}
-so $\omega{\sqrt{\mu\epsilon}}= \dfrac{\omega}{c}$
-\begin{dmath}
-\beta = \frac{2\pi f}{c}\left[1-\left(\frac{f_c}{f}\right)^2\right]
-= \frac{2\pi}{\lambda}\left[1-\left(\frac{f_c}{f}\right)^{\frac{1}{2}}\right]
+\begin{dmath*}
+\bar{\beta} = \omega\sqrt{\mu\epsilon}\sqrt{1 - \left(\frac{f_c}{f}\right)^2}
 \label{eqn:phaseconstrec}
 \end{dmath}
 Now, this is the phase constant for the waveguide in the z-direction. Now we imagine we have this structure for which the quantity we had to measure was the variation of the electric field along the length, say we take a probe to measure the field along the length, you will observe a separation distance between two consecutive maxima that is related to the phase constant of the wave along the direction of the waveguide $\dfrac{2\pi}{\lambda}$ is what we will measure in this waveguide. This $\lambda$ is what the wave has intrinsically in an unbound medium.
 
-For our case, let's say $\beta = \dfrac{2\pi}{\lambda}$, $\lambda$ is not the wavelength in unbound medium $\frac{c}{f}$, so we are better off saying  $\beta = \dfrac{2\pi}{\lambda_g}$. ${\lambda_g}$ best describes the distance between two maxima of the electric field that we would measure inside the rectangular waveguide. So $\lambda$ is the intrinsic wavelength\index{intrinsic wavelength} of the wave in an unbound medium $\dfrac{c}{f}$, inside the wavelength we have a modified wavelength to $\lambda_g$ which is related to $\lambda$. So $\lambda g$ is the wavelength for the guided electric and magnetic field distribution inside the rectangular waveguide and it is called the \textbf{Guided Wavelength}\index{guided wavelength}. 
+For our case, let's say $\beta = \dfrac{2\pi}{\lambda}$, $\lambda$ is not the wavelength in unbound medium $\frac{c}{f}$, so we are better off saying  $\beta = \dfrac{2\pi}{\lambda_g}$. ${\lambda_g}$ best describes the distance between two maxima of the electric field that we would measure inside the rectangular waveguide. So $\lambda$ is the intrinsic wavelength\index{intrinsic wavelength} of the wave in an unbound medium $\dfrac{c}{f}$, inside the wavelength we have a modified wavelength to $\lambda_g$ which is related to $\lambda$. So $\lambda g$ is the wavelength for the guided electric and magnetic field distribution inside the rectangular waveguide and it is called the \textbf{Guide Wavelength}\index{guide wavelength}. 
 
-\section{Guided Wavelength}
+\section{Guide Wavelength}
 $\beta$ is the phase constant we measured as we move the probe along to get successive maxima inside the waveguide.$\lambda$ is not what we measure along the waveguide but $\lambda_g$
 
 From equation~\ref{eqn:phaseconstrec}, $\beta$ is related to  $\beta = \dfrac{2\pi}{\lambda_g}$, then 
 \begin{dmath}
-\lambda_g = \frac{\lambda}{\left[1-{\frac{fc}{f}}\right]^{\frac{1}{2}}}
+\lambda_g = \frac{\lambda}{\left[1-{\left(\frac{fc}{f}\right)}^2\right]^{\frac{1}{2}}}
 \label{eqn:lambdag}
 \end{dmath}
-where $\lambda$ is the wavelength of the wave in unbound medium $\lambda_g$ is the wavelength which we will measure inside the bound structure along the waveguide. For travelling wave $f>f_c$ otherwise $\lambda$ is a complex number that results in exponentially decaying fields. So $\left[1-{\dfrac{fc}{f}}\right]^{\frac{1}{2}}$ is always going to be less than 1. This means $\lambda_g>\lambda$. Hence guided wavelength is always greater than the intrinsic wavelength of the medium. As $f\longrightarrow0$, $\dfrac{f_c}{f}\longrightarrow0$ at that time, $\lambda_g\longrightarrow\lambda$ but never become $\lambda$ because we would always have a finite frequency. So for a guided structure, no matter what frequency we operate at $\lambda_g>\lambda$.
+where $\lambda$ is the wavelength of the wave in unbound medium $\lambda_g$ is the wavelength that we will measure inside the bound structure along the waveguide. For travelling wave $f>f_c$ otherwise $\lambda$ is a complex number that results in exponentially decaying fields. So $\left[1-{\dfrac{fc}{f}}\right]^{\frac{1}{2}}$ is always going to be less than 1. This means $\lambda_g>\lambda$. Hence guided wavelength is always greater than the intrinsic wavelength of the medium. As $f\longrightarrow0$, $\dfrac{f_c}{f}\longrightarrow0$ at that time, $\lambda_g\longrightarrow\lambda$ but never become $\lambda$ because we would always have a finite frequency. So for a guided structure, no matter what frequency we operate at $\lambda_g>\lambda$.
 
 Secondly, as $f\longrightarrow f_c$, when $f=f_c$, $\lambda_g = \dfrac{\lambda}{0} = \infty$ so $\lambda_g\longrightarrow\infty$ when $f\longrightarrow f_c$. We know that phase velocity $V_\rho = \dfrac{\omega}{\beta}$. When $f\gg f_c$, $V_\rho\approx c$ (intrinsic velocity) and when $f\longrightarrow f_c$, $V_\rho\longrightarrow\infty$ or if $\lambda_g\longrightarrow\infty$ because $f\longrightarrow f_c$, velocity = $\lambda_gf\longrightarrow\infty$.
 
