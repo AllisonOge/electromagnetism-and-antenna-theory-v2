@@ -22,10 +22,11 @@
 \usepackage{sectsty}
 \usepackage{breqn}
 \usepackage{pgfplots}
-\usepackage[abspath, parent]{currfile}
+\usepackage{currfile-abspath}
+\getpwd
 % get the absolute path of the directory containing this file
 \makeatletter
-\edef\pathtoparttwo{\currfileabsdir/}% Store it in \pathtoparttwo
+\edef\pathtoparttwo{\thepwd}% Store it in \pathtoparttwo
 \makeatother
 % custom set exercises and example packages. add dependencies
 \usepackage[lastexercise, answerdelayed]{exercise}
