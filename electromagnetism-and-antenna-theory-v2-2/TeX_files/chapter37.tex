@@ -1,42 +1,36 @@
 \chapter{Analysis of waveguide general approach}
-In previous chapters, we investigated a structure called a parallel plane waveguide. If we are having two conducting boundaries, we saw that the electromagnetic energy can propagate between these two boundaries in the form of some definite electric and magnetic field patterns which are called modes. We also try to visualize the propagation of electromagnetic waves between these two boundaries as a superposition of uniform plane waves.
+In the preceding chapters, we conducted an investigation into a structural entity known as a parallel plane waveguide. This configuration encompasses two conducting boundaries, facilitating the propagation of electromagnetic energy between them in the form of distinct electric and magnetic field patterns, commonly referred to as modes. Our exploration also involved the conceptualization of electromagnetic wave propagation between these boundaries as an amalgamation of uniform plane waves.
 
-This understanding of modal propagation in terms of the uniform plane wave gives you a correct picture of how the modes are established inside a waveguide. However, this approach that visualises a modal pattern in terms of the fields of a uniform plane wave is always not as easy as we saw in terms of the parallel plane waveguide. In a parallel plane waveguide, since the medium still was infinite at least parallel to the conducting boundaries, we still could use or visualize the uniform plane wave propagating between the boundaries.
+This comprehension of modal propagation through the lens of uniform plane waves affords a comprehensive overview of how modes are established within a waveguide. Nevertheless, it is imperative to acknowledge that employing this visualization technique, which characterizes a modal pattern in terms of uniform plane wave fields, does not consistently yield the same level of simplicity that was evident in the context of the parallel plane waveguide. When dealing with structures akin to a pipe, whether they take the form of rectangular, circular, or arbitrary shapes, and the objective is to ascertain the propagation of electromagnetic energy within these structures, the process of visualizing this propagation as a superposition of uniform plane waves becomes exceedingly challenging.
 
-However, if we have a structure, like a pipe kind of structure; whether a rectangular pipe or circular pipe or a pipe of arbitrary shape and if I want to find out how the electromagnetic energy is going to propagate inside this structure, it will be extremely difficult to visualize the propagation in terms of a superposition of uniform plane wave and those situations. We develop a mathematical framework and try to solve the problem of electromagnetic wave propagation in structure using that general mathematical formulation.
+As a result, we have developed a mathematical framework to address the intricacies of electromagnetic wave propagation within such structures. In this chapter, we introduce a generalized framework for the analysis of wave propagation within arbitrary waveguides. Subsequently, we endeavor to establish correlations between the mathematical outcomes derived from this framework and those obtained for the parallel plane waveguide, which we perceive as a composition of uniform plane waves. This endeavor not only enhances our confidence in the conceptualization of input currents in terms of uniform plane waves but also underscores the necessity of employing a comprehensive mathematical formulation when visualizing propagation in the absence of uniform plane waves.
 
-In this chapter, we develop a general framework for analyzing wave propagation inside an arbitrary waveguide. And then, whatever result we get mathematically, we will try to correlate these results with what we have got for parallel plane waveguide which we visualize as a superposition of uniform plane waves. This will give us confidence that the visualization we had in terms of uniform plane waves for the input current gives us much better physical insight into the problem. However, since resolving in the uniform plane wave will not be possible, We develop a general mathematical framework and solve the problems in the following by using an exit general mathematical approach. we analyze a waveguide with the general approach. 
-
-let us say we have an arbitrarily shaped waveguide as shown in figure~\ref{fig:lect37}.
+Let us consider the presence of an arbitrarily configured waveguide, as depicted in Figure~\ref{fig:lect37}. In this context, we conceptualize this structure as a conducting conduit through which electromagnetic energy can traverse along the axial direction of the pipe, as exemplified by the wave propagation illustrated in the z-direction. At this juncture, we refrain from prescribing any particular shape for the cross-sectional profile; it may adopt various forms, including rectangular, circular, or any arbitrary configuration. The crucial parameter to define is the orientation of the wave, specifically in the z-direction.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\linewidth]{\pathtoparttwo/graphics/lect37}
 \caption{An Arbitrarily Shaped Waveguide}
 \label{fig:lect37}
 \end{figure}
-We can say this is a conducting pipe where the electromagnetic energy can flow along the axis of this pipe, there is wave propagation in the z-direction as shown. At the moment we are not even defining any shape for the cross-section, it could be rectangular, it could be circular or in general, it could be as arbitrarily shaped. The only information needed here is the direction of the wave, which is the z-direction. We develop a general framework starting from the Maxwell equations to show the kind of fields that exists inside the shape and then we will go on to deal with very specific cases of rectangular waveguides and propagation of modal propagation inside the rectangular waveguide. Any electric or magnetic field will be resolved into two components; one is along the wave propagation, called the longitudinal component and the other will be perpendicular to the direction of wave propagation called transverse.
-\begin{equation*}
-\bar{E} = \bar{E}_\bot + E_z\hat{z}
-\end{equation*}
-\begin{equation*}
-\bar{H} = \bar{H}_\bot + H_z\hat{z}
-\end{equation*}
-\begin{equation*}
-\bar{E}_\bot = E_x\hat{x} + E_y\hat{y}
-\end{equation*}
-\begin{equation*}
+    
+Our approach commences by establishing a comprehensive framework, originating from the Maxwell equations, to delineate the nature of the electromagnetic fields existing within this shape. Subsequently, we delve into the intricate domain of particular scenarios, specifically addressing rectangular waveguides and the propagation of modal phenomena within such waveguides. It is worth noting that any electric or magnetic field within this context can be deconstructed into two fundamental components: one aligned with the direction of wave propagation, termed the longitudinal component, and the other orthogonal to the wave propagation direction, designated as the transverse component.
+\begin{align}
+&\text{Electric field, }\bar{E} = \bar{E}_\bot + E_z\hat{z}\quad\text{and}\label{eqn:efieldlec37}\\
+&\text{Magnetic field, }\bar{H} = \bar{H}_\bot + H_z\hat{z}\label{eqn:hfieldlec37}
+\end{align}
+\begin{align*}
+\text{Where, }\bar{E}_\bot = E_x\hat{x} + E_y\hat{y}\text{ and }
 \bar{H}_\bot = H_x\hat{x} + + H_y\hat{y}
-\end{equation*}
-we define
+\end{align*}
+For the divergent operator, we define
 \begin{equation}
 \nabla = \nabla_\bot + \frac{\partial}{\partial z}\hat{z}
 \label{eqn:transversegrad}
 \end{equation}
-where
-\begin{equation*}
-\nabla_\bot = \frac{\partial}{\partial x}\hat{x} + \frac{\partial}{\partial y}\hat{y}
-\end{equation*}
-Substituting equation~\ref{eqn:transversegrad} into Maxwell's equations\index{maxwell's equations} for the electric field;
+\begin{align*}
+\text{Where, }\nabla_\bot = \frac{\partial}{\partial x}\hat{x} + \frac{\partial}{\partial y}\hat{y}
+\end{align*}
+We start with Maxwell's equations\index{maxwell's equations} and substitute Equations~\ref{eqn:transversegrad},~\ref{eqn:efieldlec37} and~\ref{eqn:hfieldlec37}. Considering the Faraday's law in differential form, we have
 \begin{align*}
 \nabla\times\bar{E} = j\omega\mu\bar{H}
 \end{align*}
@@ -46,7 +40,7 @@ Substituting equation~\ref{eqn:transversegrad} into Maxwell's equations\index{ma
 \begin{dmath*}
 \nabla_\bot\times\bar{E}_\bot + \nabla_\bot\times(E_z\hat{z}) + \frac{\partial}{\partial z}\hat{z}\times\bar{E}_\bot + \frac{\partial}{\partial z}\hat{z}\times(E_z\hat{z}) = -j\omega\mu(\bar{H}_\bot + H_z\hat{z})
 \end{dmath*}
-Taking the transverse and longitudinal components and equating them on two sides
+Equating the transverse and longitudinal components of the equation, we have
 \begin{dmath*}
 -j\omega\mu\bar{H}_\bot = \nabla_\bot\times(E_z\hat{z}) + \frac{\partial}{\partial z}\hat{z}\times\bar{E}_\bot
 \end{dmath*}
@@ -54,7 +48,7 @@ Taking the transverse and longitudinal components and equating them on two sides
 \bar{H}_\bot = -\frac{1}{j\omega\mu} \left[\nabla_\bot\times(E_z\hat{z}) + \frac{\partial}{\partial z}\hat{z}\times\bar{E}_\bot\right]
 \label{eqn:transversemag}
 \end{dmath}
-Similarly, substituting equation~\ref{eqn:transversegrad}  into Maxwell's equation for the magnetic field;
+Similarly, considering Maxwell's modified Ampere's law equation, we substitute Equations~\ref{eqn:transversegrad},~\ref{eqn:efieldlec37} and~\ref{eqn:hfieldlec37} to get the general formulation for the magnetic field inside an arbitrarily shaped waveguide.
 \begin{align*}
 \nabla\times\bar{H} = j\omega\epsilon\bar{E}
 \end{align*}
@@ -64,7 +58,7 @@ Similarly, substituting equation~\ref{eqn:transversegrad}  into Maxwell's equati
 \begin{dmath*}
 \nabla_\bot\times H_\bot + \nabla_\bot\times H_z \hat{z} +  \frac{\partial}{\partial z}\hat{z}\times H_\bot + \frac{\partial}{\partial z}\hat{z}\times H_z \hat{z} = \jmath \omega\epsilon (E_\bot + E_z \hat{z})
 \end{dmath*}
-Taking the transverse and longitudinal components and equating them on two sides
+Equating the transverse and longitudinal components of the equation.
 \begin{dmath}
 \bar{E}_\bot = \frac{1}{j\omega\epsilon} \left[\nabla_\bot\times H_z\hat{z} + \frac{\partial}{\partial z}\hat{z}\times\bar{H}_\bot\right]
 \label{eqn:transverseele}
@@ -78,33 +72,33 @@ Collecting like terms
 \omega^2\mu\epsilon\bar{E}_\bot-\frac{\partial}{\partial z}\hat{z}\times\frac{\partial}{\partial z}\hat{z}\times\bar{E}_\bot = \frac{1}{j\omega\epsilon} \left[\nabla_\bot\times H_z\hat{z} - \frac{1}{j\omega\mu}\frac{\partial}{\partial z}\hat{z}\times\nabla_\bot\times E_z \hat{z} \right]
 \label{eqn:electricfieldinwg}
 \end{dmath}
-Identity for vector triple product\index{vector triple product}
+Recall, the identity for vector triple product\index{vector triple product} is
 \begin{align*}
 A\times B\times C = (\bar{A}\cdot\bar{C})\bar{B} - (\bar{A}\cdot\bar{B})\bar{C}
 \end{align*}
 \begin{dmath*}
-\frac{\partial}{\partial z}\hat{z}\times\frac{\partial}{\partial z}\hat{z}\times\bar{E}_\bot = \frac{\partial}{\partial z}\hat{z}\left(\frac{\partial}{\partial z}\hat{z}\cdot\bar{E}_\bot\right)\hat{z} - \left(\frac{\partial}{\partial z}\hat{z}\cdot\frac{\partial}{\partial z}\hat{z}\right)\bar{E}_\bot = -\frac{\partial^2}{\partial z^2}\bar{E}_\bot
+\text{So, }\frac{\partial}{\partial z}\hat{z}\times\frac{\partial}{\partial z}\hat{z}\times\bar{E}_\bot = \frac{\partial}{\partial z}\hat{z}\left(\frac{\partial}{\partial z}\hat{z}\cdot\bar{E}_\bot\right)\hat{z} - \left(\frac{\partial}{\partial z}\hat{z}\cdot\frac{\partial}{\partial z}\hat{z}\right)\bar{E}_\bot = -\frac{\partial^2}{\partial z^2}\bar{E}_\bot\quad\text{where $\dfrac{\partial}{\partial z}\hat{z}\left(\dfrac{\partial}{\partial z}\hat{z}\cdot\bar{E}_\bot\right)\hat{z} = 0$}
 \end{dmath*}
-where $\dfrac{\partial}{\partial z}\hat{z}\left(\dfrac{\partial}{\partial z}\hat{z}\cdot\bar{E}_\bot\right)\hat{z} = 0$
 \begin{dmath*}
-\frac{\partial}{\partial z}\hat{z}\times\nabla_\bot\times E_z\hat{z} = \nabla_\bot\left(\frac{\partial}{\partial z}\hat{z}.E_z\hat{z}\right) - \left(\frac{\partial}{\partial z}\hat{z}\cdot\nabla_\bot\right)E_z\hat{z} = \nabla_\bot\left(\frac{\partial E_z}{\partial z}\right)
+\text{And, }\frac{\partial}{\partial z}\hat{z}\times\nabla_\bot\times E_z\hat{z} = \nabla_\bot\left(\frac{\partial}{\partial z}\hat{z}.E_z\hat{z}\right) - \left(\frac{\partial}{\partial z}\hat{z}\cdot\nabla_\bot\right)E_z\hat{z} = \nabla_\bot\left(\frac{\partial E_z}{\partial z}\right)\quad\text{where $\dfrac{\partial}{\partial z}\hat{z}\cdot\nabla_\bot E_z\hat{z} = 0$}
 \end{dmath*}
-where $\dfrac{\partial}{\partial z}\hat{z}\cdot\nabla_\bot E_z\hat{z} = 0$. Substituting in equation~\ref{eqn:electricfieldinwg};
+Substituting the above solutions in Equation~\ref{eqn:electricfieldinwg};
 \begin{dmath}
-\left[\omega^2\mu\epsilon\bar{E}_\bot+\frac{\partial^2}{\partial z^2}\bar{E}_\bot\right] = -j\omega\mu\nabla_\bot\times H_z\hat{z} + \nabla_\bot\left(\frac{\partial E_z}{\partial z}\right)
+\left[\omega^2\mu\epsilon\bar{E}_\bot+\frac{\partial^2}{\partial z^2}\bar{E}_\bot\right] = -j\omega\mu\nabla_\bot\times H_z\hat{z} + \nabla_\bot\left(\frac{\partial E_z}{\partial z}\right)\label{eqn:generalformulation}
 \end{dmath}
-We have just taken two Maxwell equations, applied some vector identities, and derived the expressions for the transverse component of the electric field in terms of the longitudinal components. We did that because the waveguide is a structure in which the wave is going to propagate in the z-direction, this is the special direction in which ultimately the energy is going to flow.
+In our current discourse, we have undertaken an examination of two Maxwell's equations. Employing various vector identities, we have embarked on the derivation of expressions characterizing the transverse component of the electric field in relation to the longitudinal components. This analytical endeavor stems from the fact that the waveguide under consideration serves as a conduit for wave propagation specifically along the z-direction, which represents the pivotal axis through which energy ultimately propagates.
 
-Since this direction is the special direction in which the wave is propagating, generally we take the electric and magnetic field components which are in the z-direction that is the longitudinal component as independent components and try to express the transverse fields in terms of the longitudinal components and precisely that is what we did. We now got the expression for the transverse field in terms of the longitudinal component which is $E_z$ and z.
+Due to the prominence of the z-direction as the primary avenue for wave propagation, it is customary to treat the electric and magnetic field components aligned with this direction, denoted as the longitudinal components, as independent entities. Our objective is to articulate the transverse fields in terms of these longitudinal counterparts, which is precisely the accomplishment achieved thus far. Consequently, we have successfully ascertained the expression for the transverse field, denoted as $E_z$ and $H_z$, in relation to the longitudinal component.
 
-Since our problem again is the wave of propagation in the z-direction, we are assuming the wave is travelling in the z-direction. That means the travelling wave behaviour as we have seen earlier can be given as $e^{-\gamma z}$, where $\gamma$ is the propagation constant in the z-direction. So, the wave travels in the z-direction with a propagation constant $\gamma$. So, since we are now interested in the travelling wave inside the structure, we assume that the functional form of any field electric or magnetic in the z direction will be given $e^{-\gamma z}$
+Our focus remains steadfast on the wave propagation along the z-direction. In light of this, we assume the wave's directional behaviour conforms to the exponential expression $e^{-\gamma z}$, where $\gamma$ represents the propagation constant governing the wave's advancement in the z-direction. Essentially, this signifies that any electric or magnetic field within the structure, oriented along the z-axis, can be delineated by the functional form $e^{-\gamma z}$—a reflection of the travelling wave phenomena within the structure.
 
-For a travelling wave in the z-direction;
+Mathematically, for a travelling wave in the z-direction,
 \begin{align*}
 \bar{E}, \bar{H} \sim e^{-\gamma z}\\
-\frac{\partial}{\partial z} \equiv -\gamma\\
+\text{and }\frac{\partial}{\partial z} \equiv -\gamma\\
 \frac{\partial^2}{\partial z^2} \equiv \gamma^2
 \end{align*}
+So Equation~\ref{eqn:generalformulation} becomes;
 \begin{align*}
 (\omega^2\mu\epsilon + \gamma^2)\bar{E}_\bot = -j\omega\mu\nabla_\bot\times(H_z\hat{z})-\gamma\nabla_\bot E_z
 \end{align*}
@@ -113,7 +107,7 @@ Let's define
 \omega^2\mu\epsilon + \gamma^2 \equiv h^2
 \label{eqn:h}
 \end{align}
-we will assign some physical meaning to h later. Therefore, the transverse components of electric and magnetic fields become
+we will assign some physical meaning to $h$ later. Therefore, the transverse components of electric and magnetic fields become
 \begin{align}
 \bar{E}_\bot = \frac{-j\omega\mu}{h^2}\nabla_\bot\times(H_z\hat{z}) - \frac{\gamma}{h^2}\nabla_\bot E_z
 \label{eqn:transverseele2}
@@ -122,58 +116,76 @@ we will assign some physical meaning to h later. Therefore, the transverse compo
 \bar{H}_\bot = \frac{j\omega\epsilon}{h^2}\nabla_\bot\times(E_z\hat{z}) - \frac{\gamma}{h^2}\nabla_\bot H_z
 \label{eqn:transversemag2}
 \end{align}
-$\nabla_\bot\times(H_z\hat{z})$ is representing a curl in the transverse plane, whereas $\nabla_\bot E_z$ is representing the gradient of this quantity $E_z$ which is the scalar quantity in the transverse plane. If we can solve the problem of wave propagation in terms of $E_z$ and $H_z$, then we can find out the corresponding fields in the transverse plane which are $\bar{E}_\bot$ and $\bar{H}_\bot$.
+The expression $\nabla_\bot\times(H_z\hat{z})$ encapsulates a curl operation within the transverse plane, while $\nabla_\bot E_z$ represents the gradient of the scalar quantity $E_z$ in the same transverse plane. Upon successfully resolving the wave propagation problem in terms of $E_z$ and $H_z$, we can subsequently deduce the corresponding fields situated within the transverse plane, denoted as $\bar{E}_\bot$ and $\bar{H}_\bot$.
 
-The approach for solving the problem, in general, will be as follows; We take a geometry in which we want to study the wave of propagation, find the solution for $E_z$ and $H_z$ for that geometry, then substitute into $\bar{E}_\bot$ and $\bar{H}_\bot$ expressions and then you get the component of transverse fields that is $E_x\ E_y\ H_x\ and\ H_y$.\\looking at $\bar{E}_\bot$ and $\bar{H}_\bot$ expressions, we can make certain conclusions. Firstly, if you assume that this medium is completely lossless, then this quantity $\gamma$ which is the propagation constant is purely imaginary because the wave is travelling and its amplitude is not going to change. For a lossless medium, we know that $\gamma$ should be $j\bar{\beta}$.
-\section{Loss-less waveguide}
-\begin{equation*}
-\gamma = j\bar{\beta}
-\end{equation*}
-\begin{equation*}
-\omega^2\mu\epsilon - \bar{\beta}^2 = h^2
-\end{equation*}
-If you recall $\omega^2\mu\epsilon$ or the phase constant of the wave in that unbound medium you find this quantity $h$ is nothing but the propagation constant of this wave in the transverse plane. $h$ represents the propagation constant of a wave in the transverse plane means in the XY-plane. From this expression now, few conclusions can be drawn. Firstly, if the transverse fields have to exist, then both $E_z$ and $H_z$ need not be zero but non-zero. Even if any one of them is non-zero, we can still get the transverse fields. That means we can have the field distribution inside this waveguide with either $E_z$ equal to 0 or $H_z$ equal to 0 or both of them non-zero.
+The overarching methodology for addressing this problem can be outlined as follows: Initially, we select a specific geometry wherein we intend to investigate the wave propagation. Subsequently, we ascertain the solutions for $E_z$ and $H_z$ tailored to the geometry in question. Once these solutions are determined, we proceed to substitute them into the expressions for $\bar{E}_\bot$ and $\bar{H}_\bot$. This step culminates in the derivation of the individual components of the transverse fields, encompassing $E_x, E_y, H_x,$ and $H_y$.
 
-However, if both of them are 0, then the transverse fields do not exist in general except when $h$ is equal to 0. So, now we have some interesting conclusions that can be drawn from this result that is for fields to survive inside the structure, both $E_z$ and $H_z$ cannot be 0 except in the case when x is equal to 0.
+\section{Loss-less Waveguide}
+Upon examining the expressions for $\bar{E}_\bot$ and $\bar{H}_\bot$, several noteworthy observations can be made. Firstly, in the scenario where we presume that the medium under consideration is entirely devoid of losses, it follows that the quantity $\gamma$, representing the propagation constant, assumes a purely imaginary character. This arises from the fact that in a lossless medium, the wave propagates without any diminishment in its amplitude. Thus, in such cases, we establish the relationship that $\gamma$ is equivalent to $j\bar{\beta}$, with $j$ symbolizing the imaginary unit and $\bar{\beta}$ signifying the phase constant in the z-direction.
+\begin{align*}
+&\gamma = j\bar{\beta}\quad\text{and substituting in Equation~\ref{eqn:h}, we have}\\
+&\omega^2\mu\epsilon - \bar{\beta}^2 = h^2
+\end{align*}
+In retrospect, if we consider the expression $\omega^2\mu\epsilon$ as the phase constant of a wave propagating through an unbounded medium, \emph{it becomes evident that the symbol $h$ in this context serves as a representation of the propagation constant specific to the transverse plane.} In essence, \emph{$h$ embodies the characteristic that quantifies how this wave propagates within the XY-plane, which is orthogonal to its primary direction of motion, thereby elucidating the wave's behavior and properties across different spatial dimensions}.
+
+From the equations presented in equations~\eqref{eqn:transverseele2} and~\eqref{eqn:transversemag2}, several significant insights can be gleaned. To begin with, in order for transverse fields to manifest, both $E_z$ and $H_z$ must possess non-zero values. Furthermore, even if either one of these components remains non-zero while the other is zero, transverse fields can still be established within the waveguide. This implies that the field distribution inside the waveguide can take on various configurations, including scenarios where either $E_z$ equals zero, $H_z$ equals zero, or both are non-zero.
+
+However, it is noteworthy that when both $E_z$ and $H_z$ are set to zero, transverse fields generally cease to exist, with the exception being when the parameter $h$ equals zero. Consequently, we can derive some intriguing conclusions from this result. Specifically, for fields to sustain their presence within the structure, it is imperative that both $E_z$ and $H_z$ are non-zero, except in cases where $h$ equals zero.
+
+The third configuration of interest arises when $E_z$ equals zero and $H_z$ equals zero. In this scenario, transverse fields can be established, provided that the propagation constant $h$ equals zero. It is worth delving deeper into the implications of the case where all three variables, namely, $E_z$, $H_z$, and $h$, are set to zero. When both $E_z$ and $H_z$ assume zero values, this signifies that the field distributions under consideration correspond to the transverse electric and transverse magnetic fields. Consequently, these field distributions must align with the characteristics of the transverse electromagnetic (TEM) field.
+
+In summary, the key conclusions drawn from this analysis as well as the possible configurations of the field distributions are as follows:
 \begin{enumerate}[(i)]
-\item Both $E_z$ and $H_z$ can not be 0 except when $h=0$.
-\item When $h=0$, $E_z$ and $H_z$ MUST be zero.
+\item Both $E_z$ and $H_z$ can not be zero except when $h=0$.
+\item When $h=0$, both $E_z$ and $H_z$ MUST be zero.
 \end{enumerate}
-
 \paragraph{Case 1}When $E_z$ = 0, $H_z \neq 0 \Rightarrow TE$
-\paragraph{Case 2}When $E_z \neq 0, H_z = 0 \Rightarrow TM$\\
+\paragraph{Case 2}When $E_z \neq 0, H_z = 0 \Rightarrow TM$
+\paragraph{Case 3}When $E_z = H_z = 0 \Rightarrow TEM$ then $h \equiv 0$
 
-The third configuration which is when $E_z$ is equal to 0 and $H_z$ is equal to 0, will give me the field, transverse fields provided when $h$ is equal to 0. But when $E_z$ and $H_z$ both are 0 that means we are talking about now the fields which are transverse electric and transverse magnetic fields. That means these field distributions must be the same as the transverse electromagnetic field.
-So, what we conclude is very important and very profound which is that when $E_z$ and $H_z$ both are 0 which represents the transverse electromagnetic wave, for this wave, $h$ must be identically 0. So third case, when $E_z$ and $H_z$ both are 0, we get a wave which is transverse electromagnetic, TEM and for this, $h$ has to be 0.
-\paragraph{Case 3}When $E_z = H_z = 0 \Rightarrow TEM$. For this $h \equiv 0$
 \begin{dmath*}
-\bar{\beta} = \sqrt{\omega^2\mu\epsilon - h^2}
+\text{From Equation~\eqref{eqn:h}, the phase constant }\bar{\beta} = \sqrt{\omega^2\mu\epsilon - h^2}
 \end{dmath*}
-So, the conclusion that we draw here is whether we take a transverse electric case or transverse magnetic phase since in this case, $h$ cannot be 0 because otherwise, the transverse field will go to infinity, and it will become infinite, as it goes to 0. So, when any of these  $E_z$ and $H_z$ are not 0, $H$ cannot be 0 which means $H$ is always a finite quantity or the velocity proportional to related to this means the phase velocity will be a function of frequency. Whereas, if I take $h$ as equal to 0, then $\bar{\beta}$ will be $\omega \sqrt{\mu\epsilon}$ and the phase velocity will become independent of frequency. What that means is that TE mode or TM mode has to be always dispersive. The velocity will be a function of frequency, whereas the TEM mode has to be essentially non-dispersive because for this, now the phase velocity is going to be the velocity in that medium. We draw very important conclusions from here and these are;
+Considering the possible configurations, when both $E_z$ and $H_z$ exhibit non-zero values, it follows that the parameter $h$ cannot assume a zero value, implying that $h$ is inherently a finite quantity. In the event that $h$ equals zero, $\bar{\beta}$ assumes the form of $\omega \sqrt{\mu\epsilon}$, leading to a phase velocity that becomes independent of frequency. This observation carries significant implications. Specifically, it underscores that the TE (Transverse Electric) mode or TM (Transverse Magnetic) mode inevitably exhibits dispersion, with its velocity being a function of frequency. Conversely, the TEM (Transverse Electromagnetic) mode must inherently be non-dispersive since, in this case, the phase velocity aligns with the velocity within the medium.
+
+Consequently, we derive two pivotal conclusions from this analysis:
 \begin{enumerate}[(i)]
 \item TE and TM modes are dispersive
 \item TEM mode is non-dispersive
 \end{enumerate}
-That means whenever we try to excite the field distribution, they will be either transverse electric or transverse magnetic, and then we will always have their velocity varying the function of frequency. Whereas when we take a mode if at all it exists and if the mode is transverse electromagnetic, then this mode will always travel with a velocity independent of the frequency.
+In practical terms, this signifies that when attempting to excite field distributions, whether they manifest as transverse electric or transverse magnetic modes, their velocities will invariably vary as a function of frequency. Conversely, if we consider a mode and, if it exists, as a transverse electromagnetic mode, this mode will consistently propagate at a velocity independent of the frequency.
 
-It is possible that for every structure you may not get the transverse electromagnetic mode propagating. But what we are saying is if at all the transverse electromagnetic modes exist on the structure, then this mode will be non-dispersive and it will be travelling with a speed which will always be the speed in the unbound medium which is spelling that waveguide. So, by doing this general analysis, we reached these very performed conclusions and now using this expression which you have derived, now we can analyze a particular waveguide propagation. Before we take up the specific problem, however, let us write down these quantities very explicitly which is
+It is worth noting that not all structures may support the propagation of transverse electromagnetic modes. Nevertheless, when such modes are present within a structure, they exhibit the distinctive quality of non-dispersiveness and consistently travel at a velocity equal to the speed within the unbounded medium encompassed by the waveguide. By conducting this comprehensive analysis, we have arrived at these noteworthy conclusions. Subsequently, utilizing the derived expression, we can proceed to analyze the propagation characteristics of specific waveguides.
+
+Before we take up the specific waveguide problems, let us write down these transverse fields very explicitly which are;
 \begin{dmath*}
 \nabla_\bot\times(\psi\hat{z}) \equiv 
-\begin{vmatrix}
+\footnotemark\begin{vmatrix}
 \hat{x} & \hat{y} &\hat{z}\\
-\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & o\\
+\partialderivative{}{x} & \partialderivative{}{y} & 0\\
 0 & 0 & \psi
 \end{vmatrix} = \frac{\partial\psi}{\partial y}\hat{x} - \frac{\partial\psi}{\partial x}\hat{y}
 \end{dmath*}
-In Cartesian coordinates, then we can use this expression to get a transverse field component in terms of the longitudinal components. Substituting this transverse gradient into equations \ref{eqn:transverseele2} and \ref{eqn:transversemag2} and simplifying, then the expressions essentially would look like
+\footnotetext{
+We assume the Cartesian coordinates here and so we can derive the transverse field components in terms of the longitudinal components.
+}
+Substituting this transverse gradient into equations~\eqref{eqn:transverseele2} and~\eqref{eqn:transversemag2} considering a lossless waveguide, then the expressions essentially would be
 \begin{align}
-E_x = -\frac{j\omega\mu}{h^2}.\frac{\partial H_z}{\partial y} - \frac{j\beta}{h^2}.\frac{\partial E_z}{\partial x}
+E_x = -\frac{j\omega\mu}{h^2}.\frac{\partial H_z}{\partial y} - \frac{j\bar{\beta}}{h^2}.\frac{\partial E_z}{\partial x}
 \label{eqn:transverseex}\\
-E_y = \frac{j\omega\mu}{h^2}.\frac{\partial H_z}{\partial x} - \frac{j\beta}{h^2}.\frac{\partial E_z}{\partial y}
+E_y = \frac{j\omega\mu}{h^2}.\frac{\partial H_z}{\partial x} - \frac{j\bar{\beta}}{h^2}.\frac{\partial E_z}{\partial y}
 \label{eqn:transverseey}\\
-H_x = \frac{j\omega\epsilon}{h^2}.\frac{\partial E_z}{\partial y} - \frac{j\beta}{h^2}.\frac{\partial H_z}{\partial x}
+H_x = \frac{j\omega\epsilon}{h^2}.\frac{\partial E_z}{\partial y} - \frac{j\bar{\beta}}{h^2}.\frac{\partial H_z}{\partial x}
 \label{eqn:transversehx}\\
-H_y = -\frac{j\omega\epsilon}{h^2}.\frac{\partial E_z}{\partial x} - \frac{j\beta}{h^2}.\frac{\partial H_z}{\partial y}
+H_y = -\frac{j\omega\epsilon}{h^2}.\frac{\partial E_z}{\partial x} - \frac{j\bar{\beta}}{h^2}.\frac{\partial H_z}{\partial y}
 \label{eqn:transversehy}
 \end{align}
-The expressions are quite symmetric in that sense and they are very easy to remember also. So with this, now development, general development for the propagation of a mode inside a waveguide; now we are prepared to take very specific cases and as we saw that there are two types of modes which can exist, the transverse electric mode and the transverse magnetic mode, we also saw a special case which for the transverse electromagnetic mode and now we take a very specific case that is what is called a rectangular waveguide. That is if the cross-section of this pipe which we talked about is rectangular; then what kind of fields are going to propagate inside this waveguide?
+The expressions exhibit notable symmetry and possess a mnemonic quality, rendering them easy to commit to memory. With this comprehensive development for mode propagation within a waveguide in place, we are now equipped to explore specific instances. As we've established, two distinct types of modes can exist: the transverse electric (TE) mode and the transverse magnetic (TM) mode. We've also examined a unique case—the transverse electromagnetic (TEM) mode. 
+
+Now, we delve into a highly specific scenario, namely, the rectangular waveguide. In this context, the waveguide's cross-sectional profile adopts a rectangular shape. This prompts an intriguing inquiry: \emph{What types of fields will propagate within this rectangular waveguide?}
+
+\section*{Exercises}
+\begin{ExerciseList}
+\Exercise[label={ex371}]
+What are the possible configurations of the field distributions in a waveguide?
+\end{ExerciseList}
