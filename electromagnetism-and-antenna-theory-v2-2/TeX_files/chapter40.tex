@@ -1,7 +1,14 @@
-\chapter{Surface current on the waveguide walls}
-In this chapter, we will establish that taking a limiting case for the fields for the rectangular waveguide must represent the fields we got for parallel plane waveguides. Now we show that the field we got for a rectangular waveguide can represent the field we got for a parallel plane waveguide in the limiting case when one of the dimensions of the rectangular waveguide becomes infinity. To do this, we ask the question what happens to the mode which was $TM_0$ (or the $TEM$ mode) in the parallel plane waveguide? Does this mode exist inside the rectangular waveguide or only inside a parallel plane waveguide?
+\chapter{Surface current on the waveguide 
+walls}
+In our recent discussions, we embarked on a fascinating journey through the realm of electromagnetic wave propagation within waveguiding structures. Our exploration took us through the intricacies of two distinct waveguide configurations: the parallel plane waveguide and the rectangular waveguide. Each of these waveguides unfolded its unique characteristics and posed intriguing questions that demanded answers.
 
-Considering the rectangular waveguide, we could find out that the electric and magnetic fields are both perpendicular to the direction of propagation so that the magnetic fields must lie in the XY plane shown in figure~\ref{fig:group4001}. That means they must perform a closed loop in the plane. Then there has to be an electric current enclosed by the magnetic field lines, then and only then can the magnetic field lines survive. Hence there would either be a \textbf{conduction}\index{conduction current} or \textbf{displaccment}\index{displacement current} current that will guarantee the survival of the magnetic field lines since we do not have any conducting medium inside the waveguide\footnote{The waveguide is completely hollow, with pure dielectric inside, and there is no possibility of conduction current enclosed by the magnetic field lines}. Hence conduction current is zero inside the rectangular waveguide and magnetic field lines can only be sustained by the fact that we have a displacement current, and it must be flowing in the z-direction. This displacement current will also require an electric field going in the z direction which will already say is non-existent for $TEM$ mode. Recall we have established that the electric field only lies on the transverse plane for $TEM$ mode. It does not have a component perpendicular to the plane of the paper.
+Let's start by delving into our initial investigations within the parallel plane waveguide. Here, we visualized the propagation of electromagnetic waves as the continuous reflection of uniform plane waves at the boundaries of the guide. This visual approach granted us an intuitive understanding of the fields that could exist within such a structure. We realized that waves propagating along the plane exhibited a traveling wave nature, while those perpendicular to the planes resembled standing waves. In contrast, our journey within the rectangular waveguide followed a mathematical path. We sought to determine the transverse electric (TE) and transverse magnetic (TM) fields by solving the wave equation while satisfying boundary conditions. This approach was purely mathematical, devoid of the visual insights that the parallel plane waveguide had provided. Now, the crux of our exploration lies in establishing a mathematical connection between the fields we derived for the rectangular waveguide and those we visualized for the parallel plane waveguide. We must verify that the fields derived through mathematical rigor for the rectangular waveguide align with the physical understanding we gained from the parallel plane waveguide. One of the most intriguing questions we faced was \emph{whether the transverse electromagnetic\index{transverse electromagnetic mode} (TEM) mode, which transformed into the TEM mode in the parallel plane waveguide, could also exist in the rectangular waveguide}. To address this, we embarked on a thoughtful analysis.
+
+To determine whether the TEM mode could thrive within the rectangular waveguide, we considered the nature of its electric and magnetic fields. In the TEM mode, both the electric and magnetic fields are perpendicular to the direction of propagation, confined to the cross-sectional plane as shown in Figure~\ref{fig:group4001}. However, a critical observation arises: magnetic field lines must form closed loops, and for this to occur, there must be an enclosed current.
+
+Two possibilities emerge: either a conduction current flowing perpendicular to the transverse plane or a displacement current flowing in the same direction. Yet, within the hollow confines of the rectangular waveguide, where no conducting medium resides, the conduction current is nonexistent. Thus, the only remaining option is the displacement current. However, this would necessitate an electric field component perpendicular to the transverse plane, which contradicts the fundamental nature of the TEM mode.
+
+The verdict is clear: the TEM mode cannot exist within the rectangular waveguide due to the absence of current support. This conclusion provides valuable insights into the limitations of waveguides with hollow structures.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\linewidth]{\pathtoparttwo/graphics/group4001}
@@ -9,53 +16,62 @@ Considering the rectangular waveguide, we could find out that the electric and m
 \label{fig:group4001}
 \end{figure}
 
-If that is so, we cannot have the displacement current inside the waveguide that is in the z-direction, so either we have a conduction current or displacement current going in the z-direction. Thus, there is no current which is flowing perpendicular to the plane of the paper, and hence there is no current sustaining the magnetic field lines. Based on amperes law, the magnetic field lines must enclose current; hence, these fields lying in the transverse plane cannot exist, as there are no currents to support the magnetic field lines. Thus the $TEM$ cannot exist inside a rectangular waveguide, so $TEM$ mode \textbf{does not exist in} a \textbf{rectangular waveguide}\index{transverse electromagnetic mode}.
+Conversely, within the parallel plane waveguide, the TEM mode finds its sanctuary. The magnetic field lines in this infinite structure close at infinity, enclosing the conducting boundaries and supporting the required current. This makes it possible for the TEM mode to thrive in the parallel plane waveguide.
 
-\section{Parallel plane waveguide as a limiting case of the rectangular waveguide}
-Let us take a parallel plane waveguide as a limiting case of a rectangular waveguide. If we take the rectangular waveguide of dimension width, $a$ and height, $b$ and make ${b=\infty}$, we get a structure shown in figure~\ref{fig:page3} where the wave is travelling in the z-direction. So if the electric field resides in the y-direction and the wave is going to propagate in the z-direction, this would essentially correspond to the $TE$ mode. 
+\section{Limiting Case: Parallel Plane Waveguide as Rectangular Waveguide}
+Consider a rectangular waveguide where the TE$_{10}$ mode exists. In this mode, the electric field is oriented as shown in Figure~\ref{fig:page3}.Now, imagine extending one of the walls of this rectangular waveguide to infinity, effectively making `b' (the width of the guide) equal to infinity. This transformation creates a structure that resembles a parallel-plane waveguide, with two planes and wave propagation occurring in the z-direction. In this new configuration, both walls are pushed to infinity. In this context, the TE$_{10}$ mode of the rectangular waveguide becomes the TE mode in the parallel-plane waveguide by pushing one boundary to infinity.
 \begin{figure}[h]
 \centering
 \includegraphics[width=.7\linewidth]{\pathtoparttwo/graphics/page3}
-\caption{Parallel plane waveguide as a limiting case of the rectangular waveguide if $b=\infty$}
+\caption{A Parallel-Plane Waveguide as the Limiting Case of a Rectangular Waveguide with $b=\infty$}
 \label{fig:page3}
 \end{figure}
 
-With an electric field in the y-direction as shown in figure~\ref{fig:page3}
-\begin{dmath*}
-{E_x = E_z = 0 \qquad E_y = - \frac{j\omega\mu a}{\pi} C\sin(\frac{\pi x}{a})e^{-j\beta z}}
-\end{dmath*}
-\begin{dmath*}
-H_x =  \frac{j\beta a}{\pi} C\sin(\dfrac{\pi x}{a})e^{-j\beta z}
-\end{dmath*}
-\begin{dmath*}
-H_y = 0\qquad H_z = C\cos(\dfrac{\pi x}{a})e^{-j\beta z} 
-\end{dmath*}
-In this case, the magnetic field components ${H_x}$ and ${H_z}$ exist and all these fields were constant as a function of y. 
+As we extend the walls of the rectangular waveguide to infinity, we effectively metamorphose it into a parallel-plane waveguide. In this new geometry, the electric field is oriented in the y-direction, and wave propagation occurs perpendicular to the transverse plane. This mode closely resembles the TE mode. Consequently, the electric field (E) and magnetic field (H) take on the orientations described by Equations~\eqref{eqn:te10start} through~\eqref{eqn:te10end}.
 
-Something we can get now with ${b=\infty}$ is that there are no boundary conditions to apply in the y direction. The field is infinite, then ${E_y}$ is constant along the y direction. That is precisely the field we got with a parallel plane waveguide. So in a rectangular waveguide, we can take ${TE_{10}}$ mode and make b in infinity and since we do not have any dependence of $E$ with respect to y, it means that the fields in the ${TE_{10}}$ case are essentially the same for a parallel plane waveguide. So the ${TE_1}$ mode of a parallel plane waveguide has essentially the same field as ${TE_{10}}$ mode of a rectangular waveguide. Now we have a magnetic field in the z-direction. 
+\begin{align}
+E_x &= E_z = H_y = 0\label{eqn:te10start}\\
+E_y &= -\frac{j\omega \mu a}{\pi}C\sin(\frac{\pi x}{a})e^{-j\beta z}\\
+H_x &= -\frac{j\beta a}{\pi}C\sin(\frac{\pi x}{a})e^{-j\beta z}\\
+H_z &= C\cos(\frac{\pi x}{a})e^{-j\beta z}\label{eqn:te10end}
+\end{align}
 
-So in the limiting case of the ${TE_{10}}$ mode,we can get the transverse electric mode, the lowest order transverse electric mode for the rectangular waveguide which is also the lowest order transverse electric mode for the parallel plane waveguide, $TE_1$ mode. Another mode we had was the $TEM$ mode for which the electric field was not tangential to the boundaries,(i.e along the x-axis) the magnetic field was tangential to the boundary (along the y direction) and we say that was the mode in which was not dispersive and travels as if the conducting boundary are not existing and that was the mode which was the $TEM$ mode. The magnetic and electric fields for the parallel plane waveguide for the $TEM$ mode is shown in figure~\ref{fig:page4}. 
+Notably, in this case, both magnetic field components, $H_x$ and $H_z$, coexist, and all these fields remain constant with respect to the y-coordinate.
+
+With $b=\infty$, we encounter an intriguing scenario: there are no boundary conditions to impose in the y-direction. Consequently, the electric field $E_y$ remains constant along the y-direction. Remarkably, this aligns precisely with the electric field observed in a parallel-plane waveguide. Therefore, for a rectangular waveguide operating in the TE$_{10}$ mode with $b=\infty$, the fields essentially mirror those of a parallel-plane waveguide operating in the TE$_1$ mode. This equivalency implies that the TE$_1$ mode of a parallel-plane waveguide shares identical field characteristics with the TE$_{10}$ mode of a rectangular waveguide, both featuring a magnetic field in the z-direction.
+
+This transition allows us to obtain the transverse electric mode, specifically the lowest-order transverse electric mode for the rectangular waveguide, which aligns perfectly with the lowest-order transverse electric mode for the parallel-plane waveguide—the TE$_1$ mode.
+
+Now, let's shift our focus to the Transverse Electromagnetic Mode. In TEM mode within the parallel-plane waveguide, the electric and magnetic field patterns are illustrated in Figure~\ref{fig:page4}.
+
 \begin{figure}[h]
 \centering
-\includegraphics[width=.7\linewidth]{\pathtoparttwo/graphics/page4}
-\caption{Field patterns and surface current for the electric and magnetic fields in a parallel plane waveguide in the $TEM$ mode}
+\includegraphics[width=.7\linewidth]{\pathtoparttwo/graphics/surface_current_parallel_plane_wg_temp}
+\caption{Field Patterns and Surface Currents for the Electric and Magnetic Fields in a Parallel-Plane Waveguide Operating in TEM Mode}
 \label{fig:page4}
 \end{figure}
 
-The wave travels without any variation of the electric and magnetic field as shown because neither the components of the magnetic field require the boundary conditions to be satisfied which is tangential, so we can always have surface currents, nor the normal components of an electric field needs only boundary condition to be satisfied. We can always have the surface charge induced to compensate for the normal component of the electric field. So this mode, the $TEM$ mode, exists inside the parallel plane waveguide.
+Notably, in TEM mode, the wave travels without any variation in the electric and magnetic fields. This occurs because neither the tangential components of the magnetic field require boundary conditions to be satisfied (which permits surface currents), nor do the normal components of the electric field require specific boundary conditions. In the latter case, surface charges can be induced to compensate for any discrepancies. Consequently, TEM mode thrives within the parallel-plane waveguide.
 
-One can ask the question that if figure~\ref{fig:page4} was the limiting case of the rectangular waveguide, how come the $TEM$ mode exists in the parallel plane waveguide, but not in a rectangular waveguide? We argue that since the magnetic field is in the y direction and the plane is extended in the y direction, the magnetic field lines essentially close at infinity and enclose the conducting walls as shown by dotted lines then these conducting planes have a surface current flowing in them. In the case of the rectangular waveguide where those boundaries are finite, the magnetic fields close up on themselves and thus a current is enclosed. That is why the $TEM$ mode cannot exist in rectangular waveguides but can with a parallel plane structure. The magnetic field lines will close at infinity and enclose the plane conductors as shown in figure~\ref{fig:page4} so the $TEM$ mode can exist inside parallel plane waveguides. This is the mode that propagates in a two-conductor system like coaxial cables.
+At this juncture, a pertinent question arises: \emph{if Figure~\ref{fig:page4} represents the limiting case of the rectangular waveguide, why does TEM mode flourish within parallel-plane waveguides but remain absent in rectangular waveguides?} The answer lies in the orientation of the magnetic field. In parallel-plane waveguides, where the magnetic field aligns with the y-direction and the planes extend infinitely along this axis, the magnetic field lines effectively close at infinity, enclosing the conducting walls, as depicted by the dotted lines. Consequently, surface currents flow along these conducting planes. In contrast, within the finite boundaries of a rectangular waveguide, the magnetic field lines close upon themselves, resulting in no enclosed current. This fundamental distinction explains why TEM mode cannot thrive within rectangular waveguides but can flourish in the presence of a parallel-plane structure. The magnetic field lines extend to infinity, thereby enclosing the plane conductors, as illustrated in Figure~\ref{fig:page4}. This unique feature allows TEM mode to thrive within parallel-plane waveguides, making it the ideal choice for certain applications, such as in the case of two-conductor systems like coaxial cables.
 
-So whenever we have a two-conductor system, the lowest mode which will propagate will be $TEM$ mode, however, if we go to the rectangular waveguide, the lowest mode which will propagate will be ${TE_{10}}$ mode. The important conclusion to draw is that whenever we have a hollow structure, like a hollow pipe kind of waveguide, the $TEM$ mode cannot exist which is non-dispersive. It is a special mode that is not supported by the rectangular waveguide. That is why we have all the problems of dispersion and so on, inside a rectangular waveguide. The parallel plane waveguide is still a structure which is infinite in extent, it cannot be realized in practice. It is good for understanding, but when we want to realize the structure in practice, it is the rectangular waveguide which is realizable, not the parallel plane waveguide. So whenever we have a physical structure which is a rectangular waveguide, we always have a cut-off frequency associated with that and we always have problems like dispersion and so on associated with them.
+In summary, the propagation of TEM mode, characterized by its non-dispersive behavior, represents a defining feature of parallel-plane waveguides. However, it is essential to acknowledge that parallel-plane waveguides are not practical for real-world applications due to their infinite extent. In practical scenarios, rectangular waveguides are the go-to choice, but they introduce constraints and challenges, including dispersion and cutoff frequencies. These limitations need to be carefully considered when designing waveguide systems.
 
-\section{Surface current on the parallel plane waveguide walls}
-With this understanding, let us try to see the current which gets excited on the walls of the waveguide, which actually supports these fields inside the waveguide. So whether we take a parallel plane or rectangular waveguide, what is the mechanism by which these fields are supported inside the waveguide? what are the sources? The sources are nothing but surface charge and surface currents which lie on the inner surface of the waveguides. So as the wave travels even the surface charge keeps moving i.e accumulating at different locations as we will see later, these charges and surface currents support the electric and magnetic field inside the waveguide which is responsible for carrying power inside the waveguiding structure. So what we do now is first we try to visualize the fields which would be inside the waveguide and then try to visualize how the currents are distributed on the walls of the waveguide, so let us take the simplest case which is the $TEM$ case for a parallel plane waveguide.
 
-\subsection{$TEM$ mode}
-In the parallel plane waveguide shown for $TEM$ mode, the electric field $E$ is perpendicular to the plans. With ${E_y = Ce^{-j\beta z}}$ and ${H_x = \dfrac{C}{\eta}e^{-j\beta z}}$, we can visualize these fields. If we tried out how these fields are going to be a function of space and time in the structure. First, we keep time constant and remember all the qualities above are intrinsic functions of time, so ${e^{j\omega t}}$ is implicit in all the terms.
+\section{Currents and Fields in Waveguides}
+In the study of waveguides and electromagnetic fields, it is crucial to comprehend the complex relationship between currents and charges, as they are the fundamental elements that support the propagation of electromagnetic waves. In this exploration, we will delve into the currents excited on the walls of a waveguide and their role in maintaining the electromagnetic fields within. These fields are responsible for carrying power through the waveguide, making them fundamental to waveguide theory.
+
+Whether we are dealing with a parallel-plane waveguide or a rectangular waveguide, the mechanism that sustains electromagnetic fields within these structures relies on the presence of sources. These sources, in this context, are surface charges and surface currents residing on the inner surface of the waveguide.
+
+As electromagnetic waves travel through the waveguide, these surface charges and currents continuously move and redistribute themselves along the inner walls. Their presence and dynamics are essential in supporting the electric and magnetic fields that form the foundation of waveguide-based communication and transmission systems.
+
+To comprehend this intricate interplay between currents and fields, let's begin by visualizing the fields within a waveguide, focusing on the simplest case: the Transverse Electromagnetic (TEM) mode in a parallel-plane waveguide.
+
+\subsection{TEM mode}
+In the TEM mode, the electric field and magnetic field vary harmonically with time. Considering the parallel-plane waveguide in Figure~\ref{fig:page6}, we can express these fields as
 \begin{align*}
 E_y = Ce^{-j\beta z}e^{j\omega t}\\
-H_x = {\dfrac{C}{\eta}}e^{-j\beta z} e^{j\omega t}
+H_x = {\frac{C}{\eta}}e^{-j\beta z} e^{j\omega t}
 \end{align*}
 \begin{figure}[h]
 \centering
@@ -64,54 +80,60 @@ H_x = {\dfrac{C}{\eta}}e^{-j\beta z} e^{j\omega t}
 \label{fig:page6}
 \end{figure}
 
-So these fields are varying as a function of space and time, so if we stand at a particular location in space, the field will vary as a function of time and if we freeze time or say at any instant of time, we look along the waveguide, we see a variation given as $e^{-j\beta z}$. 
+However, to understand their spatial distribution, we freeze time, effectively removing the time-dependent harmonic component (\(e^{j\omega t}\)). This allows us to concentrate on the spatial characteristics of these fields.
 
-So to visualize these fields in 3D, first, we freeze time i.e make ${\omega t}$ constant. At that instant, we want to see how the fields are distributed in space. Once we get those fields distributed in space, then we essentially say that these fields will be moving with a phase velocity for the mode. Then the electric field drifts inside this waveguide with the phase velocity. So when we visualize these fields, essentially we try to visualize the spatial variation of the fields at some instant of time and without losing generality, we can take the time $t=0$, then the field visualization is simply the real part of ${H_y}$ and ${H_x}$ which is ${\mathfrak{Re}\left\{Ce^{-j\beta z}\right\}}$ and ${\mathfrak{Re}\left\{\dfrac{C}{\eta}e^{-j\beta z}\right\}}$. That is ${C\cos\beta z}$ and ${\dfrac{C}{\eta}\cos\beta z}$, if we consider points $z=0$, with variation of ${\beta z}$. So the field varies as a cosine function in the z-direction. It is constant in the XY plane, so we see the cosine variation along the z-direction for these fields. The electric field is the same at any z (i.e XY plane) and in the y-direction.
+At this moment in time, then the field visualzation for \(E_y\) becomes \({\mathfrak{Re}\left\{Ce^{-j\beta z}\right\}}= C \cos(\beta z)\), and \(H_x\) takes the form \({\mathfrak{Re}\left\{C/\eta e^{-j\beta z}\right\}} = C/\eta \cos(\beta z)\). Here, \(C\) represents the amplitude of these fields, \(\beta\) is the phase constant, and \(\eta\) is the intrinsic impedance of the medium.
+
+Imagine standing within the waveguide and observing the field distribution. At \(z = 0\), both the electric and magnetic fields reach their maximum amplitudes, and they remain constant in the \(x\) and \(y\) directions. As you move along the \(z\)-direction, these fields exhibit a cosine-like variation, with maxima occurring at multiples of the guide wavelength, \(\lambda_g/4\) (see Figure~\ref{fig:group4002}).
+
+The electric field alternates between positive and negative maxima (see Figure~\ref{fig:page702}), while the magnetic field maintains its horizontal orientation with consistent amplitude throughout (see Figure~\ref{fig:page703}). This alternating pattern continues as you progress along the \(z\)-axis: maximum, zero, reversal of direction, maximum, and so on.
+
 \begin{figure}[h]
 \centering
-\includegraphics[width=.7\linewidth]{\pathtoparttwo/graphics/group4002}
-\caption{Variation of the electric and magnetic field in a parallel plane waveguide}
+\includegraphics[width=.7\linewidth]{\pathtoparttwo/graphics/sinusoidal_variations_electric_and_magnetic_fields_temp}
+\caption{Variation of the electric and magnetic field along the direction of wave propagation in TEM mode}
 \label{fig:group4002}
 \end{figure}
 \begin{figure}[h]
 \centering
-\includegraphics[width=.7\linewidth]{\pathtoparttwo/graphics/page702}
-\caption{Surface currents on the walls of the parallel plane waveguide in the $TEM$ mode}
+\includegraphics[width=.7\linewidth]{\pathtoparttwo/graphics/electric_field_variations_temp}
+\caption{Electric field variation in a parallel plane waveguide in the TEM mode}
 \label{fig:page702}
 \end{figure}
 \begin{figure}[h]
 \centering
-\includegraphics[width=.7\linewidth]{\pathtoparttwo/graphics/page703}
-\caption{Magnetic field variation showing normal to parallel plane waveguide surface}
+\includegraphics[width=.7\linewidth]{\pathtoparttwo/graphics/magnetic_field_variations_temp}
+\caption{Magnetic field variation showing normal to parallel plane waveguide surface and surface currents in TEM mode}
 \label{fig:page703}
 \end{figure}
 
-The magnetic field is the same at z (XY plane) and in the x-direction. The $E$ and $H$ direction is maintained to show the direction of propagation by the Poynting theorem\footnote{a theorem proposed by a British physicist named John Henry Poynting}. So $E$ starts maximum while $H$ is maximum at $z=0$, at ${z= \dfrac{\lambda_g}{4}}$ they have reduced to zero. Beyond ${z= \dfrac{\lambda_g}{4}}$, they change direction and start increasing till they go to another maximum at ${z=\dfrac{\lambda_g}{2}}$. They again start decreasing from the direction of ${z=\dfrac{\lambda_g}{2}}$ to ${z=\dfrac{3\lambda_g}{4}}$ where $E$ and $H$ are zero. Beyond ${z=\dfrac{3\lambda_g}{4}}$,  they change direction once more and start increasing getting to $z=0$ state at ${\lambda g}$. With little practice, one can see how the electric and magnetic field varies inside the waveguide. Now we know that if the magnetic field pattern is, as shown in figure~\ref{fig:group4002}, the current which is going to flow in the surface of the conductor is related to the magnetic fields i.e the tangential component of the magnetic fields. The ${\hat{n}\times\bar{H}}$ gives the surface currents on the conducting walls. Since we are considering here ideal conductors, essentially, calculating ${\hat{n}\times\bar{H}}$, that is the current which is truly confirmed to the surface of this parallel plane waveguide. 
+Now, let's establish a connection between the magnetic field's direction and the surface currents on the waveguide's walls. The tangential component of the magnetic field (\(H\)) is responsible for inducing surface currents on the conducting walls.
 
-The normal to the surface of $H$ fields is shown in figure~\ref{fig:page703}. We choose the normal pointing inwards as that is the part that bounds the electromagnetic wave to be propagated. The normal opposite that would be the electromagnetic wave was propagated outside the conducting plane. So the unit vector of the wave plane is going upward in ${\hat{y}}$ direction for the upper plane in ${-\hat{y}}$ direction. Now we can calculate ${\hat{n}\times\bar{H}}$. The ${\hat{n}\times\bar{H}}$ will give the direction of surface current, which top plane, ${\hat{n}\times\bar{H}}$ is the negative z-direction as to say the surface current is coming out from the top plane and going in the bottom plane. Hence ${J_s}$ direction is shown on the top and bottom plane respectively. ${J_s}$ will be having the same variation as the variation of the magnetic field. Maximum at $z=0$, and ${z= \dfrac{\lambda_g}{4}}$. Maximum at ${z=\dfrac{\lambda_g}{2}}$ but with direction reversed, zero at ${\dfrac{3\lambda_g}{4}}$ and maximum again at ${z=\lambda_g}$ with the same direction as with $z=0$. 
+On the upper plane of the waveguide, the normal unit vector (\(\hat{n}\)) points in the \(+y\) direction. When we calculate \(\hat{n} \times \boldsymbol{H}\), we find that the surface current, \(\boldsymbol{J_s}\), flows in the direction of wave propagation (\(z\)-direction). Conversely, on the lower plane, where \(\hat{n}\) points in the \(-y\) direction, the surface current flows in the opposite direction, \(-z\). These depictions are shown in Figure~\ref{fig:page703}.
 
-So in a two-conductor system, we get current to flow in the direction in which the wave is propagating. ${J_s}$ in the positive z-direction in the bottom at $z=0$ and ${J_s}$ in the negative z-direction at the top for $z=0$. If we have a two-conductor system like the coaxial cable, we connect a voltage source, current goes inside the conductor and returns back through what is called a ground path. So we see that the current goes inside from one terminal and comes outside from the other terminal. So in that situation of the two-conductor system, the direction of the current flow which we have for the $TEM$ mode (keep in mind) is the same as the direction of wave propagation. So the current is going from the bottom plane and returning from the top plane at $z=0$. The question we ask is if the wave is propagating in the z-direction, is it always true that current has to flow in the z-direction or the direction of wave propagation? Then we got the answer which is wrong. That is because we always discuss the transverse electromagnetic mode.
+These surface currents exhibit the same spatial variation as the magnetic field, with maxima at multiples of \(\lambda_g/4\). In a two-conductor system like a coaxial cable, we observe that the current flows in the direction of wave propagation. This alignment between current flow and wave propagation direction is a characteristic of the TEM mode.
 
-The fact that we are used when we go to the low-frequency circuit, immediately we jump to the conclusion that yes since the wave is moving in the z-direction, the power is flowing in the z-direction, and the current must flow in that direction.
+However, it's crucial to note that this alignment between current direction and wave propagation is not a universal rule. It's a characteristic of the TEM mode, which we often encounter in low-frequency circuits. In other scenarios, such as when dealing with more complex electromagnetic modes, this alignment may not hold true.
 
-\subsection{$TE$ mode}\index{transverse electric mode}
+\subsection{TE mode}\index{transverse electric mode}
+Let's begin by considering the TE$_1$ mode in a parallel-plane waveguide. The structure in question is depicted Figure~\ref{fig:watson4}, where we have the magnetic_field_variation mode within the parallel-plane waveguide.
 \begin{figure}[h]
 \centering
 \includegraphics[width=.7\linewidth]{\pathtoparttwo/graphics/WATSON4}
-\caption{Analysis of parallel plane waveguide propagating wave in the $TE$ mode}
+\caption{Analysis of parallel plane waveguide propagating wave in the TE$_1$ mode}
+\label{fig:watson4}
 \end{figure}
 
-Let us look at the parallel plane waveguide considering the $TE$ mode and let us see what will be the direction of the current and field in the waveguide. As we saw, the fields for the parallel plane waveguide are identical to the $TE_{10}$ mode for rectangular waveguide giving as
-\begin{align*}
-E_x &= E_z = H_y = 0\\
-E_y &= -\dfrac{j\omega \mu a}{\pi}C\sin(\dfrac{\pi x}{a})e^{-j\beta z}\\
-H_x &= -\dfrac{j\beta a}{\pi}C\sin(\dfrac{\pi x}{a})e^{-j\beta z}\\
-H_z &= C\cos(\dfrac{\pi x}{a})e^{-j\beta z}
-\end{align*}
-So the electric field will be y oriented, and it will have a variation which would be in the z-direction with the value of ${\beta}$. To visualize ${E_y}$, let's take the real part of ${E_y}$ and look at its variation with respect to x,y and z. This will give us a 3-dimensional picture of the fields.
+As we've seen before, the field distribution in a parallel-plane waveguide is identical to that of the TE$_{10}$ mode in a rectangular waveguide given in Equations~\eqref{eqn:te10start}\textemdash~\eqref{eqn:te10end}
+
+First and foremost, the electric field will be oriented in the y-direction, and it will exhibit variations in both the x and z directions, characterized by the phase constant \(\beta\). To visualize these fields effectively, we will consider their amplitudes, specifically the real parts, and plot them as functions of x, y, and z. This will allow us to create a three-dimensional representation of these fields.
+
+Before proceeding further, we will simplify the expression for the electric field by handling the complex component represented by `-j' We know that `-j' can be expressed as $e^{-j\pi/2}$. Thus, the electric field expression can be rewritten as:
 \begin{dmath*}
-E_y = \dfrac{-j\omega \mu a}{\pi}C\sin(\dfrac{\pi x}{a})e^{
--j\beta z}\equiv e^{-j\dfrac{\pi}{2}}\times\dfrac{\omega \mu a}{\pi}C\sin(\dfrac{\pi x}{a})e^{-j\beta z}  = \dfrac{\omega \mu a}{\pi}C\sin(\dfrac{\pi x}{a})e^{-j\left(\beta z + \dfrac{\pi}{2}\right)
+E_y = \dfrac{-j\omega\mu a}{\pi}C\sin(\dfrac{\pi x}{a})e^{
+-j\beta z}
+=e^{-j\dfrac{\pi}{2}}\times\dfrac{\omega \mu a}{\pi}C\sin(\dfrac{\pi x}{a})e^{-j\beta z}
+= \dfrac{\omega \mu a}{\pi}C\sin(\dfrac{\pi x}{a})e^{-j\left(\beta z + \dfrac{\pi}{2}\right)
 }
 \end{dmath*}
 \begin{dmath*}
@@ -121,27 +143,71 @@ Recall, $\cos(-\left(\beta z + \dfrac{\pi}{2}\right))=\cos(\beta z + \frac{\pi}{
 \begin{dmath*}
 \mathfrak{Re}\left\{E_y\right\} = A\sin(\dfrac{\pi x}{a})\cos(\beta z +\dfrac{\pi}{2}) = A\sin(\dfrac{\pi x}{a})\sin(\beta z) = A\sin(\dfrac{\pi x}{a})\sin(\dfrac{2\pi z}{\lambda_g})
 \end{dmath*}
-We can do the same for ${H}$
+We apply a similar process to the magnetic field (H) expression, resulting in:
 \begin{align*}
-\mathfrak{Re}\left\{H_x\right\} = B\sin(\dfrac{\pi x}{a})\sin(\dfrac{2\pi z}{\lambda_g})\\
-\mathfrak{Re}\left\{H_z\right\}= C\cos(\dfrac{\pi x}{a})\cos(\dfrac{2\pi z}{\lambda_g})
+\mathfrak{Re}\{H_x\} = B\sin(\frac{\pi x}{a})\sin(\frac{2\pi z}{\lambda_g})\\
+\mathfrak{Re}\{H_z\}= C\cos(\frac{\pi x}{a})\cos(\frac{2\pi z}{\lambda_g})
 \end{align*}
-These are the field which is in existence when time is fixed, say at $t=0$. At that instant, these three expressions give the fields along the waveguides. As we can see in the z-direction, the fields are all sinusoidal with a spatial period of ${\lambda_g}$. However ${\mathfrak{Re}\left\{H_z\right\}}$ and ${\mathfrak{Re}\left\{H_z\right\}}$ are in \textbf{quadrature}, that is ${90^{o}}$ degree out of phase with each other so that when ${H_x}$ is maximum, ${H_z}$ is zero. And when ${H_z}$ is maximum, ${H_x}$ is zero. 
+These expressions represent the field distributions at a specific instant (t = 0) along the waveguide.
 
-So in space, we have two components, the ${H_x}$ and the ${H_z}$ components. ${H_x}$ component has sine variation along z. With $z=0$, ${H_x}$ is zero at that location, but ${H_z}$ is maximum at that location. If we go ${z=\dfrac{\lambda_g}{4}}$, ${H_x}$ is maximum and ${H_x=0}$.
+In the z-direction, both the electric and magnetic fields exhibit sinusoidal variations with a spatial period of $\lambda_g$. However, they are out of phase with each other. Where $H_x$ is at its maximum, $H_z$ is zero, and vice versa. This results in a two-component field system, $H_x$ and $H_z$. Let's examine their spatial behaviour:
 
-From the top of this parallel plane waveguide, we see the magnetic fields as shown in figure~\ref{}. Since the magnetic field is close to themselves, it is only a matter of imagination. To close the magnetic field loops as shown by the dotted lines ${\dfrac{\lambda_g}{4}}$ from here the direction with reverse to have the dotted line from $\dfrac{\lambda_g}{4}$  to $\dfrac{\lambda_g}{2}$ and so on.
+The $H_x$ component follows a sine variation in the z-direction, with maximum amplitude at $z = \frac{\lambda_g}{4}$. As we move a distance of $\frac{\lambda_g}{2}$ along the z-axis, $H_x$ becomes maximum again. 
+% add figure showing the spatial variation of Hz along the z-axis
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/WATSON}
-\caption{Magnetic field patterns in the parallel plane waveguide operating in the $TE$ mode}
+\includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/magnetic_field_variations_te1_1_temp}
+\caption{Magnetic field patterns showing the vector field for the components in one half cycle of the sinusoidal variations in the parallel plane waveguide operating in the TE mode}
 \label{fig:watson}
 \end{figure}
 
-Hence we can complete this to get the field distribution shown in figure~\ref{fig:watson}, for a waveguide going from ${-\infty}$ to ${+\infty}$. So from the top in a parallel plane waveguide, the magnetic field lines look like rolled carpets which are scattered inside the structure. They are of infinite length perpendicular to the plane of the paper. This is how the magnetic field will be distributed.
+A view from the top of this parallel plane waveguide, shows that the magnetic field lines take the form of stacked, rolled carpets perpendicular to the plane of the paper, extending infinitely in length as shown in Figure~\ref{fig:magnetic_field_variation}.
+% add figure depicting the magnetic field lines in the parallel plane waveguide
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/magnetic_field_variations_te1_2_temp}
+\caption{Resulting Magnetic field patterns in the parallel plane waveguide operating in the TE mode}
+\label{fig:magnetic_field_variation}
+\end{figure}
 
-However for the electric field, ${E_y= A\sin(\dfrac{\pi x}{a})\sin(\dfrac{2\pi z}{\lambda_g})}$ the electric field has variation in the z-direction since as ${H_x}$, but it is oriented in the y direction. So from the top, the electric field lines is perpendicular to the plane of the paper. The behaviour of ${E_y}$ and ${H_x}$ is identical, that means whenever ${H_x}$ is maximum, ${H_y}$ will be maximum. So it has identical variation to ${H_x}$. So if we look at the ${H_x}$ component, so the electric field is maximum at ${z= \dfrac{\lambda_g}{4}}$ and minimum at $z=0$ with the ${H_x}$ variation along z. The electric field always points in the y direction with wave propagating in the z direction and ${H_x}$ in the x direction, ${H_y}$ from ${E\times H= \hat{z}}$ must point in the y direction at that point.
+Now, let's shift our attention to the electric field ($E_y$). It possesses a sinusoidal variation along the z-direction, similar to $H_x$, but is oriented in the y-direction.
+\begin{align*}
+E_y= A\sin(\dfrac{\pi x}{a})\sin(\dfrac{2\pi z}{\lambda_g})
+\end{align*}
+Consequently, the electric field lines are perpendicular to the plane of the paper, with their amplitudes varying as the distance from the center increases.
+% add figure depictin the electric field lines in the parallel plane waveguide
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/electric_field_variations_te1_temp}
+\caption{Electric field variation in the parallel plane waveguide operating in the TE$_1$ mode}
+\label{fig:electric_field_variation}
+\end{figure}
 
-So we have a certain notion we have we have built for an electrical circuit that is essentially from the transverse nature of the electromagnetic wave. As soon as we make the departure from a transverse electromagnetic wave to a transverse electric or transverse magnetic case, all those notions completely break down and we get a much clearer picture of the propagation of electromagnetic waves and the current and the distribution of charges and so on for various configurations. So with this understanding of the current flow for a parallel plane structure which is rather the simplest structure, now we can discuss the field distribution inside a rectangular waveguide which is a more practical structure.
+With a clear picture of the field distributions, let's explore the currents generated on the waveguide's surface. These currents are determined by the tangential component of the magnetic field on the walls.
 
-In summary, we saw that the $TEM$ mode cannot exist inside a rectangular waveguide. We also showed that by taking limits with a rectangular waveguide and pushing one of the dimensions to infinity, then the field we get for a rectangular waveguide is identical to what we have got for a parallel plane waveguide. Then we developed a mechanism for visualizing these fields inside a waveguide. We saw two cases, one was of the transverse electromagnetic wave in a parallel plane waveguide, and the other was the ${TE_1}$ mode inside the parallel plane waveguide. 
+For the leftside wall, where the magnetic field has only a z-component, the normal unit vector $\hat{n}$ points inward along the +x direction. Therefore, when calculating $\hat{n} \times \boldsymbol{H}$, the resulting current flows in the y-direction. Conversely, on the rightside wall, where the magnetic field has no x-component, the normal unit vector $\hat{n}$ points inward along the -x direction. Consequently, the surface current flows in the opposite y-direction (see Figure~\ref{fig:surface_current_variation}).
+% add figure depicting the direction of surface current (Js) on the walls of the parallel plane waveguide
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/surface_current_variations_te1_temp}
+\caption{Surface current variations in the parallel plane waveguide operating in the TE$_1$ mode}
+\label{fig:surface_current_variation}
+\end{figure}
+
+Notably, in contrast to the TEM mode, where the current and power flow coincide, in this scenario, the surface current flows perpendicular to the direction of power flow. While the current flows in the y-direction, the power flows in the z-direction. This highlights an essential distinction: the direction of current and power flow can be independent of each other.
+
+In summary, our exploration has shed light on the intricate interplay of fields and currents within a parallel-plane waveguide, specifically in the TE1 mode. We've uncovered the unique spatial patterns of electric and magnetic fields and how they relate to surface currents. Additionally, we've challenged the conventional notion that current and power flow must align, emphasizing that they can have distinct directions.
+
+This understanding serves as a foundational concept in the realm of electromagnetic wave propagation and waveguide theory, enriching our comprehension of complex electromagnetic phenomena. It also highlights the importance of considering different modes and configurations in the study of electromagnetic fields.
+
+Next, we will delve into the field distribution and current flow within a rectangular waveguide, a practical structure commonly used in waveguide applications. We will also explore advanced topics, such as calculating losses in waveguides.
+
+\section*{Exercises}
+\begin{ExerciseList}
+\Exercise[label={ex401}]
+Can the Transverse Electromagnetic (TEM) mode exist within a rectangular waveguide, and if not, what are the underlying reasons for its absence?
+\Exercise[label={ex402}]
+Describe the field patterns and current distributions in the Transverse Electromagnetic (TEM) mode within a parallel-plane waveguide, and explain why this mode is supported in such a structure.
+\Exercise[label={ex403}]
+In the context of parallel-plane waveguides and rectangular waveguides, why does the alignment between current direction and power flow direction differ, and what does this reveal about the interplay between fields and currents in waveguide systems?
+\end{ExerciseList}
