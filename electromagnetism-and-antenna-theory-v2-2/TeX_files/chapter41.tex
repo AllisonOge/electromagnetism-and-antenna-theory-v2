@@ -27,7 +27,7 @@ There was no y component for the magnetic field. There was no z component for th
 \end{align}
 Essentially these were the fields we visualized inside a parallel plane waveguide.
 
-From Equation~\ref{eqn:eyppw}, if $z = 0, E_{y}$ is zero. At a distance $ z = \dfrac{\lambda g}{4}$, $E_{y}$ is maximum for variation in z.
+From Equation~\eqref{eqn:eyppw}, if $z = 0, E_{y}$ is zero. At a distance $ z = \dfrac{\lambda g}{4}$, $E_{y}$ is maximum for variation in z.
 
 If we move the origin such that $z = \dfrac{\lambda g}{4}$ is now the starting point shown in Figure~\ref{fig:lectureimage2}.
 \begin{figure}[h]
@@ -196,7 +196,7 @@ where $\eta= \sqrt{\frac{\mu}{\epsilon}}$. Therefore Equation~\ref{eqn:attenuati
 
 So knowing the dielectric constant of the medium and assuming the loss tangent is very small, ie the losses in the medium are very small, we can establish the attenuation constant $\alpha_{d}$ due to the finite conductivity of the dielectric medium. We say that for two losses, the attenuation constant is proportional to the conductivity of the medium and we see that $\alpha_{d}$ is related to the cut-off frequency. So when the frequency is much larger compared to $f_{c}$, we have $\dfrac{\sigma\eta}{2}$ which is very similar to the case of the transmission line. We recall that if we take the transverse electromagnetic mode, $\dfrac{\sigma\eta}{2}$ was the attenuation constant for the transmission line.
 
-So when we talk about the lossy mediums in the unbound medium, that time we got a loss which was $\alpha = \dfrac{\sigma\eta}{2}$. What happens now however is that in the rectangular waveguide, it also depends upon how far away you are from the cut-off frequency, so if you are very close to the cut-off frequency, $\sqrt{1 - \left(\dfrac{fc}{f}\right)^{2}}$ becomes close to zero and Equation~\ref{eqn:attenuationconst2} becomes very large. So now the dielectric loss is a function of frequency which otherwise was not a function of frequency. In the transverse electromagnetic mode,  $\alpha_{d}$ only depended on the conductivity. So $\alpha_{d}$ is proportional to the conductivity of the dielectric $\sigma$ and also depends on how far away you are from the cut-off frequency of a particular mode. As you get closer to the mode's cut-off frequency, your dielectric loss increases, so by using the equation, we can calculate one component of the attenuation constant and that is the dielectric attenuation constant $\alpha_{d}$.
+So when we talk about the lossy mediums in the unbound medium, that time we got a loss which was $\alpha = \dfrac{\sigma\eta}{2}$. What happens now however is that in the rectangular waveguide, it also depends upon how far away you are from the cut-off frequency, so if you are very close to the cut-off frequency, $\sqrt{1 - \left(\dfrac{fc}{f}\right)^{2}}$ becomes close to zero and Equation~\eqref{eqn:attenuationconst2} becomes very large. So now the dielectric loss is a function of frequency which otherwise was not a function of frequency. In the transverse electromagnetic mode,  $\alpha_{d}$ only depended on the conductivity. So $\alpha_{d}$ is proportional to the conductivity of the dielectric $\sigma$ and also depends on how far away you are from the cut-off frequency of a particular mode. As you get closer to the mode's cut-off frequency, your dielectric loss increases, so by using the equation, we can calculate one component of the attenuation constant and that is the dielectric attenuation constant $\alpha_{d}$.
 
 \subsection{Conductor Attenuation constant}
 The second component we want to calculate now is the finite conductivity of the boundary. This calculation is not as straightforward as the dielectric attenuation constant we have just done. Since the fields are now inside the waveguide, simply modifying the propagation constant would do, but we do not know now how to put this medium as a lossy medium. If the losses are going to take place in the walls, then we have to go from the first principle and calculate the attenuation constant using the first principles. What this means is that if there is a loss in the medium, the $E$ and $H$ fields vary as a function of $z$ ie $ {\hat{E}}, {\hat{H}} \ \sim\ e^{-\alpha z}$ where $\alpha$ is the attenuation constant. So the power which is proportional to $|{\hat{E}}|^{2}$ or $|{\hat{H}}|^{2}$ since power is ${\hat{E}}\times{\hat{H}}$. So power density is the power which the waveguide carriers, i.e $W\sim e^{-2\alpha z}$ ie varies as $e^{-2\alpha z}$. We can differentiate $\omega$ power with respect to z to get 
@@ -215,4 +215,22 @@ Now to calculate the attenuation constant, we require two quantities to be calcu
 
 So $W = \int\frac{1}{2}\mathfrak{Re}\{\bar{E}\times\bar{H^*}\}\cdot{da}$ gives the total power flowing in  the waveguide. Once we know the surface current $I_{s}$ on these walls, then we see that power loss per unit area is given by half surface resistance multiplied by $|J_{s}|^{2}$. So knowing the surface current, we can calculate the loss per unit area and since the height of the waveguide is known, we can calculate the loss per unit length of the waveguide. Once we know these two quantities, using the relation $\alpha = -\dfrac{\dv{W}{z}}{2W}$, we can calculate the attenuation constant of this waveguide due to the finite conductivity of the walls.
 
-In the next chapter, by using the basic definition of the attenuation constant, we will derive the attenuation constant for two modes. One is for a parallel plane waveguide in the TEM mode, i.e the simplest mode just to get a feel of how to calculate this quantity. Then we would calculate the attenuation constant for a rectangular waveguide for TE$_{10}$ mode. 
+In the next chapter, by using the basic definition of the attenuation constant, we will derive the attenuation constant for two modes. One is for a parallel plane waveguide in the TEM mode, i.e the simplest mode just to get a feel of how to calculate this quantity. Then we would calculate the attenuation constant for a rectangular waveguide for TE$_{10}$ mode.
+
+\section*{Exercises}
+\begin{ExerciseList}
+\Exercise[label={ex411}]
+What is the dominant mode in a rectangular waveguide, and why is it important?
+
+\Exercise[label={ex412}]
+How are the electric and magnetic fields visualized inside a parallel plane waveguide? And what are the field patterns for TE$_{10}$ mode in a rectangular waveguide?
+
+\Exercise[label={ex413}]
+What is the attenuation constant in a waveguide, and how is it related to loss in waveguides? How is the attenuation constant affected by dielectric losses and conductor losses? And how does the loss tangent affect the attenuation constant in dielectric-filled waveguides?
+
+\Exercise[label={ex414}]
+How is surface current induced in a rectangular waveguide? And what is the relationship between surface current and magnetic field direction on different walls of the waveguide?
+
+\Exercise[label={ex415}]
+How is the attenuation constant related to power loss and total power carried by the waveguide?
+\end{ExerciseList}
