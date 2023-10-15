@@ -1,5 +1,5 @@
 \chapter{Green Function Technique}
-Now, we would solve the wave equations in equations~\eqref{eqn:vectorpotentialeqnwithlorentzguage} and~\eqref{eqn:scalarpotential} using a technique known as the \emph{Green Function Technique}\index{green function technique}. The Green function technique is applied in solving inhomogeneous ordinary differential equations which, in this case, is what we have. The Green function technique solves for the Green function, which is a scalar denoted by $G$ for the differential equations given. The Green function, $G$, is the impulse response of the differential equation. For the wave equation, the green function, $G$, is the spatial impulse response of the system which is described by the wave equations. When applying the Green function technique to the wave equations given, we are essentially solving for the spatial impulse response of the wave equations. The spatial impulse response of the wave equations is the solution to the wave equations. The solution to the wave equations is the fields $\vec{E}$ and $\vec{H}$. The wave equations from in equations~\eqref{eqn:vectorpotentialeqnwithlorentzguage} and~\eqref{eqn:scalarpotential} are given by:
+Now, we would solve the wave equations in Equations~\eqref{eqn:vectorpotentialeqnwithlorentzguage} and~\eqref{eqn:scalarpotential} using a technique known as the \emph{Green Function Technique}\index{green function technique}. The Green function technique is applied in solving inhomogeneous ordinary differential equations which, in this case, is what we have. The Green function technique solves for the Green function, which is a scalar denoted by $G$ for the differential equations given. The Green function, $G$, is the impulse response of the differential equation. For the wave equation, the green function, $G$, is the spatial impulse response of the system which is described by the wave equations. When applying the Green function technique to the wave equations given, we are essentially solving for the spatial impulse response of the wave equations. The spatial impulse response of the wave equations is the solution to the wave equations. The solution to the wave equations is the fields $\vec{E}$ and $\vec{H}$. The wave equations from in Equations~\eqref{eqn:vectorpotentialeqnwithlorentzguage} and~\eqref{eqn:scalarpotential} are given by:
 \begin{align}
 \nabla^{2}\bar{A}-\mu\bar{A} = -\mu\bar{J}
 \label{eqn:vectorpotentialeqnwithlorentzguage_lec47}\\
@@ -9,7 +9,7 @@ Now, we would solve the wave equations in equations~\eqref{eqn:vectorpotentialeq
 Let us note that the Laplace operator is scalar (it operates on a scalar) which means it operates on each component of the $\bar{A}$ vector. So essentially replacing the vector $\bar{A}$ with a scalar is possible.
 Points to note when using the technique:
 \begin{enumerate}[(i)]
-\item First, we replace in the differential equations~\eqref{eqn:vectorpotentialeqnwithlorentzguage_lec47} and~\eqref{eqn:scalarpotential_lec47}, the original function (in this case, $\bar{A}$ and $V$) with the Green function and replace the driving quantity (in this case $-\mu\bar{J}$ and $-\frac{\rho}{\epsilon}$) with the impulse function $\delta = f_{n}$(space).
+\item First, we replace in the differential Equations~\eqref{eqn:vectorpotentialeqnwithlorentzguage_lec47} and~\eqref{eqn:scalarpotential_lec47}, the original function (in this case, $\bar{A}$ and $V$) with the Green function and replace the driving quantity (in this case $-\mu\bar{J}$ and $-\frac{\rho}{\epsilon}$) with the impulse function $\delta = f_{n}$(space).
 \item Next, we convolve the solution of the Green function with the driving quantity to get the solution to the original function.
 \end{enumerate}
 
@@ -29,7 +29,7 @@ Recall from the wave equation, in an inbound medium,
 \beta &= \omega\sqrt{\mu \varepsilon}\\
 \beta &= \omega\sqrt{\mu_o \varepsilon_o}\quad\text{for free space}
 \end{align*}
-So, equation~\eqref{eqn:vectorpotentialeqnwithlorentzguage_lec47_timevarying} can be written as:
+So, Equation~\eqref{eqn:vectorpotentialeqnwithlorentzguage_lec47_timevarying} can be written as:
 \begin{align*}
 \nabla^{2}\bar{A}+\beta^{2}\bar{A} = -\mu\bar{J}
 \end{align*}
@@ -58,7 +58,7 @@ Let's define a variable $\psi = rG$, such that,
 &\text{and}&\\
 &G = \frac{\psi}{r}&
 \end{align*}
-Substitute $G$ and $\derivative{G}{r}$ interms of $\psi$ in equation~\eqref{eqn:vectorpotentialeqnwithlorentzguage_lec47_sphericalcoordinates}:
+Substitute $G$ and $\derivative{G}{r}$ interms of $\psi$ in Equation~\eqref{eqn:vectorpotentialeqnwithlorentzguage_lec47_sphericalcoordinates}:
 \begin{align*}
 \frac{1}{r^{2}}\derivative{}{r}\left(r^{2}
 \left(\frac{1}{r}(\derivative{\psi}{r} - G) \right) \right) + \beta^{2}\frac{\psi}{r} &= \delta(r)\\
@@ -90,9 +90,9 @@ G = \frac{Ce^{-j\beta r}}{r}
 It should be noted that a constant $r$ represents the constant phase surface. In the spherical coordinate system when $r$ equals a constant, we know it represents a sphere so these constant phase surfaces are spheres and the wave propagating is called the \emph{spherical wave}\index{spherical wave}. Also, one other thing to be noted is that the amplitude of the spherical wave reduces by $\frac{1}{r}$ as opposed to the uniform plane wave in which the amplitude does not change as a function of space. In conclusion, the solution of the Green function, $G$, gives a spherical wave whose magnitude reduces by  $\frac{1}{r}$ and whose phase fronts are spheres.
 
 \subsection{Solution of the Green function in the presence of a source}
-The solution of the Green function in equation~\eqref{eqn:greenfunction_solution} is not complete as the solution is the impulse response which is the complementary solution of the differential equation, hence, let's compute $C$ by applying the appropriate boundary conditions.
+The solution of the Green function in Equation~\eqref{eqn:greenfunction_solution} is not complete as the solution is the impulse response which is the complementary solution of the differential equation, hence, let's compute $C$ by applying the appropriate boundary conditions.
 
-To evaluate $C$, we substitute the general solution of $G = \frac{Ce^{-j\beta r}}{r}$ in the original differential equation in equation~\eqref{eqn:vectorpotentialeqnwithlorentzguage_lec47_sphericalcoordinates}, integrate the whole expression over the volume around the origin, and then take a limit when $r\rightarrow0$\footnote{
+To evaluate $C$, we substitute the general solution of $G = \frac{Ce^{-j\beta r}}{r}$ in the original differential equation in Equation~\eqref{eqn:vectorpotentialeqnwithlorentzguage_lec47_sphericalcoordinates}, integrate the whole expression over the volume around the origin, and then take a limit when $r\rightarrow0$\footnote{
 We take the limit when $r\rightarrow0$ because the source is at the origin. Also note that generally the limit is taken for an impulse response, but in this case, the source is at the origin, so the limit is taken when $r\rightarrow0$.
 }
 \begin{dmath*}
@@ -174,6 +174,6 @@ Also, there is one observation point where the vector potential is to be determi
 \begin{equation}
 \mu\vec{J}(r^{'}) \frac{e^{-j\beta|\vec{r}-\vec{r^{'}}|}}{4\pi|\vec{r}-\vec{r^{'}}|}dV',
 \end{equation}
-So integrating it over the region of the space where the source is, gives the total vector potential given by equation~\eqref{eqn:vector_potential_complete}. The reason for the mod sign in equation~\eqref{eqn:vector_potential_complete} is to always have a positive value of r. So with the current distribution at the location $\vec{r^{'}}$, the magnetic vector potential at any point $\vec{r}$ can be calculated.
+So integrating it over the region of the space where the source is, gives the total vector potential given by Equation~\eqref{eqn:vector_potential_complete}. The reason for the mod sign in Equation~\eqref{eqn:vector_potential_complete} is to always have a positive value of r. So with the current distribution at the location $\vec{r^{'}}$, the magnetic vector potential at any point $\vec{r}$ can be calculated.
 
 In this course, when modelling antennas, we assume the current distribution is given before the problem and our solution is simplified to just solving for the fields. However, if the current distribution were not given, then with some excitation point on the structure, the solution to the problem can be gotten from Maxwell's equation. But like it was said earlier, the current distribution is assumed to be given.

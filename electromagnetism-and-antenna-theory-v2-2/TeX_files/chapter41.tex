@@ -27,7 +27,7 @@ There was no y component for the magnetic field. There was no z component for th
 \end{align}
 Essentially these were the fields we visualized inside a parallel plane waveguide.
 
-From equation~\ref{eqn:eyppw}, if $z = 0, E_{y}$ is zero. At a distance $ z = \dfrac{\lambda g}{4}$, $E_{y}$ is maximum for variation in z.
+From Equation~\ref{eqn:eyppw}, if $z = 0, E_{y}$ is zero. At a distance $ z = \dfrac{\lambda g}{4}$, $E_{y}$ is maximum for variation in z.
 
 If we move the origin such that $z = \dfrac{\lambda g}{4}$ is now the starting point shown in Figure~\ref{fig:lectureimage2}.
 \begin{figure}[h]
@@ -111,7 +111,7 @@ n \times H = \hat{x} \times (\hat{z}) = \hat{y}
 \end{equation}
 From these equations, the surface current is going in the y-direction only upon one face down and the other sign is immaterial here.
 	
-The bottom plane has the opposite direction for $J_{s}$ corresponding to the top plane as calculated and it is shown above. So looking at the current distribution for all four walls and combining them together, we have the Figure~\ref{fig:lectureimage10}. So in the figure for the right side wall, the magnetic field is in the z-direction and at $\pi$ region, $J_{s}$ is in the y-direction as we have solved in equations~\ref{eqn:negy} and \ref{eqn:posy}. On the top wall, the normal direction is y, so then we have a situation shown where it is as if the current is just coming out of the top plane or coming into a point on the top plane or bottom plane depending on the location under consideration. 
+The bottom plane has the opposite direction for $J_{s}$ corresponding to the top plane as calculated and it is shown above. So looking at the current distribution for all four walls and combining them together, we have the Figure~\ref{fig:lectureimage10}. So in the figure for the right side wall, the magnetic field is in the z-direction and at $\pi$ region, $J_{s}$ is in the y-direction as we have solved in Equations~\ref{eqn:negy} and \ref{eqn:posy}. On the top wall, the normal direction is y, so then we have a situation shown where it is as if the current is just coming out of the top plane or coming into a point on the top plane or bottom plane depending on the location under consideration. 
 
 So on the side wall, the current does not change as $H$ on the side wall was also constant. It is zero at the centre of the top plane, it increases as we get to the side of the top plane, remains constant on the side wall and then decreases till it becomes zero on opposite points to the top wall where $H$ started from. In fact, the current is as if it is starting from nowhere it grows and dies down on the opposite wall where it started. In the next half cycle, the direction of the current will charge and this repeats itself periodically. In a half cycle, the current flows upward that is the charge moves downward. In another half cycle, the current flows downward i.e the electrons move upward. So the accumulation of charges takes place between two walls and the charges keep going back and forth and essentially the current flows on the surface of the waveguide. So for every $\frac{\lambda g}{2}$ we have a current island created. It grows and becomes maximum and then decreases to zero on the top plane and bottom plane. It repeats this every $\frac{\lambda g}{2}$. So the current flow is like a blooming flower around both sides, with one like a source and another like a sink of current on the opposite top and bottom plane.
 	
@@ -144,7 +144,7 @@ Then for lossy medium, where $\epsilon_{l}$ is for lossy medium given as:
 \begin{align*}
 \epsilon_{l} = \epsilon_{o}\epsilon_{rl}
 \end{align*}
-But $\epsilon_{rl} = \epsilon_{r}(1-j\tan\delta)$ and $\tan\delta$ is the loss tangent. We substitute for $\epsilon_{l}$ in equation~\ref{eqn:dispersrelte10} 
+But $\epsilon_{rl} = \epsilon_{r}(1-j\tan\delta)$ and $\tan\delta$ is the loss tangent. We substitute for $\epsilon_{l}$ in Equation~\ref{eqn:dispersrelte10} 
 \begin{equation*}
 \beta^{2}_{l} = \omega^{2}\mu\epsilon_{o}\epsilon_{r}(1-j\tan\delta)
 \end{equation*}
@@ -183,7 +183,7 @@ As such
 \begin{dmath*}
 \beta = \sqrt{\omega^{2}\mu\epsilon-\omega^{2}_{c}\mu\epsilon} = \omega\sqrt{\mu\epsilon}\sqrt{1-\left(\dfrac{fc}{f}\right)^{2}}
 \end{dmath*}
-Substituting for $\beta$ in the equation~\ref{eqn:attenuationconst}
+Substituting for $\beta$ in the Equation~\ref{eqn:attenuationconst}
 \begin{dmath*}	
 \alpha_{d}=\dfrac{\omega\mu\sigma}{2\beta}= \dfrac{\omega\mu\sigma}{2\omega\sqrt{\mu\epsilon}\sqrt{1-\left(\dfrac{fc}{f}\right)^{2}}}
 \end{dmath*}
@@ -192,11 +192,11 @@ Dividing the numerator and denominator by $\omega\sqrt{\mu\epsilon}$
 \alpha_{d} = \dfrac{\sigma\sqrt{\frac{\mu}{\epsilon}}}{2\sqrt{1-\left(\dfrac{fc}{f}\right)^{2}}}=\dfrac{\sigma\eta}{2\sqrt{1 - \left(\dfrac{fc}{f}\right)^{2}}}
 \label{eqn:attenuationconst2}
 \end{dmath}
-where $\eta= \sqrt{\frac{\mu}{\epsilon}}$. Therefore equation~\ref{eqn:attenuationconst2} is the formula for the attenuation constant and $f_c$ is the cut-off frequency of the mode under consideration.
+where $\eta= \sqrt{\frac{\mu}{\epsilon}}$. Therefore Equation~\ref{eqn:attenuationconst2} is the formula for the attenuation constant and $f_c$ is the cut-off frequency of the mode under consideration.
 
 So knowing the dielectric constant of the medium and assuming the loss tangent is very small, ie the losses in the medium are very small, we can establish the attenuation constant $\alpha_{d}$ due to the finite conductivity of the dielectric medium. We say that for two losses, the attenuation constant is proportional to the conductivity of the medium and we see that $\alpha_{d}$ is related to the cut-off frequency. So when the frequency is much larger compared to $f_{c}$, we have $\dfrac{\sigma\eta}{2}$ which is very similar to the case of the transmission line. We recall that if we take the transverse electromagnetic mode, $\dfrac{\sigma\eta}{2}$ was the attenuation constant for the transmission line.
 
-So when we talk about the lossy mediums in the unbound medium, that time we got a loss which was $\alpha = \dfrac{\sigma\eta}{2}$. What happens now however is that in the rectangular waveguide, it also depends upon how far away you are from the cut-off frequency, so if you are very close to the cut-off frequency, $\sqrt{1 - \left(\dfrac{fc}{f}\right)^{2}}$ becomes close to zero and equation~\ref{eqn:attenuationconst2} becomes very large. So now the dielectric loss is a function of frequency which otherwise was not a function of frequency. In the transverse electromagnetic mode,  $\alpha_{d}$ only depended on the conductivity. So $\alpha_{d}$ is proportional to the conductivity of the dielectric $\sigma$ and also depends on how far away you are from the cut-off frequency of a particular mode. As you get closer to the mode's cut-off frequency, your dielectric loss increases, so by using the equation, we can calculate one component of the attenuation constant and that is the dielectric attenuation constant $\alpha_{d}$.
+So when we talk about the lossy mediums in the unbound medium, that time we got a loss which was $\alpha = \dfrac{\sigma\eta}{2}$. What happens now however is that in the rectangular waveguide, it also depends upon how far away you are from the cut-off frequency, so if you are very close to the cut-off frequency, $\sqrt{1 - \left(\dfrac{fc}{f}\right)^{2}}$ becomes close to zero and Equation~\ref{eqn:attenuationconst2} becomes very large. So now the dielectric loss is a function of frequency which otherwise was not a function of frequency. In the transverse electromagnetic mode,  $\alpha_{d}$ only depended on the conductivity. So $\alpha_{d}$ is proportional to the conductivity of the dielectric $\sigma$ and also depends on how far away you are from the cut-off frequency of a particular mode. As you get closer to the mode's cut-off frequency, your dielectric loss increases, so by using the equation, we can calculate one component of the attenuation constant and that is the dielectric attenuation constant $\alpha_{d}$.
 
 \subsection{Conductor Attenuation constant}
 The second component we want to calculate now is the finite conductivity of the boundary. This calculation is not as straightforward as the dielectric attenuation constant we have just done. Since the fields are now inside the waveguide, simply modifying the propagation constant would do, but we do not know now how to put this medium as a lossy medium. If the losses are going to take place in the walls, then we have to go from the first principle and calculate the attenuation constant using the first principles. What this means is that if there is a loss in the medium, the $E$ and $H$ fields vary as a function of $z$ ie $ {\hat{E}}, {\hat{H}} \ \sim\ e^{-\alpha z}$ where $\alpha$ is the attenuation constant. So the power which is proportional to $|{\hat{E}}|^{2}$ or $|{\hat{H}}|^{2}$ since power is ${\hat{E}}\times{\hat{H}}$. So power density is the power which the waveguide carriers, i.e $W\sim e^{-2\alpha z}$ ie varies as $e^{-2\alpha z}$. We can differentiate $\omega$ power with respect to z to get 

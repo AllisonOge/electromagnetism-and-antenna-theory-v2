@@ -14,7 +14,7 @@ H_z = C\cos(\frac{m\pi x}{a}) \cos(\frac{n\pi y}{b})e^{-j\beta z}
 \label{eqn:magneticfield}
 \end{dmath}
 
-Like the case of the transverse magnetic, we denote this by TE$_{mn}$ to show the order of the transverse electric mode. We ask what are indexes required for the existence of these fields. If $m = n = 0$ i.e $\text{TE}_{00},H_z$ is not zero unlike the TM$_{00}$ mode. Recall that the transverse fields from equations~\ref{eqn:transverseex}-\ref{eqn:transversehy} expressed as:
+Like the case of the transverse magnetic, we denote this by TE$_{mn}$ to show the order of the transverse electric mode. We ask what are indexes required for the existence of these fields. If $m = n = 0$ i.e $\text{TE}_{00},H_z$ is not zero unlike the TM$_{00}$ mode. Recall that the transverse fields from Equations~\ref{eqn:transverseex}-\ref{eqn:transversehy} expressed as:
 \begin{align*}
 E_x = -\frac{j\omega u}{h^2}\frac{\partial H_z}{\partial y} - \dfrac{j\beta}{h^2}\frac{\partial E_z}{\partial x}\\
 E_y = \frac{j\omega u}{h^2}\frac{\partial H_z}{\partial x} - \dfrac{j\beta}{h^2}\frac{\partial E_z}{\partial y}\\
@@ -23,7 +23,7 @@ H_y = -\frac{j\omega \epsilon}{h^2}\frac{\partial E_z}{\partial x} - \dfrac{j\be
 \end{align*}
 All the transverse fields involve space derivation, $\dfrac{\partial}{\partial x}$ or $\dfrac{\partial}{\partial y}$. So having a field which does not vary as a function of space $(x,y)$ for TE$_{00}$, $H_z = Ce^{-j\beta z}$  $\dfrac{\partial H_z}{\partial x}$,  $\dfrac{\partial H_z}{\partial y} = 0$ and $E_z = 0$. So that $E_x, E_y, H_x$ and $H_y$ will all go to zero. So if $m = n = 0, H_z = C \Rightarrow E_\bot , H_\bot = 0$. This means that in this situation of $m = n = 0$ for TE, we have magnetic field $H_z = Ce^{-j\beta z}$ but no electric field. What we have seen for a time-varying field is such that this can't happen as electric and magnetic fields are coupled. So if the electric field goes to zero, then the magnetic field must go to zero. This means that the constant $C$ is $H_z = Ce^{-j\beta z}$ must be identically equal to zero. This means that mode TE$_{00}$ cannot exist like TM$_{00}$.
 
-Let's consider $H_z$ from equation~\ref{eqn:magneticfield} when $m$ or $n = 0$,
+Let's consider $H_z$ from Equation~\ref{eqn:magneticfield} when $m$ or $n = 0$,
 \begin{dmath*}
 H_z = C \cos \left(\frac{m\pi x}{a}\right)\cos\left(\frac{n\pi y}{b}\right)e^{-j\beta z} = C \cos \left(\frac{n\pi y}{b}\right)e^{-j\beta z} \neq 0 
 \end{dmath*}
@@ -73,7 +73,7 @@ For our case, let's say $\beta = \dfrac{2\pi}{\lambda}$, $\lambda$ is not the wa
 \section{Guide Wavelength}
 $\beta$ is the phase constant we measured as we move the probe along to get successive maxima inside the waveguide.$\lambda$ is not what we measure along the waveguide but $\lambda_g$
 
-From equation~\ref{eqn:phaseconstrec}, $\beta$ is related to  $\beta = \dfrac{2\pi}{\lambda_g}$, then 
+From Equation~\ref{eqn:phaseconstrec}, $\beta$ is related to  $\beta = \dfrac{2\pi}{\lambda_g}$, then 
 \begin{dmath}
 \lambda_g = \frac{\lambda}{\left[1-{\left(\frac{fc}{f}\right)}^2\right]^{\frac{1}{2}}}
 \label{eqn:lambdag}
@@ -83,7 +83,7 @@ where $\lambda$ is the wavelength of the wave in unbound medium $\lambda_g$ is t
 Secondly, as $f\longrightarrow f_c$, when $f=f_c$, $\lambda_g = \dfrac{\lambda}{0} = \infty$ so $\lambda_g\longrightarrow\infty$ when $f\longrightarrow f_c$. We know that phase velocity $V_\rho = \dfrac{\omega}{\beta}$. When $f\gg f_c$, $V_\rho\approx c$ (intrinsic velocity) and when $f\longrightarrow f_c$, $V_\rho\longrightarrow\infty$ or if $\lambda_g\longrightarrow\infty$ because $f\longrightarrow f_c$, velocity = $\lambda_gf\longrightarrow\infty$.
 
 These are certain important conclusions we can draw from our analysis and try to investigate the cut-off frequencies for different modes. Comparing the lowest modes for the TE and TM modes, which are TE$_{10}$, TE$_{01}$, and TM$_{11}$.
-From equation~\ref{eqn:cut-off} for  $m=1$ and $n=0$, TE$_{10}$ have 
+From Equation~\ref{eqn:cut-off} for  $m=1$ and $n=0$, TE$_{10}$ have 
 \begin{dmath*}
 f_{c_{\text{TE}_{10}}} = \frac{1}{2\pi \sqrt{\mu\epsilon}}\frac{\pi}{a} = \frac{\frac{\pi}{a}}{2\pi \sqrt{\mu\epsilon}}
 \end{dmath*}

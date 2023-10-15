@@ -11,7 +11,7 @@ Now, we will determine the vector potential $\vec{A}$ at some point in space giv
 \label{fig:small_current_element}
 \end{figure}
 
-We recall that the vector potential given in equation~\eqref{eqn:vector_potential_complete}, we substitute r for $|\vec{r} - \vec{r'}|$ because $\vec{r'}$ is the position where the current element is located which is the origin such that the vector potential is;
+We recall that the vector potential given in Equation~\eqref{eqn:vector_potential_complete}, we substitute r for $|\vec{r} - \vec{r'}|$ because $\vec{r'}$ is the position where the current element is located which is the origin such that the vector potential is;
 \begin{align}
 \vec{A}(\vec{r}) =\int_v \frac{\mu \vec{J}(\vec{r'}) e^{-j\beta r}}{4\pi r}dv'
 \label{eq:vector_potential_lec48}
@@ -111,7 +111,7 @@ Comparing the above equation with $\vec{E} = E_r\hat{r} + E_{\theta}\hat{\theta}
 E_r = \frac{-j \hat{r}}{\omega \epsilon r\sin\theta}\left(\sin\theta\frac{\partial }{\partial \theta}H_{\phi} + H_{\phi}\frac{d\sin\theta}{d\theta}\right)
 = \frac{-j}{\omega \epsilon r}\frac{\partial}{\partial \theta}H_{\phi} - \frac{j\cos\theta}{\omega \epsilon r\sin\theta}H_\phi
 \end{dmath*}
-Recall that $H_{\phi} = \dfrac{\sin\theta I_0 dl e^{j(\omega t-\beta r)} }{4\pi} \left(\dfrac{j\beta}{r} + \dfrac{1}{r^2}\right)$ from equation~\eqref{eqn:magneticfieldsmallcurrentelement}
+Recall that $H_{\phi} = \dfrac{\sin\theta I_0 dl e^{j(\omega t-\beta r)} }{4\pi} \left(\dfrac{j\beta}{r} + \dfrac{1}{r^2}\right)$ from Equation~\eqref{eqn:magneticfieldsmallcurrentelement}
 \begin{dmath*}
 \dfrac{\partial H_{\phi}}{\partial \theta} =  \frac{I_0 dl e^{j(\omega t-\beta r)} }{4\pi} (\frac{j\beta}{r} + \frac{1}{r^2})\dfrac{d (\sin\theta)}{d \theta}
 = \dfrac{\cos \theta I_0 dl e^{j(\omega t-\beta r)} }{4\pi} \left(\frac{j\beta}{r} + \frac{1}{r^2}\right)
@@ -151,7 +151,7 @@ E_{\theta} = \frac{I_0sin \theta dl e^{j(\omega t - \beta r)}}{4\pi \epsilon}\le
 Now we note that the magnetic field of the hertz dipole is oriented in the $\phi$ direction around the $z$ axis while the electric field has two components\textemdash one in the $r$ direction which is the $r$ component and one in the $\theta$ direction which is the $\theta$ component.
 
 \section{Near and Far fields}
-A few important points emerge when studying equations~\eqref{eqn:magneticfieldsmallcurrentelement}, ~\eqref{eqn:electricfieldradialcomponentsmallcurrentelement} and~\eqref{eqn:electricfieldthetacomponentsmallcurrentelement}, a careful look shows the expressions contain terms varying with $\frac{1}{r^3}$, $\frac{1}{r^2}$ and $\frac{1}{r}$. At points very close to the current element, the  $\frac{1}{r^3}$ term must be dominant. The variation of an electric field with  $\frac{1}{r^3}$ should remind us of the electrostatic field of the dipole. The near field terms of  $\frac{1}{r^3}$ in the electric field component represent energy stored in a reactive (capacitive) field and they do not contribute to the radiated power. Also, the  $\frac{1}{r^2}$ term in the $H_\phi$ expression is similarly important only in the region very near to the current element. It corresponds to the induction field of the DC element as found through Biot-Savart law. At a distance far away from the source, the effect of the  $\frac{1}{r^3}$ and  $\frac{1}{r^2}$ terms reduces drastically except for the effect of the  $\frac{1}{r}$ term, and we are said to be in the far-field zone. Thus the remaining fields that have the  $\frac{1}{r}$ dependence are the radiation fields. 
+A few important points emerge when studying Equations~\eqref{eqn:magneticfieldsmallcurrentelement}, ~\eqref{eqn:electricfieldradialcomponentsmallcurrentelement} and~\eqref{eqn:electricfieldthetacomponentsmallcurrentelement}, a careful look shows the expressions contain terms varying with $\frac{1}{r^3}$, $\frac{1}{r^2}$ and $\frac{1}{r}$. At points very close to the current element, the  $\frac{1}{r^3}$ term must be dominant. The variation of an electric field with  $\frac{1}{r^3}$ should remind us of the electrostatic field of the dipole. The near field terms of  $\frac{1}{r^3}$ in the electric field component represent energy stored in a reactive (capacitive) field and they do not contribute to the radiated power. Also, the  $\frac{1}{r^2}$ term in the $H_\phi$ expression is similarly important only in the region very near to the current element. It corresponds to the induction field of the DC element as found through Biot-Savart law. At a distance far away from the source, the effect of the  $\frac{1}{r^3}$ and  $\frac{1}{r^2}$ terms reduces drastically except for the effect of the  $\frac{1}{r}$ term, and we are said to be in the far-field zone. Thus the remaining fields that have the  $\frac{1}{r}$ dependence are the radiation fields. 
 
 Let's take a look at equation ~\eqref{eqn:electricfieldthetacomponentsmallcurrentelement}, the term $\frac{\beta^2}{\omega r}$ can be further simplified to $\frac{\omega \mu \epsilon}{r}$, which means it varies inversely with r and is proportional to the frequency,$\omega$. Also considering the $\frac{\beta}{\omega r^2}$ term, substituting $\beta = \omega \sqrt{\mu \epsilon}$ gives $\frac{\sqrt{\mu \epsilon}}{r^2}$ which is independent of the frequency, $\omega$ and the term $\frac{1}{\omega r^3}$ term (the \emph{electrostatic field}\index{electrostatic field}), varies as $\frac{1}{\omega }$. Hence at lower frequencies the $\frac{1}{\omega r^3}$ dominates while at higher frequencies the $\frac{\beta^2}{\omega r}$ dominates for the same current $I_0dl$ which tallies with the statement established earlier that frequency increases the radiation increases. 
 
@@ -169,7 +169,7 @@ Now the next question to ask is \emph{why does this field dominate at a lower fr
 
 Essentially, there are 3 fields; \emph{the electrostatic field}, \emph{the induction field} and \emph{the radiation field}, which are generated by the simple Hertz dipole. Our interest however is the radiation field. 
 
-From equation~\eqref{eqn:electricfieldthetacomponentsmallcurrentelement}, let $E_{\theta} = 0$. Thus,
+From Equation~\eqref{eqn:electricfieldthetacomponentsmallcurrentelement}, let $E_{\theta} = 0$. Thus,
 \begin{align*}
 &\frac{j\beta^2}{\omega r} + \frac{\beta}{\omega r^2} - \frac{j}{\omega r^3} = 0&\\
 &\text{Taking the modulus}&\\
@@ -183,7 +183,7 @@ From equation~\eqref{eqn:electricfieldthetacomponentsmallcurrentelement}, let $E
 &r\beta = 1\quad\text{ or }\quad r\beta + 1 = 1&\\
 &r = \frac{1}{\beta}\quad\text{ or }\quad r = 0&\\
 \end{align*}
-Since at $ r = 0$, the expression in equation~\eqref{eqn:electricfieldthetacomponentsmallcurrentelement} becomes undefined, then $ r = \frac{1}{\beta} $; $\beta = \frac{2\pi}{\lambda} \Longrightarrow r =  \frac{\lambda}{2 \pi} $.
+Since at $ r = 0$, the expression in Equation~\eqref{eqn:electricfieldthetacomponentsmallcurrentelement} becomes undefined, then $ r = \frac{1}{\beta} $; $\beta = \frac{2\pi}{\lambda} \Longrightarrow r =  \frac{\lambda}{2 \pi} $.
 
 At $ r =  \frac{\lambda}{2 \pi} $ the Electric field goes to zero and the plot is given in Figure~\ref{fig:electricfiedvariationwithdistance}.
 \begin{figure}[h]

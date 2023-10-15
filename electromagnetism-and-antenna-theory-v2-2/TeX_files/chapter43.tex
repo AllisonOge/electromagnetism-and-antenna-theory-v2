@@ -12,7 +12,7 @@ where $\nabla^2$ is the Laplacian operator, $\Psi$ represents the unknown functi
 \nabla^2 \bar{E} + h^2 \bar{E} = 0\label{eqn:helmholtzelectric}\\
 \nabla^2 \bar{H} + h^2 \bar{H} = 0\label{eqn:helmholtzmagnetic}
 \end{align}
-Considering the electric field component, $E_z$, equation~\eqref{eqn:helmholtzelectric} becomes:
+Considering the electric field component, $E_z$, Equation~\eqref{eqn:helmholtzelectric} becomes:
 \begin{align*}
 \frac{1}{r} \partialderivative{}{r}\partialderivative{E_z}{r} + \frac{1}{r^2} \partialderivative[2]{E_z}{\phi} + h^2 E_z = 0
 \end{align*}
@@ -24,16 +24,16 @@ Consider the second-order ordinary differential equation (ODE) given as follows:
 x^2 \derivative[2]{y}{x} + x \derivative{y}{x} + (x^2 - n^2)y = 0
 \label{eqn:secondorderode}
 \end{align}
-The first solution to equation~\eqref{eqn:secondorderode} was proposed by Daniel Bernoulli,\footnote{
+The first solution to Equation~\eqref{eqn:secondorderode} was proposed by Daniel Bernoulli,\footnote{
 Daniel Bernoulli (8/02/1700\textemdash17/03/1782) was a Swiss mathematician and physicist and was one of many prominent mathematicians in the Bernoulli family. He is particularly remembered for his applications of mathematics to mechanics, especially fluid mechanics, and his pioneering work in probability and statistics. His name is commemorated in Bernoulli's principle, a particular example of the conservation of energy, which describes the mathematics of mechanism underlying the operation of two important technologies of the 20th century: the carburettor and the aeroplane wing.
 }
 from the famous Bernoulli principle and it was for analysis of a hanging chain (how it oscillates). We all know a pendulum and therefore we have studied its oscillation with a fixed length of chain. However, there is an oscillation when the length is not fixed and that oscillation was described by Daniel Bernoulli. The second solution was by L. Euler\footnote{
 Leonard Euler (15/04/1707\textemdash18/09/1783) was a Swiss mathematician, physicist, astronomer, logician, and engineer, who made important and influential discoveries in many branches of mathematics, such as infinitesimal calculus and graph theory, while also making pioneering contributions to several branches such as topology and analytic number theory. He also introduced much of the modern mathematical terminology and notation, particularly for mathematical analysis, such as the notion of a mathematical function.
 } famous for the Euler formula and it was for the theory of vibrations of a circular membrane. For instance, the vibrations on a circular drum. In the end, it was Friedrich Bessel\footnote{
 Friedrich Wilhelm Bessel (22/7/784\textemdash17/03/1846) German Astronomer, mathematician, physicist and geodesist, influenced by Carl Friedrich Wihhelm Argelander. Laplace function was named after him in his death even if originally discovered by Daniel Bernoulli.
-} who did a systematic study of the PDE and proposed the various forms of the solution which form the basis of the Bessel function and equation~\eqref{eqn:secondorderode} is called the \emph{Bessel equation}. Bessel functions are probably the next important functions to sines and cosines functions. They play a role in electromagnetics, heat transfer, wave motion, elasticity, and scattering problems\textemdash where waves are scattered from a cylinder or fluids are scattered in a microfluidic channel with cylindrical dimensions. Essentially, any time there is a cylindrical symmetry, the solution is a Bessel function.
+} who did a systematic study of the PDE and proposed the various forms of the solution which form the basis of the Bessel function and Equation~\eqref{eqn:secondorderode} is called the \emph{Bessel equation}. Bessel functions are probably the next important functions to sines and cosines functions. They play a role in electromagnetics, heat transfer, wave motion, elasticity, and scattering problems\textemdash where waves are scattered from a cylinder or fluids are scattered in a microfluidic channel with cylindrical dimensions. Essentially, any time there is a cylindrical symmetry, the solution is a Bessel function.
 
-From equation~\eqref{eqn:secondorderode}, the symbol n is a real number which is positive or zero. Let us denote $\derivative[2]{y}{x} \equiv y''$ and $\derivative{y}{x} \equiv y'$, so that
+From Equation~\eqref{eqn:secondorderode}, the symbol n is a real number which is positive or zero. Let us denote $\derivative[2]{y}{x} \equiv y''$ and $\derivative{y}{x} \equiv y'$, so that
 \begin{align*}
 x^2y'' + xy' + (x^2 - n^2)y = 0
 \end{align*}
@@ -48,14 +48,14 @@ Ferdinand George Frobenius  (26/10/1849\textemdash03/08/1971) was a German mathe
 y(x) = \sum_{k=0}^{\infty}C_k x^{k + \alpha}
 \label{eqn:besselfunctionsoln}
 \end{align}
-which is a general power series solution where $\alpha$ is a constant we introduce to the power of x since the power of x may not necessarily be an integer. Now let us take the derivative of the proposed solution and substitute for the terms $x(xy')'$ and y in equation~\eqref{eqn:secondorderode2}.
+which is a general power series solution where $\alpha$ is a constant we introduce to the power of x since the power of x may not necessarily be an integer. Now let us take the derivative of the proposed solution and substitute for the terms $x(xy')'$ and y in Equation~\eqref{eqn:secondorderode2}.
 \begin{align*}
 y' &= \sum_{k=0}^{\infty}C_k (k + \alpha) x^{k + \alpha - 1}\\
 xy' &= \sum_{k=0}^{\infty}C_k (k + \alpha) x^{k + \alpha}\\
 (xy')' &= \sum_{k=0}^{\infty}C_k (k + \alpha)^2 x^{k + \alpha - 1}\\
 x(xy')' &= \sum_{k=0}^{\infty}C_k (k + \alpha)^2 x^{k + \alpha}
 \end{align*}
-Substituting the above terms in equation~\eqref{eqn:secondorderode2} we get
+Substituting the above terms in Equation~\eqref{eqn:secondorderode2} we get
 \begin{align*}
 \sum_{k=0}^{\infty}C_k (k + \alpha)^2 x^{k + \alpha} + (x^2 - n^2)\sum_{k=0}^{\infty}C_k x^{k + \alpha} = 0
 \end{align*}
@@ -63,7 +63,7 @@ Substituting the above terms in equation~\eqref{eqn:secondorderode2} we get
 \sum_{k=0}^{\infty}C_k (k + \alpha)^2 x^{k + \alpha} - n^2\sum_{k=0}^{\infty}C_k x^{k + \alpha} + \sum_{k=0}^{\infty}C_k x^{k + \alpha + 2} = 0
 \label{eqn:secondorderode3}
 \end{dmath}
-Now we need to determine the various coefficient $C_k$ and the term $\alpha$ we have introduced. The values will be determined by the equation above. First, we note that the equation is true for all powers of x i.e. for $x^0, x^1, x^2$ and so on, hence we have a combination of infinite equations. So let us consider equation~\eqref{eqn:secondorderode3} for $k=0$, we have 
+Now we need to determine the various coefficient $C_k$ and the term $\alpha$ we have introduced. The values will be determined by the equation above. First, we note that the equation is true for all powers of x i.e. for $x^0, x^1, x^2$ and so on, hence we have a combination of infinite equations. So let us consider Equation~\eqref{eqn:secondorderode3} for $k=0$, we have 
 \[
 C_0 \alpha^2 x^\alpha - n^2C_0 x^\alpha + C_0 x^{\alpha + 2} =0
 \]
@@ -72,7 +72,7 @@ Considering similar exponents of x gives
 C_0 \alpha^2 x^\alpha - n^2C_0 x^\alpha &=0\\
 C_0 x^\alpha(\alpha^2 -n^2) &=0
 \end{align*}
-Therefore, $C_0 =0$ or $(\alpha^2 -n^2) =0$. $C_0 =0$ makes no sense, it means the solution is not going to exist so  $\alpha^2 -n^2 =0$ or  $\alpha =\pm n$. Now let us consider the coefficients of $x^{\alpha + 1}$ for $k=1$ in equation~\eqref{eqn:secondorderode3}.
+Therefore, $C_0 =0$ or $(\alpha^2 -n^2) =0$. $C_0 =0$ makes no sense, it means the solution is not going to exist so  $\alpha^2 -n^2 =0$ or  $\alpha =\pm n$. Now let us consider the coefficients of $x^{\alpha + 1}$ for $k=1$ in Equation~\eqref{eqn:secondorderode3}.
 \begin{align*}
 C_1(1 + \alpha)^2 x^{1 + \alpha} - n^2 C_1 x^{1 + \alpha} &= 0\\
 C_1x^{1 + \alpha}[(1 + \alpha)^2 - n^2] &= 0\\
@@ -80,7 +80,7 @@ C_1x^{1 + \alpha}[1 + \alpha^2 + 2\alpha - n^2] &=0\quad\text{Since }\alpha^2 = 
 C_1x^{1 + \alpha}[1 + 2\alpha] &=0\quad\text{For }\alpha =\pm n\\
 C_1x^{1 + \alpha}[1 + 2(\pm n)] &= 0
 \end{align*}
-This means that $C_1 = 0$, since $n \geqq 0$. Now let us consider the coefficients of $x^{\alpha + 2}$ for $k=2$ and $k=0$ in equation~\eqref{eqn:secondorderode3}.
+This means that $C_1 = 0$, since $n \geqq 0$. Now let us consider the coefficients of $x^{\alpha + 2}$ for $k=2$ and $k=0$ in Equation~\eqref{eqn:secondorderode3}.
 So 
 \begin{align*}
 C_2(2 + \alpha) x^{2 + \alpha} - n^2 C_2x^{2 + \alpha} + C_0x^{2 + \alpha} = 0\\
@@ -92,12 +92,12 @@ C_{k-2} = C_k (n^2 - (k + \alpha)^2)\quad\text{or}\\
 C_k\text{ = }\frac{C_{k-2}}{[n^2 - (k + \alpha)^2]}
 \label{eqn:coefficients}
 \end{dmath}
-If k is odd for instance $k = 3$, then equation~\eqref{eqn:coefficients} becomes
+If k is odd for instance $k = 3$, then Equation~\eqref{eqn:coefficients} becomes
 \begin{align*}
 C_3 = \frac{C_{1}}{n^2 - (3 + \alpha)^2} = 0\quad\text{since }C_1 = 0
 \end{align*} 
 
-Also, $C_5$ will be related to $C_3$ and so the odd coefficient does not exist while for even values of k, there are even coefficients. Let $\alpha = \pm n$, so equation~\eqref{eqn:coefficients} becomes 
+Also, $C_5$ will be related to $C_3$ and so the odd coefficient does not exist while for even values of k, there are even coefficients. Let $\alpha = \pm n$, so Equation~\eqref{eqn:coefficients} becomes 
 \begin{dmath*}
 C_k = \frac{C_{k-2}}{n^2 - (k + n)^2} 
 = \frac{C_{k-2}}{n^2 - k^2 - n^2 - 2nk}
@@ -168,7 +168,7 @@ J_n(x) = \sum_{k = 0}^{\infty}\frac{(-1)^k (\frac{x}{2})^{2k + n}}{k! \Gamma(n +
 \label{eqn:besselsolnseries2}
 \end{equation}
 
-Using equation~\eqref{eqn:besselsolnseries2}, let us consider the Bessel function for the zeroth order i.e. $n=0$
+Using Equation~\eqref{eqn:besselsolnseries2}, let us consider the Bessel function for the zeroth order i.e. $n=0$
 \begin{align*}
 J_0(x) = 1 - \frac{(\frac{x}{2})^2 }{1!} + \frac{(\frac{x}{2})^4 }{(2!)^2} - \frac{(\frac{x}{2})^6 }{(3!)^2} + \ldots
 \end{align*}
@@ -183,7 +183,7 @@ y(x) = A J_n(x) + B J_{-n} (x)
 \]
 However, this solution is only true if n is not an integer. This is because when n is an integer the two terms are linearly dependent, and are related by $ J_{-n}(x) = (-1)^n J_n(x)$ which shows $J_{-n}(x)$ is linearly related to $ J_n(x).$ This can be shown by referring once again to our knowledge of gamma functions.
 
-We know that $\Gamma(n + 1) = n \Gamma(n)$, so 	$\Gamma(n) = \frac{\Gamma(n + 1)}{n} $ and for negative integer values of n, or zero, $\Gamma(n)$ is infinite. So from equation \ref{eqn:besselsolnseries3}, the coefficients of the first n terms become zero since the gamma function is infinite and the summation starts with $k=n$, thus
+We know that $\Gamma(n + 1) = n \Gamma(n)$, so 	$\Gamma(n) = \frac{\Gamma(n + 1)}{n} $ and for negative integer values of n, or zero, $\Gamma(n)$ is infinite. So from Equation~\ref{eqn:besselsolnseries3}, the coefficients of the first n terms become zero since the gamma function is infinite and the summation starts with $k=n$, thus
 \begin{align*}
 J_n(x) &= \sum_{k = n}^{\infty}\frac{(-1)^k (\frac{x}{2})^{2k - n}}{k! \Gamma(-n + k + 1)}\quad\text{substituting }m\text{ = }k - n\\
 J_{-n}(x) &= \sum_{m = 0}^{\infty}\frac{(-1)^{m + n} (\frac{x}{2})^{2m + n}}{(m + n)! \Gamma(m + 1)}\\

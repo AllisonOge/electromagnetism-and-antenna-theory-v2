@@ -2,7 +2,7 @@
 Before delving into the discussion of TE (Transverse Electric) modes in a circular waveguide, let us briefly revisit the TM (Transverse Magnetic) modes covered in the previous chapter. 
 
 \section{TM modes in a circular waveguide}
-Considering a circular waveguide filled with a dielectric material characterized by permeability $\mu$ and permittivity $\epsilon$, we recognize the presence of the $E_z$ component. The boundary condition for the conducting surface is fulfilled when $E_z(r=a) = 0$, indicating that the electric field component $E_z$ vanishes at the radial distance $r=a$. Upon solving for $E_z$ using equation~\eqref{eqn:electricfieldsoln}, we obtained the solution $E_z = A_n J_n(hr)\cos(n\phi)$, where $h = \omega^2\mu + \gamma^2$.
+Considering a circular waveguide filled with a dielectric material characterized by permeability $\mu$ and permittivity $\epsilon$, we recognize the presence of the $E_z$ component. The boundary condition for the conducting surface is fulfilled when $E_z(r=a) = 0$, indicating that the electric field component $E_z$ vanishes at the radial distance $r=a$. Upon solving for $E_z$ using Equation~\eqref{eqn:electricfieldsoln}, we obtained the solution $E_z = A_n J_n(hr)\cos(n\phi)$, where $h = \omega^2\mu + \gamma^2$.
 
 Upon further analysis, we have observed that certain modes satisfy the boundary condition, and these modes can be characterized by two parameters, namely $n$ and $p$. In this context, a specific TM mode is denoted as TM$_{np}$. The parameter $n$ not only represents the variation of the amplitude in $\phi$ but also corresponds to the order of the Bessel function involved in the solution. On the other hand, the parameter $p$ indicates the specific zero point (root) within the Bessel function, which enables the satisfaction of the boundary condition. Indeed, the modes in the circular waveguide are characterized by two aspects. Firstly, the variation of amplitude in the $\phi$ direction. It is represented by the term $\cos(n\phi)$ in the solution.
 
@@ -83,7 +83,7 @@ For $p=2$, we consider the second root of the $J_1(hr)$ function. This implies t
 In summary, the parameter $n$ represents the number of wavelengths in the azimuthal direction ($\phi$), while $p$ denotes the number of lobes in the radial direction ($r$).
    
 \section{TE modes in a circular waveguide}
-Now, let's take a look at the TE modes of the circular waveguide. For this mode, we need to study the derivative of the Bessel function. From equation~\eqref{eqn:besselsolnseries2}, we can see that the Bessel function is given as 
+Now, let's take a look at the TE modes of the circular waveguide. For this mode, we need to study the derivative of the Bessel function. From Equation~\eqref{eqn:besselsolnseries2}, we can see that the Bessel function is given as 
 \begin{align*}
 J_n(x) &= \sum_{k = 0}^{\infty}\frac{(-1)^k (\frac{x}{2})^{2k + n}}{k! \Gamma(n + k + 1)}\quad\text{But, }\Gamma(n + k + 1) = (n+k)!\\
 &= \sum_{k = 0}^{\infty}\frac{(-1)^k (\frac{x}{2})^{2k + n}}{k! (n + k)!}\quad\text{Substituting }x = hr\\
@@ -131,7 +131,7 @@ To solve this equation we repeat the procedure we carried out for the TM mode su
 \begin{align*}
 H_z(r,\phi)= R(r)\Phi(\phi)
 \end{align*}
-Therefore equation~\eqref{eqn:helmholtztemode} becomes
+Therefore Equation~\eqref{eqn:helmholtztemode} becomes
 \begin{align*}
 \frac{1}{r}\partialderivative{}{r}\bigg(r\partialderivative{R\Phi}{r}\bigg) + \frac{1}{r^2}\partialderivative[2]{R\Phi}{\phi} + h^2\{R\Phi\} = 0
 \end{align*}
@@ -149,7 +149,7 @@ The procedure is similar to that of the TM mode, the only difference is that we 
 \begin{align*}
 H_z(r,\phi) = A_nJ_n(hr)\cos(n\phi)\quad\text{n has to be an integer}
 \end{align*}
-We can now solve for the other components. From equations~\eqref{eqn:transverseele2} and~\eqref{eqn:transversemag2} we have
+We can now solve for the other components. From Equations~\eqref{eqn:transverseele2} and~\eqref{eqn:transversemag2} we have
 \begin{align*}
 \bar{E}_\perp = \frac{-j\omega\mu}{h^2}\nabla_\perp\times(H_z\hat{z}) - \frac{\gamma}{h^2}\nabla_\perp E_z\\
 \bar{H}_\perp = \frac{j\omega\epsilon}{h^2}\nabla_\perp\times(E_z\hat{z}) - \frac{\gamma}{h^2}\nabla_\perp H_z

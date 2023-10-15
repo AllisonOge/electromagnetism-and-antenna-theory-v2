@@ -33,7 +33,7 @@ dE = \dfrac{j\eta J(x) Idx\beta\sin\theta e^{-j\beta d}}{4\pi d}
 \label{eqn27}
 \end{equation} 
 
-for the far away point r $\gg$ x so distance d at the denominator can  be approximated to r but however d in the $ e^{j\beta d}$ can not be approximated because at r $\gg$ x, the amplitude of E does not vary significantly with x, however the phase (which is  $\beta x\cos\theta$ ) has large variation if x is comparable to $\lambda$  so equation \ref{eqn27} is written as
+for the far away point r $\gg$ x so distance d at the denominator can  be approximated to r but however d in the $ e^{j\beta d}$ can not be approximated because at r $\gg$ x, the amplitude of E does not vary significantly with x, however the phase (which is  $\beta x\cos\theta$ ) has large variation if x is comparable to $\lambda$  so Equation~\ref{eqn27} is written as
 
 $$ dE = \dfrac{j\eta\beta l\sin\theta e^{-j\beta (r-x\cos\phi)}}{4\pi r}.J(x)dx $$
 The  total radiation field at P due to the whole current distribution can be obtained by integrating from  $x = 0$ to $x = L$ as 
@@ -46,7 +46,7 @@ $$ E(\phi) = \int_{0}^{L}\dfrac{j\eta\beta l\sin\theta e^{-j\beta r}}{4\pi r}. J
 
 For a given distance r, the quantity outside the  integral sign is constant ie let $$ \dfrac{j\eta\beta l\sin\theta e^{-j\beta r}}{4\pi r} = k $$
 Note also that $\sin\theta$ is a constant because in our analysis we are considering a constant $\theta$ plane for the current distribution.
-Also since J(x) is zero for $x < 0$ and $x >L$, even if we change the limits of integration from $ -\infty\to +\infty$ In equation \ref{eqn28}  value of integral does not change. Therefore, we rewrite as 
+Also since J(x) is zero for $x < 0$ and $x >L$, even if we change the limits of integration from $ -\infty\to +\infty$ In Equation~\ref{eqn28}  value of integral does not change. Therefore, we rewrite as 
 
 \begin{align*}
 E(\phi) &= k\int_{-\infty}^{+\infty}J(x) e^{j\beta x \cos\phi}dx \\
@@ -57,7 +57,7 @@ E(\phi) &= k\int_{-\infty}^{+\infty}J(x) e^{j\beta x \cos\phi}dx \\
 \label{eqn29}
 \end{equation}
 If we define $\frac{x}{\lambda} \equiv x'$ as the normalized distance and $\cos\theta = p$ 
-the direction cosine, we can write equation \ref{eqn29} as 
+the direction cosine, we can write Equation~\ref{eqn29} as 
 $$E(\phi) = k\int_{-\infty}^{+\infty}J(x') e^{j2\pi x' p }dx$$
 $$ x' = \frac{x}{\lambda}; \ \ \ dx' = \frac{dx}{\lambda}$$
 given $dx = \lambda dx'$ we now have
@@ -134,7 +134,7 @@ The nulls of a sinc function would correspond to when $\pi pL$ is a multiple of 
 
 As we can be seen from fig.\ref{fig10}, the nulls and side lobes are equi-spaced along $p$ by a distance of $\dfrac{1}{L}$.
 
-Substitution of $p = \dfrac{3}{2L}, \dfrac{5}{2L}$ etc in equation \ref{eqn31}, we get the amplitudes of the side lobes as $-\dfrac{2}{3\pi}, \dfrac{2}{5\pi}$ etc respectively. That is, the amplitude of the first side lobe is $21\% $ of the peak and the second side lobe is about $13\%$ of the peak. One other important fact to be noted is if we increase the width of the current distribution (such as from $-L$ to $+L$), this is the same as increasing the length of the current sheet and we observe that the width of the main beam reduces\footnote{From fig 10; we observe that the width of the beam is $\dfrac{2}{L}$ and therefore the beam width varies as $\dfrac{1}{L}$} (i.e the beam width between first nulls decreases) and the beam becomes narrower. Therefore, as the size (aperture) of the antenna increases, the antenna becomes more directive, and also the more nulls we get\footnote{Also we observe there are approximately $2L$ nulls, so as $L$ increases, the number of null increases.}.
+Substitution of $p = \dfrac{3}{2L}, \dfrac{5}{2L}$ etc in Equation~\ref{eqn31}, we get the amplitudes of the side lobes as $-\dfrac{2}{3\pi}, \dfrac{2}{5\pi}$ etc respectively. That is, the amplitude of the first side lobe is $21\% $ of the peak and the second side lobe is about $13\%$ of the peak. One other important fact to be noted is if we increase the width of the current distribution (such as from $-L$ to $+L$), this is the same as increasing the length of the current sheet and we observe that the width of the main beam reduces\footnote{From fig 10; we observe that the width of the beam is $\dfrac{2}{L}$ and therefore the beam width varies as $\dfrac{1}{L}$} (i.e the beam width between first nulls decreases) and the beam becomes narrower. Therefore, as the size (aperture) of the antenna increases, the antenna becomes more directive, and also the more nulls we get\footnote{Also we observe there are approximately $2L$ nulls, so as $L$ increases, the number of null increases.}.
 
 \section{Tilting the Main Beam.}
 Let's consider for instance a case when we have to change the direction of the beam, say, by $p_0$, we should notice that $p_\circ$ is the direction cosine and it corresponds to an angle $\phi_\circ$ on the polar plot. So it is equivalent to tilting the beam by $\phi_\circ$ and then we wanted to know how the current distribution would get affected. Therefore we can substitute for $p$ in the fourier transform by $(p - p_\circ)$, such that;

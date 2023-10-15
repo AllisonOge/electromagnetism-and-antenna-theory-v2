@@ -101,7 +101,7 @@ With that established let us present Maxwell's equations as follows:
 \nabla\times\vec{E}&=- \dfrac{\partial\vec{B}}{\partial t}\label{eqn:faradayslaw}\\
 \nabla\times\vec{H}&=\bar{J}+\dfrac{\partial\bar{D}}{\partial t}\label{eqn:ampereslaw}
 \end{align}
-From equation~\eqref{eqn:divergenceofmagneticfield}, $\nabla\cdot\vec{B}=0$, the condition is still satisfied if it is rewritten as $\nabla\cdot(\nabla\times\vec{A})=0$, and we call the vector $\vec{A}$ the \emph{magnetic vector potential}\index{magnetic vector potential}. Recall from the electrostatic case that calculating the electric field for any problem was best approached by finding the scalar potential and this approach is applied here such that $\vec{B}=\nabla\times\vec{A}$ which simplifies the solution.
+From Equation~\eqref{eqn:divergenceofmagneticfield}, $\nabla\cdot\vec{B}=0$, the condition is still satisfied if it is rewritten as $\nabla\cdot(\nabla\times\vec{A})=0$, and we call the vector $\vec{A}$ the \emph{magnetic vector potential}\index{magnetic vector potential}. Recall from the electrostatic case that calculating the electric field for any problem was best approached by finding the scalar potential and this approach is applied here such that $\vec{B}=\nabla\times\vec{A}$ which simplifies the solution.
 
 Our objectives are as follows
 \begin{enumerate}[(i)]
@@ -111,7 +111,7 @@ Our objectives are as follows
 \end{enumerate}
 
 \subsubsection*{Solution for the potential $\vec{A}$}
-From equation~\eqref{eqn:faradayslaw}
+From Equation~\eqref{eqn:faradayslaw}
 \begin{align*}
 &\nabla\times\vec{E}=\dfrac{-\partial(\nabla\times\vec{A})}{\partial t}&\\
 &\text{Interchanging the time and space derivatives gives}&\\
@@ -124,7 +124,7 @@ From equation~\eqref{eqn:faradayslaw}
 \end{align*}
 The minus sign is placed to retain the relationship between $\vec{E}$ and $V$. If the time-varying magnetic scalar vector $\dot{\vec{A}}$ is removed from the expression.
 
-From equation~\eqref{eqn:ampereslaw}, $\nabla\times\vec{H}=\vec{J}+\dot{\vec{D}}$
+From Equation~\eqref{eqn:ampereslaw}, $\nabla\times\vec{H}=\vec{J}+\dot{\vec{D}}$
 and $\vec{D}=\epsilon\vec{E}$. Then,
 \begin{align}
 \nabla\times\vec{H}=\vec{J}+\epsilon\dot{\vec{E}}\footnotemark
@@ -141,7 +141,7 @@ From $\vec{B}=\nabla\times\vec{A}$ and $\vec{B}=\mu\vec{H}$, then
 \vec{H}=\dfrac{1}{\mu}\nabla\times\vec{A}
 \label{eqn:magneticfieldtovectorpotential}
 \end{equation}
-Substitute equation~\eqref{eqn:magneticfieldtovectorpotential} in~\eqref{eqn:ampereslawwithepsilon} gives
+Substitute Equation~\eqref{eqn:magneticfieldtovectorpotential} in~\eqref{eqn:ampereslawwithepsilon} gives
 \begin{align*}
 &\nabla\times\left(\dfrac{1}{\mu}\nabla\times\vec{A}\right)=\vec{J}+\epsilon\dot{\vec{E}}\footnotemark&\\
 &\nabla\times\nabla\times\vec{A}=\mu\vec{J}+\mu\epsilon\dot{\vec{E}}&\\
@@ -159,13 +159,13 @@ Rewriting the expression
 \nabla^{2}\vec{A}-\mu\epsilon\ddot{\vec{A}}=-\mu\vec{J}+\mu\epsilon\nabla\dot{V}+\nabla(\nabla\cdot\vec{A})
 \label{eqn:vectorpotentialeqn}
 \end{equation}
-When the equation~\ref{eqn:vectorpotentialeqn} is compared with the equation of electric and magnetic fields in a source-free unbound medium (if we set $\vec{J}$ to zero for $\sigma=0$). It is seen that the above equation has the components $\mu\epsilon\nabla\dot{V}$ and $\nabla(\nabla\cdot\vec{A})$, in addition, compare to the equations of the electric and magnetic fields in a source-free unbounded medium which are given by
+When the Equation~\ref{eqn:vectorpotentialeqn} is compared with the equation of electric and magnetic fields in a source-free unbound medium (if we set $\vec{J}$ to zero for $\sigma=0$). It is seen that the above equation has the components $\mu\epsilon\nabla\dot{V}$ and $\nabla(\nabla\cdot\vec{A})$, in addition, compare to the equations of the electric and magnetic fields in a source-free unbounded medium which are given by
 \begin{align*}
 \nabla^{2}\vec{E}-\mu\epsilon\ddot{\vec{E}}=0\\
 \nabla^{2}\vec{H}-\mu\epsilon\ddot{\vec{H}}=0
 \end{align*}
 
-If these solutions satisfy the same boundary conditions\textemdash it is source-free and an unbound medium\textemdash then from the \emph{uniqueness theorem}\index{uniqueness theorem}, they are indeed the same solution. Hence we can make equation~\eqref{eqn:vectorpotentialeqn} unique by satisfying the uniqueness theorem and defining the expression for the divergence of the vector $A$.
+If these solutions satisfy the same boundary conditions\textemdash it is source-free and an unbound medium\textemdash then from the \emph{uniqueness theorem}\index{uniqueness theorem}, they are indeed the same solution. Hence we can make Equation~\eqref{eqn:vectorpotentialeqn} unique by satisfying the uniqueness theorem and defining the expression for the divergence of the vector $A$.
 
 Hence,
 \begin{align*}
@@ -178,7 +178,7 @@ Then,
 \label{eqn:lorentzguagecondition}
 \end{align}
 Equation~\eqref{eqn:lorentzguagecondition} is called the \emph{Lorentz gauge condition}\index{lorentz gauge condition}. This condition defines the divergence of the magnetic vector potential
-Now equation~\eqref{eqn:vectorpotentialeqn} reduces to
+Now Equation~\eqref{eqn:vectorpotentialeqn} reduces to
 \begin{equation}
 \nabla^{2}\vec{A}-\mu\epsilon\ddot{\vec{A}}=-\mu\vec{J}
 \label{eqn:vectorpotentialeqnwithlorentzguage}
@@ -197,7 +197,7 @@ Take the divergence of $\vec{E}+\dot{\vec{A}}=-\mu\vec{J}$ to give;
 \label{eqn:scalarpotential}
 \end{equation}
 
-Both equations~\eqref{eqn:vectorpotentialeqnwithlorentzguage} and~\eqref{eqn:scalarpotential} can be rewritten as
+Both Equations~\eqref{eqn:vectorpotentialeqnwithlorentzguage} and~\eqref{eqn:scalarpotential} can be rewritten as
 \begin{align*}
 \Box\vec{A}=\mu J\\
 \Box V=\dfrac{\rho}{\epsilon}\\
@@ -206,6 +206,6 @@ Where $\Box$ is called the D'Alembertian Operator or box operator given by
 \begin{align*}
 \Box=\dfrac{\partial^{2}}{\partial t^{2}}-\dfrac{1}{c^{2}}\nabla^{2}
 \end{align*}
-With the Lorentz gauge condition, we get an identical solution to equation~\eqref{eqn:vectorpotentialeqnwithlorentzguage} for the scalar potential $V$. This expression shows that the magnetic vector potential is related to the conduction current density, $\vec{J}$, and the scalar potential is related to the volume charge density, $\rho$.
+With the Lorentz gauge condition, we get an identical solution to Equation~\eqref{eqn:vectorpotentialeqnwithlorentzguage} for the scalar potential $V$. This expression shows that the magnetic vector potential is related to the conduction current density, $\vec{J}$, and the scalar potential is related to the volume charge density, $\rho$.
 
 In conclusion, when we have time-varying sources, we would have electric potential and magnetic vector potential and both are essentially governed by the wave equation; which implies they have wave behaviour in the 3-dimensional space.

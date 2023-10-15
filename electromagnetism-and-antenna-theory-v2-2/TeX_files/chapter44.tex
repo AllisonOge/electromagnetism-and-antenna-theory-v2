@@ -1,13 +1,13 @@
 \chapter{Circular Waveguide (1)}\label{lec:lec44}
-In the previous chapter, we discussed the second-order partial differential equation (PDE) of the form given in equation~\eqref{eqn:secondorderode} called the \emph{Bessel equation}\label{bessel equation}. It is given as
+In the previous chapter, we discussed the second-order partial differential equation (PDE) of the form given in Equation~\eqref{eqn:secondorderode} called the \emph{Bessel equation}\label{bessel equation}. It is given as
 \begin{equation*}
 x^2\derivative[2]{y}{x} + x\derivative{y}{x} + (x^2-n^2)y = 0
 \end{equation*}
-There is one kind of solution called the \emph{Bessel function\index{bessel function} of the first kind} which is an infinite series from equation~\eqref{eqn:besselsolnseries2} given as
+There is one kind of solution called the \emph{Bessel function\index{bessel function} of the first kind} which is an infinite series from Equation~\eqref{eqn:besselsolnseries2} given as
 \begin{equation*}
 J_n(x) = \sum^\infty_{k=0} \frac{(-1)^k (\frac{x}{2})}{k!\Gamma(n+k+1)}
 \end{equation*}
-Where n is the order of the solution and $\Gamma(n+k+1) = (n+k)\Gamma(n+k)$. As we know for any second-order PDE there are always two different independent solutions and so we have another solution called the \emph{Bessel function of second kind} or Neumann function\index{neumann function} which from equation~\eqref{eqn:neumannfunctions} is given as 
+Where n is the order of the solution and $\Gamma(n+k+1) = (n+k)\Gamma(n+k)$. As we know for any second-order PDE there are always two different independent solutions and so we have another solution called the \emph{Bessel function of second kind} or Neumann function\index{neumann function} which from Equation~\eqref{eqn:neumannfunctions} is given as 
 \[
 Y_n(x) = \frac{\cos(n\pi)J_n(x)-J_{-n}(x)}{\sin(n\pi)}
 \]
@@ -77,12 +77,12 @@ Let us examine a hollow metallic pipe characterized by a radius of a. The interi
 \label{fig:fig3}
 \end{figure}
 
-From the Helmholtz wave equation in equation~\eqref{eqn:helmholtzelectric} 
+From the Helmholtz wave equation in Equation~\eqref{eqn:helmholtzelectric} 
 \begin{equation}
 \nabla^2\vec{E} + \omega^2\mu\epsilon\vec{E}=0
 \label{eqn:helmholtzelectriclec44}
 \end{equation}\
-The Laplacian operator $\nabla^2\vec{E}$ encompasses both transverse and longitudinal components. However, our focus lies on finding a solution of the form $\vec{E}=\vec{E}_{\bot}e^{-\gamma z}$, where the amplitude $\vec{E}_\bot$ remains confined to the transverse plane, and the wave propagates along the z-axis with a propagation constant denoted by $\gamma$. So we will write equation \ref{eqn:helmholtzelectriclec44} as
+The Laplacian operator $\nabla^2\vec{E}$ encompasses both transverse and longitudinal components. However, our focus lies on finding a solution of the form $\vec{E}=\vec{E}_{\bot}e^{-\gamma z}$, where the amplitude $\vec{E}_\bot$ remains confined to the transverse plane, and the wave propagates along the z-axis with a propagation constant denoted by $\gamma$. So we will write Equation~\ref{eqn:helmholtzelectriclec44} as
 \begin{align*}
 \nabla^2\vec{E}_\perp e^{-\gamma z} + \omega^2 \mu\epsilon E_\perp e^{-\gamma z} = 0\\\text{where }\nabla^2 = \nabla^2_\perp + \partialderivative[2]{}{z}&\\
 \nabla^2_\perp\vec{E}_\perp e^{-\gamma z} + \partialderivative[2]{}{z}\left(\vec{E}_\perp e^{-\gamma z}\right) + \omega^2\mu\epsilon\vec{E}_\perp e^{-\gamma z} =&  0\\
@@ -103,7 +103,7 @@ The cylindrical coordinate system is defined by $\hat{r}$ and $\hat{\phi}$ in th
 \label{fig:fig4}
 \end{figure}
 
-We will now write equation \ref{eqn:helmholtzelectriclec44_2} for the cylindrical coordinate as 
+We will now write Equation~\ref{eqn:helmholtzelectriclec44_2} for the cylindrical coordinate as 
 \begin{align}
 \frac{1}{r}\partialderivative{}{r}\left(r\partialderivative[2]{\vec{E}_\bot}{r}\right) + \frac{1}{r^2}\partialderivative[2]{\vec{E}_\bot}{\phi}+ h^2\vec{E}_\bot = 0 
 \label{eqn:cylindricalequation}   
@@ -122,7 +122,7 @@ So for the TM mode, we will solve for $E_z$ which should vary in $r$ and $\phi$ 
 \begin{align*}
 E_z(r,\phi, z)=E_z(r,\phi)e^{-\gamma z}\quad\text{where }e^{-\gamma z}
 \end{align*}
-It signifies the field is propagating in the z-direction. So from the from equation~\eqref{eqn:cylindricalequation} we have;
+It signifies the field is propagating in the z-direction. So from the from Equation~\eqref{eqn:cylindricalequation} we have;
 \begin{equation}
 \frac{1}{r}\partialderivative{}{r}\left(r\partialderivative{E_z}{r}\right) + \frac{1}{r^2}\partialderivative[2]{E_z}{\phi} + h^2 E_z = 0 
 \label{eqn:pdecircularwaveguide}
@@ -135,7 +135,7 @@ E_z(r, \phi) = R(r)\Phi(\phi)\footnotemark
 Using separation of variables where $R(r)$ is a function of $r$ only and $\Phi(\phi)$ is a function of $\phi$ only.
 }
 
-So we will write equation \ref{eqn:pdecircularwaveguide} as 
+So we will write Equation~\ref{eqn:pdecircularwaveguide} as 
 \begin{align*}
 &\frac{1}{r}\partialderivative{}{r}\left(r\partialderivative{R(r)\Phi(\phi)}{r}\right) + \frac{1}{r^2}\partialderivative[2]{R(r)\Phi(\phi)}{\phi} + h^2E_z(r,\phi) = 0\\
 &\frac{\Phi(\phi)}{r}\derivative{}{r}\left(r\derivative{R(r)}{r}\right) + \frac{R}{r^2}\derivative[2]{\Phi(\phi)}{\phi} + h^2 E_z = 0\\
@@ -157,7 +157,7 @@ Equation~\eqref{eqn:pdecircularwaveguide2} is true for any value of $r$ and $\ph
 \derivative[2]{\Phi(\phi)}{\phi} + n^2\Phi(\phi) = 0
 \label{eqn:pdecircularwaveguide3}
 \end{equation}
-And so $\frac{r}{R(r)}\derivative{}{r}\left(r\derivative{R(r)}{r}\right) + r^2 h$ has to be $+n^2$ so that equation~\eqref{eqn:pdecircularwaveguide2} holds true, hence;
+And so $\frac{r}{R(r)}\derivative{}{r}\left(r\derivative{R(r)}{r}\right) + r^2 h$ has to be $+n^2$ so that Equation~\eqref{eqn:pdecircularwaveguide2} holds true, hence;
 \begin{align*}
 \underbrace{\frac{r}{R(r)}\derivative{}{r}\left(r\derivative{R(r)}{r}\right)}& + r^2h - n^2 = 0\\
 \frac{r^2}{R(r)}\derivative[2]{R(r)}{r} + \frac{r}{R(r)}\derivative{R(r)}{r}& - r^2h-n^2=0
@@ -173,7 +173,7 @@ This is a Bessel equation\index{bessel equation} and can be compared to
 \end{align*}
 And recall that $n^2$ is the constant we introduced.
 
-First let's solve the second-order ordinary differential equation given in equation \ref{eqn:pdecircularwaveguide3} as
+First let's solve the second-order ordinary differential equation given in Equation~\ref{eqn:pdecircularwaveguide3} as
 \begin{align*}
 &\derivative[2]{\Phi(\phi)}{\phi} + n^2\Phi(\phi) = 0\quad\text{whose solution is }\\
 &\Phi(\phi)\equiv\sin(n\phi)\quad\text{or}\\
@@ -187,11 +187,11 @@ One of the solutions we can achieve by choosing $\cos(n\phi)$ is
 \end{align*}
 This solution will be periodic about $2\pi$ if n is an integer so n has to be an integer.
   
-Also the solution of the Bessel equation, equation \ref{eqn:pdecircularwaveguide4} is a Bessel function and it is given as
+Also the solution of the Bessel equation, Equation~\ref{eqn:pdecircularwaveguide4} is a Bessel function and it is given as
 \begin{align*}
 R(r)=CJ_n(hr)
 \end{align*}
-The argument of the Bessel function is $hr$ if we compare equation~\eqref{eqn:pdecircularwaveguide4} against the Bessel equation rewritten as:
+The argument of the Bessel function is $hr$ if we compare Equation~\eqref{eqn:pdecircularwaveguide4} against the Bessel equation rewritten as:
 \begin{align*}
 r^2\derivative{R(r)}{r} + r\derivative{R(r)}{r} + ((hr)^2 - n^2)R(r) =& 0\\
 x^2\derivative{y}{x} + x\derivative{y}{x} + (x^2-n^2)y=0
@@ -239,7 +239,7 @@ H_\phi &= -\frac{j\omega\epsilon}{h^2}\partialderivative{E_z}{r} = -\frac{j\omeg
 \end{align}
 where $J_n'(hr)$ is the derivative of the Bessel function. Now let's determine h by applying the boundary conditions.
 
-The $E_z$ component given as $C_nJ_n(hr)\cos(n\phi)$ from equation~\eqref{eqn:electricfieldsoln}, is parallel or tangential to the conducting wall and so $E_z(r=a)=0$. This implies that $J_n(ha)=0$ which could be any root of a specific Bessel function as $n = 0,1,2,\ldots$. Let's consider $n = 0$ which is the first order Bessel function $J_0(hr)$. Also, $n=0$ implies that there is a constant field in the $\phi$ direction since $\cos(n\phi)=1$. In general, n shows the number of wavelengths, $\lambda$ that fits within $2\pi$ and the order of the Bessel function. For $n=0$ if we consider the first root of the Bessel function $J_0(hr)$ to satisfy the boundary condition at r=a we have that $h_a = 2.405$ from the Table~\ref{tab:rootsofbessel}.
+The $E_z$ component given as $C_nJ_n(hr)\cos(n\phi)$ from Equation~\eqref{eqn:electricfieldsoln}, is parallel or tangential to the conducting wall and so $E_z(r=a)=0$. This implies that $J_n(ha)=0$ which could be any root of a specific Bessel function as $n = 0,1,2,\ldots$. Let's consider $n = 0$ which is the first order Bessel function $J_0(hr)$. Also, $n=0$ implies that there is a constant field in the $\phi$ direction since $\cos(n\phi)=1$. In general, n shows the number of wavelengths, $\lambda$ that fits within $2\pi$ and the order of the Bessel function. For $n=0$ if we consider the first root of the Bessel function $J_0(hr)$ to satisfy the boundary condition at r=a we have that $h_a = 2.405$ from the Table~\ref{tab:rootsofbessel}.
 \begin{table}[h]
 \centering
 \caption{Roots of Bessel functions}

@@ -53,7 +53,7 @@ W=\int_{x=0}^{a}\int_{y=0}^{1} \frac{1}{2}\mathfrak{Re}\lbrace\bar{E} \times \ba
 \end{equation}
 For the TEM mode, $\bar{E}$ is in the x direction and $\bar{H}$ is in the y direction, so the power flow is in the z-direction.
 
-From equation~\eqref{eqn:powerparawaveguide}, $\bar{E} \times \bar{H}^\ast = \bar{E} \times \frac{\bar{E}^\ast}{\eta}$. If we consider the dielectric filling the waveguide as an ideal dielectric, $\eta$ is a real quantity, then the power carried by the waveguide per unit width is given as:
+From Equation~\eqref{eqn:powerparawaveguide}, $\bar{E} \times \bar{H}^\ast = \bar{E} \times \frac{\bar{E}^\ast}{\eta}$. If we consider the dielectric filling the waveguide as an ideal dielectric, $\eta$ is a real quantity, then the power carried by the waveguide per unit width is given as:
 \begin{dmath}
 W = \int_{x=0}^{a}\int_{y=0}^{1}\frac{1}{2}\mathfrak{Re}\left\lbrace E_0 \frac{E_0^\ast}{\eta}\right\rbrace dxdy
 = \frac{\left|E_{0}\right|^2}{2\eta}\int_{x=0}^{a}\int_{y=0}^{1}dxdy 
@@ -87,7 +87,7 @@ Where $R_s$ is the surface resistance\index{surface resistance} and $X_s$ is the
 \end{dmath}
 Equation~\eqref{eqn:powerlossperunitlength} is the power loss per unit length of the waveguide. So, we have the quantities which are needed for the calculation of the attenuation constant.
 
-Thus subsituting for values in equation~\eqref{eqn:alphac} the attenuation constant, $\alpha_c$ is given as 
+Thus subsituting for values in Equation~\eqref{eqn:alphac} the attenuation constant, $\alpha_c$ is given as 
 \begin{dmath}
 \alpha_c = \frac{\sqrt\dfrac{\omega\mu}{2 \sigma}\times\dfrac{|E_0|^2}{\eta}}{2 \times \dfrac{|E_0|^2 a}{2 \eta}}
 = \frac{2}{a}\sqrt{\frac{\omega\mu}{2\sigma}}=\frac{1}{a}\sqrt{\frac{\omega\mu}{2\sigma}}
@@ -151,7 +151,7 @@ In the case of the rectangular waveguide, the current which is flowing on the su
 \label{fig:lecture2-image-a}
 \end{figure}
 
-On side walls G and H, the surface current is y-oriented as shown in Figure~\ref{fig:lecture2-image-a}. It is contributed by the magnetic field component, $H_z$ since $H_x$ is zero at $x=0$ or $x=a$ (see equation~\eqref{eqn:hxrecte10}). On the top and bottom walls J and I, we have the surface current direction in x and z since both $H_x$ and $H_z$ are non-zero at $y=0$ and $y=b$ (see equations~\eqref{eqn:hxrecte10} and~\eqref{eqn:hzrecte10}). Therefore, on sides G and H, we have currents that are only y oriented given as
+On side walls G and H, the surface current is y-oriented as shown in Figure~\ref{fig:lecture2-image-a}. It is contributed by the magnetic field component, $H_z$ since $H_x$ is zero at $x=0$ or $x=a$ (see Equation~\eqref{eqn:hxrecte10}). On the top and bottom walls J and I, we have the surface current direction in x and z since both $H_x$ and $H_z$ are non-zero at $y=0$ and $y=b$ (see Equations~\eqref{eqn:hxrecte10} and~\eqref{eqn:hzrecte10}). Therefore, on sides G and H, we have currents that are only y oriented given as
 \begin{align*}
 \bar{J_s}|_{x=0} = \bar{J_s}|_{x=a} = H_z|_{x=0\text{ or }x=a}=C
 \end{align*}
@@ -172,7 +172,7 @@ For the horizontal walls, $\bar{J_s}$ is a vector quantity now as there are two 
 \end{align*}
 $|\bar{H}|$ is the magnitude of the total component made up of $H_x$ and $H_z$.
 
-From equations~\eqref{eqn:hxrecte10} and~\eqref{eqn:hzrecte10}, we observe that they are not varying as a function of y, so they are the same at $y=0$ or $y=b$ i.e. at the top and bottom walls which are the two horizontal walls.
+From Equations~\eqref{eqn:hxrecte10} and~\eqref{eqn:hzrecte10}, we observe that they are not varying as a function of y, so they are the same at $y=0$ or $y=b$ i.e. at the top and bottom walls which are the two horizontal walls.
 \begin{dmath}
 W_L|_{\text{horizontal walls}}
 % = 2\int_{x=0}^{a}\int_{z=0}^{1}\frac{1}{2}R_s\left(|H_x|^2 + |H_z|^2\right)dxdz
