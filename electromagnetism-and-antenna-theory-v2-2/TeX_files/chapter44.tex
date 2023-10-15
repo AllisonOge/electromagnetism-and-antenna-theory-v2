@@ -25,7 +25,7 @@ For all electromagnetic problems, the order $n$ is always an integer. So we will
 \[
 J_n(0)=0\quad\text{for }n \neq 0
 \]
-When we plot these functions, we notice that their behaviour resembles that of the sine and cosine functions. This similarity arises from the fact that both types of functions are periodic. However, as the value of x increases, the peak value of the functions begins to diminish. For example, if we plot the Bessel function $J_0(x)$, as depicted in Figure \ref{fig:fig1}, it reaches its maximum at x = 0 and experiences attenuation as x increases.
+When we plot these functions, we notice that their behaviour resembles that of the sine and cosine functions. This similarity arises from the fact that both types of functions are periodic. However, as the value of x increases, the peak value of the functions begins to diminish. For example, if we plot the Bessel function $J_0(x)$, as depicted in Figure~\ref{fig:fig1}, it reaches its maximum at x = 0 and experiences attenuation as x increases.
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/fig_1.1}
@@ -33,7 +33,7 @@ When we plot these functions, we notice that their behaviour resembles that of t
 \label{fig:fig1}
 \end{figure}
 
-As we go to higher-order functions the behaviour is similar to a sine function. Let us plot the Bessel function $J_1(x)$ as shown in figure~\ref{fig:fig2}.
+As we go to higher-order functions the behaviour is similar to a sine function. Let us plot the Bessel function $J_1(x)$ as shown in Figure~\ref{fig:fig2}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/fig_2.1}
@@ -108,7 +108,7 @@ We will now write equation \ref{eqn:helmholtzelectriclec44_2} for the cylindrica
 \frac{1}{r}\partialderivative{}{r}\left(r\partialderivative[2]{\vec{E}_\bot}{r}\right) + \frac{1}{r^2}\partialderivative[2]{\vec{E}_\bot}{\phi}+ h^2\vec{E}_\bot = 0 
 \label{eqn:cylindricalequation}   
 \end{align}
-This is the equation which will give the solution of the modes. The field components in the circular waveguide are $E_r$, $E_\phi$ and $E_z$ as shown in figure~\ref{fig:fig5}
+This is the equation which will give the solution of the modes. The field components in the circular waveguide are $E_r$, $E_\phi$ and $E_z$ as shown in Figure~\ref{fig:fig5}
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\linewidth]{\pathtoparttwo/graphics/fig_5.1}
@@ -254,7 +254,7 @@ The $E_z$ component given as $C_nJ_n(hr)\cos(n\phi)$ from equation~\eqref{eqn:el
 \label{tab:rootsofbessel}
 \end{table}
 
-Also $J_0(ha)=0$ if $ha=5.520$ for the second root at $p=2$. The first case is called $TM_{01}$ mode and the second case is called the $TM_{02}$ mode. 
+Also $J_0(ha)=0$ if $ha=5.520$ for the second root at $p=2$. The first case is called TM$_{01}$ mode and the second case is called the TM$_{02}$ mode. 
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/fig_6.1}
@@ -262,9 +262,9 @@ Also $J_0(ha)=0$ if $ha=5.520$ for the second root at $p=2$. The first case is c
 \label{fig:fig6}
 \end{figure}
 
-Therefore $J_n^p(hr)$ corresponds to $TM_{np}$ mode where n tells us the number of wavelengths $\lambda$ that is in the $\phi$ direction and p tells us the number of lobes that is in the r direction.
+Therefore $J_n^p(hr)$ corresponds to TM$_{np}$ mode where n tells us the number of wavelengths $\lambda$ that is in the $\phi$ direction and p tells us the number of lobes that is in the r direction.
 
-The fundamental TM mode in the $TM_{01}$ mode which has 
+The fundamental TM mode in the TM$_{01}$ mode which has 
 $$
 ha = 2.405 \Longrightarrow h=\frac{2.405}{a}
 $$
@@ -276,13 +276,13 @@ h^2=\omega_c^2\mu\epsilon
 $$ 
 where $\omega_c$ is the cut-off frequency in radians given as $2\pi f_c$ and $f_c$ is the cut-off frequency in Hertz.
 
-So $f_c =\frac{h}{2\pi\sqrt{\mu\epsilon}}$, for $TM_{01}$ mode $h=\frac{2.405}{a}$ therefore 
+So $f_c =\frac{h}{2\pi\sqrt{\mu\epsilon}}$, for TM$_{01}$ mode $h=\frac{2.405}{a}$ therefore 
 $$
 f_c=\frac{2.405}{2\pi a\sqrt{\mu\epsilon}} =\frac{0.383}{a\sqrt{\mu\epsilon}}
 $$
-The second TM mode is the $TM_{11}$ mode where $ha =3.832$ such that $h=\frac{3.832}{a}$ and $f_c=\frac{3.832}{2\pi a\sqrt{\mu\epsilon}}$. Also, the next mode is the $TM_{21}$ mode for which $ha =5.136$ and $h=\frac{5.136}{a} \Longrightarrow f_c=\frac{5.136}{2\pi a\sqrt{\mu\epsilon}}$ and so on. 
+The second TM mode is the TM$_{11}$ mode where $ha =3.832$ such that $h=\frac{3.832}{a}$ and $f_c=\frac{3.832}{2\pi a\sqrt{\mu\epsilon}}$. Also, the next mode is the TM$_{21}$ mode for which $ha =5.136$ and $h=\frac{5.136}{a} \Longrightarrow f_c=\frac{5.136}{2\pi a\sqrt{\mu\epsilon}}$ and so on. 
 
-Let's examine the fundamental mode $TM_{01}$ briefly. Here n=0 which implies that only the fields $E_r, E_z$ and $H_\phi$ exist and they are not varying in the $\phi$ direction. They are given as
+Let's examine the fundamental mode TM$_{01}$ briefly. Here n=0 which implies that only the fields $E_r, E_z$ and $H_\phi$ exist and they are not varying in the $\phi$ direction. They are given as
 $$
 E_r=\frac{-j\beta}{h^2}C_0J_0'(hr)\\
 E_z=C_oJ_o(hr)

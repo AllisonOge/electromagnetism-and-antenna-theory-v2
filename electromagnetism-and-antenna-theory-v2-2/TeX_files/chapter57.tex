@@ -21,7 +21,7 @@ However, the above problem cannot be solved analytically but it can be solved nu
 \phi_{HPBW} \approx \frac{BWFN (\phi_{FN})}{2}
 \end{equation}
 
-Therefore, given a radiation pattern, all we need to do is find the first nulls and then find the beam width between first nulls $\phi_{FN}$, however, it should be kept in mind that depending upon the direction of maximum radiation, two nulls may not always be visible. Consider two radiation patterns shown in Figure \ref{54.2}. For the visible region where the direction of maximum radiation $\phi_{max}$ is given in some direction. Since the radiation pattern is a figure of revolution around the axis of the arrays, the same pattern is replicated as shown.
+Therefore, given a radiation pattern, all we need to do is find the first nulls and then find the beam width between first nulls $\phi_{FN}$, however, it should be kept in mind that depending upon the direction of maximum radiation, two nulls may not always be visible. Consider two radiation patterns shown in Figure~\ref{54.2}. For the visible region where the direction of maximum radiation $\phi_{max}$ is given in some direction. Since the radiation pattern is a figure of revolution around the axis of the arrays, the same pattern is replicated as shown.
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/fig54_2}
@@ -29,12 +29,12 @@ Therefore, given a radiation pattern, all we need to do is find the first nulls 
 \label{54.2}
 \end{figure}
 
-It can be seen that for Figure \ref{54.2}a, the first null to the left of the maximum direction  is visible while the first null to the right of the maximum direction is not visible and then for Figure \ref{54.2}b, the reverse is the case. So if we rewrite the equation for finding the nulls which is:
+It can be seen that for Figure~\ref{54.2}a, the first null to the left of the maximum direction  is visible while the first null to the right of the maximum direction is not visible and then for Figure~\ref{54.2}b, the reverse is the case. So if we rewrite the equation for finding the nulls which is:
 \begin{equation}
 \cos{\phi_{SL}} = \cos{\phi_{max}} \pm \frac{m \lambda}{N d} 
 \end{equation}
 
-For Figure \ref{54.2}a, it can be said that the null corresponding to the first null to the left is $\cos{\phi^+_{N_1}} = \cos{\phi_{max}} - \frac{ \lambda}{N d} $ and it falls within the range of $\cos{\phi_{SL}}$ which is $-1$ to $+1$, while the first null to the right is given by $\cos{\phi^-_{N_1}} = \cos{\phi_{max}} + \frac{ \lambda}{N d} $ and it does not fall within the range if $-1$ to $+1$. Similarly, the same can be said for Figure \ref{54.2}b only now in reverse. Therefore, this poses a problem to our approximation which is $\phi_{HPBW} = \frac{ \phi_{BWFN}}{2}$ so to solve this problem, we make further approximation and assume the nulls are equally spaced in the $\phi$  domain, therefore, the difference between any of the direction of the first nulls and the direction of the maximum radiation is approximately equal to the half power beam width of the array. We can best understand it this way. If we assume the nulls are equally spaced, then the expression:
+For Figure~\ref{54.2}a, it can be said that the null corresponding to the first null to the left is $\cos{\phi^+_{N_1}} = \cos{\phi_{max}} - \frac{ \lambda}{N d} $ and it falls within the range of $\cos{\phi_{SL}}$ which is $-1$ to $+1$, while the first null to the right is given by $\cos{\phi^-_{N_1}} = \cos{\phi_{max}} + \frac{ \lambda}{N d} $ and it does not fall within the range if $-1$ to $+1$. Similarly, the same can be said for Figure~\ref{54.2}b only now in reverse. Therefore, this poses a problem to our approximation which is $\phi_{HPBW} = \frac{ \phi_{BWFN}}{2}$ so to solve this problem, we make further approximation and assume the nulls are equally spaced in the $\phi$  domain, therefore, the difference between any of the direction of the first nulls and the direction of the maximum radiation is approximately equal to the half power beam width of the array. We can best understand it this way. If we assume the nulls are equally spaced, then the expression:
 $
 \phi_{HPBW} \approx \frac{\phi^+_{N_1} - \phi^-_{N_1}}{2}
 $
@@ -127,7 +127,7 @@ $$
 
 Obviously, for a general uniform array, the equation of directivity \ref{eqn43} has to be evaluated numerically. For a large array however, one can make appropriate approximations to the integral $\iint \arrowvert AF \arrowvert^2 d \Omega$. The integral can be replaced by the solid angle within the half power beam width of the array. To get a better insight. Let us find the directivity of an $N$ element array in the broadside and the end-fire mode.
 
-Figure \ref{54.8} shows the main beam of the array in three dimensional space. It is apparent that although the planar radiation pattern looks similar to the broadside and the end fire arrays, in three dimension, they have totally different appearance.The three dimensional main beam pattern for a broadside array looks like a disk, whereas for the end fire array, it appears like an elongated balloon.
+Figure~\ref{54.8} shows the main beam of the array in three dimensional space. It is apparent that although the planar radiation pattern looks similar to the broadside and the end fire arrays, in three dimension, they have totally different appearance.The three dimensional main beam pattern for a broadside array looks like a disk, whereas for the end fire array, it appears like an elongated balloon.
 
 \begin{figure}[h]
 \includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/fig54_5}
@@ -136,7 +136,7 @@ Figure \ref{54.8} shows the main beam of the array in three dimensional space. I
 \label{54.8}
 \end{figure}
 
-If we denote the $HPBW$ of the broadside and the end-fire array respectively by $\phi_{BS}$ and $\phi_{EF}$, from equations \ref{eqn39} and \ref{eqn40}, we get:
+If we denote the $HPBW$ of the broadside and the end-fire array respectively by $\phi_{BS}$ and $\phi_{EF}$, from Equations~\ref{eqn39} and \ref{eqn40}, we get:
 
 $$
 \phi_{BS} = \frac{\lambda}{dN}
@@ -215,7 +215,7 @@ $$ D = \dfrac{2}{0.8677} = 2.3 $$
 \end{exmp}
 
 \section{Grating Lobes}
-As mentioned earlier when $\psi = 0 $ or multiples of $2\pi$, there is a maximum. Recall that the direction of maximum for an array is chosen at $\psi = 0$ so that it is symmetric along the range of $\psi$. However, at every multiple of $2\pi$ there will be a maximum as shown in Figure \ref{54.9} and these maximums are called grating lobes. So a grating lobe or grating beam is a beam identical to the main beam but in an undesired direction. The presence of grating lobes causes the power radiated by the array to get divided between the main beam and these lobes and therefore the power efficiency in the direction of the main beam is consequently reduced. The grating lobes are normally avoided in the radiation pattern.
+As mentioned earlier when $\psi = 0 $ or multiples of $2\pi$, there is a maximum. Recall that the direction of maximum for an array is chosen at $\psi = 0$ so that it is symmetric along the range of $\psi$. However, at every multiple of $2\pi$ there will be a maximum as shown in Figure~\ref{54.9} and these maximums are called grating lobes. So a grating lobe or grating beam is a beam identical to the main beam but in an undesired direction. The presence of grating lobes causes the power radiated by the array to get divided between the main beam and these lobes and therefore the power efficiency in the direction of the main beam is consequently reduced. The grating lobes are normally avoided in the radiation pattern.
 \begin{figure}[h]
 \includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/fig54_6}
 \centering

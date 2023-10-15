@@ -6,7 +6,7 @@ Essentially this chapter deals first with the principles of the generation of el
 \section{Radiation}
 The basis of radiation is the \emph{accelerated charges}. From electrostatics, when there is a charge, then there is essentially an electric field. If the charge is kept in motion, then it constitutes current, and current produces a magnetic field but note this current is in uniform motion. However, what happens when there is a time-varying current (i.e. a current which varies as a function of time and therefore gets accelerated and decelerated), \emph{then what kind of field would exist?} Well, the answer is simple, as stated earlier, accelerated charges are the basis of radiation, and radiation is the propagation of an electromagnetic field.
 
-However, every accelerated charge may not give you radiation because if it would, a simple coaxial cable having time-varying currents should produce radiation but that is not what happens. This is because there is one other condition to be satisfied. Let us consider a transmission line as shown in figure~\ref{fig:txnsline} which we can say is a coaxial cable as we considered earlier where the distance between the lines is far less than the wavelength of the time-varying signal flowing through the transmission line.
+However, every accelerated charge may not give you radiation because if it would, a simple coaxial cable having time-varying currents should produce radiation but that is not what happens. This is because there is one other condition to be satisfied. Let us consider a transmission line as shown in Figure~\ref{fig:txnsline} which we can say is a coaxial cable as we considered earlier where the distance between the lines is far less than the wavelength of the time-varying signal flowing through the transmission line.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\linewidth]{\pathtoparttwo/graphics/fig_1}
@@ -18,9 +18,9 @@ As discussed in the previous chapters about waveguides, such transmission lines 
 \begin{align*}
 I(l)=\dfrac{V^+}{Z_0}e^{-\gamma l} - \dfrac{V^-}{Z_0}e^{-\gamma l}
 \end{align*}
-The terms of the equation show that the travelling electric currents are travelling in opposite directions as shown in figure~\ref{fig:txnsline}. Essentially the field produced by each of the time-varying components cancels out because the distance between the lines is extremely small, i.e., $d\ll\lambda$. 
+The terms of the equation show that the travelling electric currents are travelling in opposite directions as shown in Figure~\ref{fig:txnsline}. Essentially the field produced by each of the time-varying components cancels out because the distance between the lines is extremely small, i.e., $d\ll\lambda$. 
 
-So though we have accelerated and decelerated charges, we do not have radiation. However, we can say that there is a possibility of radiation because accelerated and decelerated charges are capable of giving radiation. However, if the distance between the lines in figure~\ref{fig:txnsline} is separated further such that $d\approx\lambda$, then the cancellation of fields will not take place in all directions. That is, if the field components cancel in one direction, in some other direction it is possible that the phase of the wave is changed due to the phase difference between propagating waves of the two currents and there might be radiation from the structure.
+So though we have accelerated and decelerated charges, we do not have radiation. However, we can say that there is a possibility of radiation because accelerated and decelerated charges are capable of giving radiation. However, if the distance between the lines in Figure~\ref{fig:txnsline} is separated further such that $d\approx\lambda$, then the cancellation of fields will not take place in all directions. That is, if the field components cancel in one direction, in some other direction it is possible that the phase of the wave is changed due to the phase difference between propagating waves of the two currents and there might be radiation from the structure.
 Therefore, it appears that for radiation to occur, there have two conditions that are satisfied and they are; 
 \begin{enumerate}[(i)]
 \item There must be time-varying currents; and
@@ -29,7 +29,7 @@ Therefore, it appears that for radiation to occur, there have two conditions tha
 Now let's identify structures where these conditions are clearly specified.
 
 \subsection{Radiation Phenomenon}
-Now we understand the criteria for radiation, it is important to note that as frequency increases, the acceleration and deceleration of charges will increase because the rate at which the current is changing is higher. Hence as frequency increase for the same amplitude of currents, same peak current, or root-mean-square (RMS) current, we should get more radiation. Thus, in designing any antenna, we will want the structure to give radiation effectively. Also, we will want the structure to transfer a sufficient amount of power in the form of electromagnetic waves which will take the power away from the transmission line structure. Just as an illustration we take a transmission line whose characteristic impedance is known and then flare the end of the structure so that $d\approx\lambda$ such that there is the possibility of radiation (see figure~\ref{fig:flaredtxnsline}). Recall that the characteristic impedance of a transmission line depends on the inductance per unit, L, and capacitance per unit, C. For effective power transfer, we recall that the impedance of the load end (which in this case is the impedance seen by the wave as it propagates from the guided structure to space) must match the characteristic impedance $Z_0$. So if we strive to maintain maximum power transfer then the flaring of the end of the transmission line is controlled (gradual) such that the characteristic impedance at the end of the transmission line just matches the impedance seen by the wave which is $377\Omega$ for free space.
+Now we understand the criteria for radiation, it is important to note that as frequency increases, the acceleration and deceleration of charges will increase because the rate at which the current is changing is higher. Hence as frequency increase for the same amplitude of currents, same peak current, or root-mean-square (RMS) current, we should get more radiation. Thus, in designing any antenna, we will want the structure to give radiation effectively. Also, we will want the structure to transfer a sufficient amount of power in the form of electromagnetic waves which will take the power away from the transmission line structure. Just as an illustration we take a transmission line whose characteristic impedance is known and then flare the end of the structure so that $d\approx\lambda$ such that there is the possibility of radiation (see Figure~\ref{fig:flaredtxnsline}). Recall that the characteristic impedance of a transmission line depends on the inductance per unit, L, and capacitance per unit, C. For effective power transfer, we recall that the impedance of the load end (which in this case is the impedance seen by the wave as it propagates from the guided structure to space) must match the characteristic impedance $Z_0$. So if we strive to maintain maximum power transfer then the flaring of the end of the transmission line is controlled (gradual) such that the characteristic impedance at the end of the transmission line just matches the impedance seen by the wave which is $377\Omega$ for free space.
 
 By controlling the flaring we vary L and C and thus vary $Z_0$
 \begin{figure}[h]
@@ -39,11 +39,11 @@ By controlling the flaring we vary L and C and thus vary $Z_0$
 \label{fig:flaredtxnsline}
 \end{figure}
 
-Also, we can take an extreme case and still have the nature of the standing wave retained in the transmission line when the ends are flared completely as shown in figure~\ref{fig:flaredtxnsline}(b). In this case, the current distribution is in the same direction and is generating fields that will not cancel each other.
+Also, we can take an extreme case and still have the nature of the standing wave retained in the transmission line when the ends are flared completely as shown in Figure~\ref{fig:flaredtxnsline}(b). In this case, the current distribution is in the same direction and is generating fields that will not cancel each other.
 
 These concepts we will discuss in some detail and give answers to questions like \emph{how much power is radiated and in which direction would the power not be radiated? What kind of polarization will be developed by the structure?} and so on.
 
-Given the phenomenon of radiation in an antenna structure, we would say the structure has dual nature that is on one side, it acts as a circuit element with input impedance and bandwidth range, while on the other side, it generates electric and magnetic fields with characteristics that flow in a given direction and with a given power. This is illustrated in figure~\ref{fig:antennadualnature} and the characteristics of the antenna are given in table~\ref{tab:antennachar}.
+Given the phenomenon of radiation in an antenna structure, we would say the structure has dual nature that is on one side, it acts as a circuit element with input impedance and bandwidth range, while on the other side, it generates electric and magnetic fields with characteristics that flow in a given direction and with a given power. This is illustrated in Figure~\ref{fig:antennadualnature} and the characteristics of the antenna are given in table~\ref{tab:antennachar}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\linewidth]{\pathtoparttwo/graphics/fig_3}
@@ -78,7 +78,7 @@ To model radiation, we refer back to Maxwell's equations. In previous chapters, 
 \label{fig:mathematicalmodel}
 \end{figure}
 
-Let's consider a source of conduction current density $\vec{J}$ and volume charge density $\rho$ which produces electric and magnetic fields at some point called the observation point which source free as shown in figure~\ref{fig:mathematicalmodel}. The objective would be to establish the relationship between the electric and magnetic fields with the sources.
+Let's consider a source of conduction current density $\vec{J}$ and volume charge density $\rho$ which produces electric and magnetic fields at some point called the observation point which source free as shown in Figure~\ref{fig:mathematicalmodel}. The objective would be to establish the relationship between the electric and magnetic fields with the sources.
 
 Some points to note in this analysis are;
 \begin{enumerate}[(i)]
@@ -86,7 +86,7 @@ Some points to note in this analysis are;
 \item When we analyzed the uniform plane wave we were not concerned with the choice of coordinate system to use and it was possible to model in the cartesian coordinate system which was an easier choice because the coordinates are not changing with direction but in this case, the choice of coordinate system matters and the appropriate choice is the spherical coordinate system.
 \end{enumerate}
 
-So the coordinate system normally used for antennas is the spherical coordinate system, as shown in figure~\ref{fig:sphericalcoordinate}. Again, the coordinate system is made up of the radial distance, $\rho$, the azimuthal angle, $\phi$, and the polar angle, $\theta$. The radial distance is the distance from the origin to the point of interest, the azimuthal angle is the angle measured from the x-axis in the x-y plane, and the polar angle is the angle measured from the z-axis. The unit vectors in the spherical coordinate system are $\hat{\rho}$, $\hat{\phi}$, and $\hat{\theta}$.
+So the coordinate system normally used for antennas is the spherical coordinate system, as shown in Figure~\ref{fig:sphericalcoordinate}. Again, the coordinate system is made up of the radial distance, $\rho$, the azimuthal angle, $\phi$, and the polar angle, $\theta$. The radial distance is the distance from the origin to the point of interest, the azimuthal angle is the angle measured from the x-axis in the x-y plane, and the polar angle is the angle measured from the z-axis. The unit vectors in the spherical coordinate system are $\hat{\rho}$, $\hat{\phi}$, and $\hat{\theta}$.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\linewidth]{\pathtoparttwo/graphics/fig_5}

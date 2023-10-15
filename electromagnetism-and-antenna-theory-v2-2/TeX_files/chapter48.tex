@@ -3,7 +3,7 @@ Let us consider the simplest case of the current distribution which is a small c
 
 The small current element is also referred to as the \emph{Hertz dipole}\index{hertz dipole} which is characterized by what is called the \emph{current moment}\index{current moment}. The current moment is the product of the current and the length of the element, $Id\vec{l}$. For the current distribution, we assume a sinusoidally varying time-varying function for our analysis such that $I = I_0d\vec{l}e^{j\omega t}$. This current element can be imagined as a small rod of the cross-sectional area which carries $\vec{J}$ such that the integral over the cross-sectional area gives the current which is multiplied by the length of the rod, $d\vec{l}$, to give the current moment. Hence $\int_v\vec{J}dv' = I_0d\vec{l}e^{j\omega t}$ (with the assumption that the current is constant across the length of the rod, $d\vec{l}$). 
 
-Now, we will determine the vector potential $\vec{A}$ at some point in space given by $(r, \theta, \phi)$ in the spherical coordinate system, as shown in figure~\ref{fig:small_current_element}. It shows the current element of length, $d\vec{l}$ at the origin.
+Now, we will determine the vector potential $\vec{A}$ at some point in space given by $(r, \theta, \phi)$ in the spherical coordinate system, as shown in Figure~\ref{fig:small_current_element}. It shows the current element of length, $d\vec{l}$ at the origin.
 \begin{figure}[h]
 \includegraphics[width=0.8\linewidth]{\pathtoparttwo/graphics/fig1_1}
 \centering
@@ -155,7 +155,7 @@ A few important points emerge when studying equations~\eqref{eqn:magneticfieldsm
 
 Let's take a look at equation ~\eqref{eqn:electricfieldthetacomponentsmallcurrentelement}, the term $\frac{\beta^2}{\omega r}$ can be further simplified to $\frac{\omega \mu \epsilon}{r}$, which means it varies inversely with r and is proportional to the frequency,$\omega$. Also considering the $\frac{\beta}{\omega r^2}$ term, substituting $\beta = \omega \sqrt{\mu \epsilon}$ gives $\frac{\sqrt{\mu \epsilon}}{r^2}$ which is independent of the frequency, $\omega$ and the term $\frac{1}{\omega r^3}$ term (the \emph{electrostatic field}\index{electrostatic field}), varies as $\frac{1}{\omega }$. Hence at lower frequencies the $\frac{1}{\omega r^3}$ dominates while at higher frequencies the $\frac{\beta^2}{\omega r}$ dominates for the same current $I_0dl$ which tallies with the statement established earlier that frequency increases the radiation increases. 
 
-Let's better explain the electrostatic fields; it has been established that at lower frequencies this field dominates. For it to be called an electrostatic field there must be charges but in our analysis, we did not introduce charges, all we introduced was a current element where we assumed there is a current $I$ flowing through it. However, a new question is asked \emph{where does the current go?} Current is the flow charge and we are considering time-varying currents, so for half a cycle the flow of the current is upward while in the second half, the flow is downward. Considering the first half cycle the flow of current causes the accumulation of positive charges at the top and negative charges at the bottom as shown in figure~\ref{fig:dipole}(a).
+Let's better explain the electrostatic fields; it has been established that at lower frequencies this field dominates. For it to be called an electrostatic field there must be charges but in our analysis, we did not introduce charges, all we introduced was a current element where we assumed there is a current $I$ flowing through it. However, a new question is asked \emph{where does the current go?} Current is the flow charge and we are considering time-varying currents, so for half a cycle the flow of the current is upward while in the second half, the flow is downward. Considering the first half cycle the flow of current causes the accumulation of positive charges at the top and negative charges at the bottom as shown in Figure~\ref{fig:dipole}(a).
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\linewidth]{\pathtoparttwo/graphics/fig1_2}
@@ -163,7 +163,7 @@ Let's better explain the electrostatic fields; it has been established that at l
 \label{fig:dipole}
 \end{figure}
 
-For the next half cycle, the accumulation of positive charges occurs at the bottom while the negative charges are accumulated at the top since the current is flowing downwards. So essentially, this current flow which is time-varying is equivalent to having time-varying charges that can be likened to an electric dipole whose charges are changing as a function of time. Considering a condition for a half cycle and calculating the electric field at an observation point a distance r from the dipole as shown in figure~\ref{fig:dipole}(b), gives an electric field which varies with $\frac{1}{r^3}$.
+For the next half cycle, the accumulation of positive charges occurs at the bottom while the negative charges are accumulated at the top since the current is flowing downwards. So essentially, this current flow which is time-varying is equivalent to having time-varying charges that can be likened to an electric dipole whose charges are changing as a function of time. Considering a condition for a half cycle and calculating the electric field at an observation point a distance r from the dipole as shown in Figure~\ref{fig:dipole}(b), gives an electric field which varies with $\frac{1}{r^3}$.
 
 Now the next question to ask is \emph{why does this field dominate at a lower frequency?} Well, we know that charge is the integral of current over time i.e. $Q =\int Idt$, so for a period which is very large for the same current amplitude the accumulated charges would be more. So as frequency goes on reducing the amount of charge that will get accumulated will increase. This is why at lower frequencies the electrostatic field dominates.
 
@@ -185,7 +185,7 @@ From equation~\eqref{eqn:electricfieldthetacomponentsmallcurrentelement}, let $E
 \end{align*}
 Since at $ r = 0$, the expression in equation~\eqref{eqn:electricfieldthetacomponentsmallcurrentelement} becomes undefined, then $ r = \frac{1}{\beta} $; $\beta = \frac{2\pi}{\lambda} \Longrightarrow r =  \frac{\lambda}{2 \pi} $.
 
-At $ r =  \frac{\lambda}{2 \pi} $ the Electric field goes to zero and the plot is given in figure~\ref{fig:electricfiedvariationwithdistance}.
+At $ r =  \frac{\lambda}{2 \pi} $ the Electric field goes to zero and the plot is given in Figure~\ref{fig:electricfiedvariationwithdistance}.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\linewidth]{\pathtoparttwo/graphics/fig1_3}
