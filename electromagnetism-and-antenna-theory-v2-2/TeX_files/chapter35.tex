@@ -30,7 +30,7 @@ By imposing appropriate boundary conditions, we derived the reflection coefficie
 \label{fig:lec35fig1}
 \end{figure}
 
-We observed that the electric field $\bar{E}$ in the medium is a superposition of the incident and reflected fields. The electric field can be expressed as $\bar{E} = \jmath 2E_i\sin(\beta x\cos\theta)e^{-\jmath\beta z\sin\theta}$, where $\beta$ is the phase constant, $\theta$ is the angle of incidence, and $E_i$ represents the incident electric field amplitude. The magnetic field $H$ consists of standing and travelling waves.
+We observed that the electric field $\bar{E}$ in the medium is a superposition of the incident and reflected fields. The electric field can be expressed as $\bar{E} = j 2E_i\sin(\beta x\cos\theta)e^{-j\beta z\sin\theta}$, where $\beta$ is the phase constant, $\theta$ is the angle of incidence, and $E_i$ represents the incident electric field amplitude. The magnetic field $H$ consists of standing and travelling waves.
 
 We can exploit the behaviour of the electric field to create a guiding structure for electromagnetic energy. By trapping energy from both sides of a semi-infinite dielectric medium, we can create a parallel plane waveguide. The tangential component of the electric field at the interface ($x=0$) should be continuous. However, we observed that at certain distances $x=\frac{m\lambda}{2\cos\theta}$ (where $\lambda$ is the wavelength), the electric field becomes zero. Placing a conducting sheet tangential to the electric field at these points does not alter the boundary conditions.
 
@@ -104,18 +104,18 @@ So $H_i$ and $H_r$ keep changing direction, and the magnetic field inside the pl
 
 From Equations~\eqref{en:totalelectricfield2},~\eqref{eqn:totalmagfieldx3} and~\eqref{eqn:totalmagfieldz2}, we can rewrite the components of the electric and magnetic field with $\cos\theta$ substituted with $\frac{m\pi x}{d}$ and $\sin\theta = \sqrt{1 - \cos^2\theta}$ as follows:
 \begin{dmath}
-E=\jmath 2 E_i \sin(\frac{m\pi x}{d})\footnotemark e^{-j\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}} \hat{y}
+E=j 2 E_i \sin(\frac{m\pi x}{d})\footnotemark e^{-j\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}} \hat{y}
 \label{eqn:totalelectricfield3}
 \end{dmath}
 \footnotetext{
 Since, $\beta = \frac{2\pi}{\lambda}$, then $\beta\cos\theta = \beta\times\frac{m\lambda}{2d} = \frac{2\pi}{\lambda}\times\frac{m\lambda}{2d}=\frac{m\pi}{d}$
 }
 \begin{dmath}
-H_x = -\jmath 2\frac{E_i}{\eta}\sin\theta\sin(\frac{m\pi x}{d}) e^{-\jmath 2\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}
+H_x = -j 2\frac{E_i}{\eta}\sin\theta\sin(\frac{m\pi x}{d}) e^{-j 2\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}
 \label{eqn:totalmagfieldx4}
 \end{dmath}
 \begin{dmath}
-H_z = -\frac{2E_i}{\eta}\left(\frac{m\lambda}{2d}\right)\cos(\frac{m\pi x}{d})e^{-\jmath 2\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}
+H_z = -\frac{2E_i}{\eta}\left(\frac{m\lambda}{2d}\right)\cos(\frac{m\pi x}{d})e^{-j 2\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}
 \label{eqn:totalmagfieldz3}
 \end{dmath}
 These are the three fields which can survive in a particular waveguide for a perpendicularly polarized electric field (perpendicular to the plane of incidence). Now the phase constant for the mode is
@@ -146,7 +146,7 @@ Similarly, for $m=2$, $\sin(\frac{m\pi x}{d})$ takes its first positive zero at 
 \label{fig:lec35fig7}
 \end{figure}
 
-So the mode parameter, `$m$', signifies the number of half-cycle variations of the electric field (or magnetic field) amplitude that occur in the direction transverse to the net wave propagation. For instance, when $m=0$, the electric field remains constant along the transverse direction. Consequently, to satisfy the boundary conditions at the conducting planes, the electric field must be zero everywhere. As a result, the $m=0$ mode is physically impossible inside the waveguide, and no wave can propagate in this mode. That is what the bold part of the expression, $\bar{E} = \jmath 2E_i\boldsymbol{\sin(\frac{m\pi x}{d})}e^{-\jmath 2\beta\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}$, signifies.
+So the mode parameter, `$m$', signifies the number of half-cycle variations of the electric field (or magnetic field) amplitude that occur in the direction transverse to the net wave propagation. For instance, when $m=0$, the electric field remains constant along the transverse direction. Consequently, to satisfy the boundary conditions at the conducting planes, the electric field must be zero everywhere. As a result, the $m=0$ mode is physically impossible inside the waveguide, and no wave can propagate in this mode. That is what the bold part of the expression, $\bar{E} = j 2E_i\boldsymbol{\sin(\frac{m\pi x}{d})}e^{-j 2\beta\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}$, signifies.
 
 However, the lowest value of $m$ that can propagate within the structure is $m=1$, also known as the `TE$_1$' mode. In this mode, there is one half-cycle variation of the electric field amplitude in the direction transverse to the propagation direction. This variation allows the electric field to be zero at both conducting boundaries, thereby fulfilling the boundary conditions and enabling sustained wave propagation along the waveguide.
 
@@ -163,7 +163,7 @@ The separation between the plates is $d = 10cm = 0.1m$. The frequency of operati
 
 Assuming the wave propagates in the z-direction and the electric field points in the y-direction then from Equation~\eqref{eqn:totalelectricfield3}, we have
 \begin{align*}
-\bar{E} = \jmath 2E_i\sin(\frac{m\pi x}{d})e^{-\jmath 2\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}\hat{y}
+\bar{E} = j 2E_i\sin(\frac{m\pi x}{d})e^{-j 2\beta z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}\hat{y}
 \end{align*}
 Let us find the wavelength, $\lambda$ and the phase constant, $\beta$.
 \begin{align*}
@@ -178,12 +178,12 @@ Let us find the wavelength, $\lambda$ and the phase constant, $\beta$.
 \end{align*}
 Thus,
 \begin{align*}
-\bar{E} &= \jmath 2\times100\sin(\frac{m\pi x}{d})e^{-\jmath 2\times200\pi z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}\hat{y}\\
-&= \jmath 200\sin(\frac{\pi x}{0.1})e^{-\jmath 400\pi z\sqrt{1 - \left(\frac{\lambda}{0.2}\right)^2}}\hat{y}\\
-&= \jmath 200\sin(10\pi x)e^{-\jmath 400\pi z\sqrt{1 - {(5\lambda)}^2}}\hat{y}\\
-&= \jmath 200\sin(10\pi x)e^{-\jmath 400\pi z\sqrt{1 - {(5\times0.03)}^2}}\hat{y}\\
-&= \jmath 200\sin(10\pi x)e^{-\jmath 400\pi z\sqrt{0.7975}}\hat{y}\\
-&= \jmath 200\sin(10\pi x)e^{-\jmath 356.8\pi z}\hat{y}\quad V/m
+\bar{E} &= j 2\times100\sin(\frac{m\pi x}{d})e^{-j 2\times200\pi z\sqrt{1 - \left(\frac{m\lambda}{2d}\right)^2}}\hat{y}\\
+&= j 200\sin(\frac{\pi x}{0.1})e^{-j 400\pi z\sqrt{1 - \left(\frac{\lambda}{0.2}\right)^2}}\hat{y}\\
+&= j 200\sin(10\pi x)e^{-j 400\pi z\sqrt{1 - {(5\lambda)}^2}}\hat{y}\\
+&= j 200\sin(10\pi x)e^{-j 400\pi z\sqrt{1 - {(5\times0.03)}^2}}\hat{y}\\
+&= j 200\sin(10\pi x)e^{-j 400\pi z\sqrt{0.7975}}\hat{y}\\
+&= j 200\sin(10\pi x)e^{-j 356.8\pi z}\hat{y}\quad V/m
 \end{align*}
 
 For the magnetic field, we have two components, $H_x$ and $H_y$, so from Equations~\eqref{eqn:totalmagfieldx4} and \eqref{eqn:totalmagfieldz3}, we have

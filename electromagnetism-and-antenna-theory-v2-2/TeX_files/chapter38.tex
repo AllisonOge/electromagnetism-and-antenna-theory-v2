@@ -74,7 +74,7 @@ The cosine and sine functions show amplitude variation which is a standing wave 
 
 Our solution shows that there are two waves on the structure travelling in the positive and negative z directions. However, if we assume that this waveguide is of infinite distance, $z \rightarrow\infty$, in the z direction, then there is no reflection. As we have seen from the transmission line, there is no reflection if the transmission line is infinite. So for simplicity of the analysis we assume, there is no wave travelling in the negative z direction and that we have only the forward wave.
 
-Therefore, by substituting the above equations into Equation~\eqref{eqn:electricwave} we can then write the general equation for the component $E_{z}$. However, for no backward wave, $C_6 = 0$  so that $Z(z) = C_5e^{-\jmath\beta z}$. Thus the general solution for the wave equation $E_z = XYZ$ is
+Therefore, by substituting the above equations into Equation~\eqref{eqn:electricwave} we can then write the general equation for the component $E_{z}$. However, for no backward wave, $C_6 = 0$  so that $Z(z) = C_5e^{-j\beta z}$. Thus the general solution for the wave equation $E_z = XYZ$ is
 \begin{equation*}
 E_{z} = C_{5}(C_{1}cos Ax + C_{2}sin Ax)(C_{3}\cos By + C_{4}sin By) e^{-j\beta z}
 \end{equation*}
@@ -87,16 +87,16 @@ Now we apply the boundary condition on $E_{z}$ to obtain the constants.  In this
 \end{enumerate}   
 At these four walls, tangential components of electric fields should be zero, i.e. $E_z = 0$ at $x=0$, $x=a$, $y=0$ and $y=b$. At $x=0$,  
 \begin{dmath*}
-E_{z} = C_{5}(C_1 + 0)(C_3\cos By + C_4\sin By)e^{-\jmath\beta z} = 0
+E_{z} = C_{5}(C_1 + 0)(C_3\cos By + C_4\sin By)e^{-j\beta z} = 0
 \end{dmath*}
 or
 \begin{align*}
-C_1 C_{5}(C_3\cos By + C_4\sin By)e^{-\jmath\beta z} = 0\\
+C_1 C_{5}(C_3\cos By + C_4\sin By)e^{-j\beta z} = 0\\
 \longrightarrow C_1 = 0
 \end{align*}
 $C_1 = 0$ will make $E_z = 0$ for $x=0$ term. At $y=0$,
 \begin{dmath*}
-E_{z} = C_{5}(C_1 \cos Ax + C_2\sin Ax)(C_3 + 0)e^{-\jmath\beta z} = 0
+E_{z} = C_{5}(C_1 \cos Ax + C_2\sin Ax)(C_3 + 0)e^{-j\beta z} = 0
 \end{dmath*}
 $C_3 = 0$ will make $E_z = 0$ for $y=0$ so we have reduced $E_z$ to
 \begin{dmath*}
@@ -182,7 +182,7 @@ H_x = \frac{j \omega\epsilon}{h^2}\cdot\pdv{E_z}{y} = \frac{j \omega\epsilon}{h^
 H_y =-\frac{j \omega\epsilon}{h^2}\pdv{E_z}{x} = -\frac{j \omega\epsilon}{h^{2}}\left(\frac{m\pi}{b}\right) C \cos \left(\frac{m\pi x}{a}\right)\sin \left(\frac{n\pi y}{b}\right)e^{-j \beta z}
 \end{dmath*}
 
-Now we get the amplitude field for the TM mode in a rectangular waveguide. With the understanding that the lowest order mode in the structure will be TM$_{11}$ mode. With $E_z = C\sin\left(\dfrac{m\pi x}{a}\right)\sin\left(\dfrac{n\pi y}{b}\right)e^{-\jmath\beta z}$, we see that $E_z = 0$ cross-section of the waveguide as shown in Figure~\ref{fig:lec38fig3}, the variation of the field in the half-cycles is shown based on the different values of m and n.
+Now we get the amplitude field for the TM mode in a rectangular waveguide. With the understanding that the lowest order mode in the structure will be TM$_{11}$ mode. With $E_z = C\sin\left(\dfrac{m\pi x}{a}\right)\sin\left(\dfrac{n\pi y}{b}\right)e^{-j\beta z}$, we see that $E_z = 0$ cross-section of the waveguide as shown in Figure~\ref{fig:lec38fig3}, the variation of the field in the half-cycles is shown based on the different values of m and n.
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\linewidth]{\pathtoparttwo/graphics/lec38fig3}
